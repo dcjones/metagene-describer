@@ -1,0 +1,29 @@
+[project]
+name = "metagene-describer"
+version = "0.1.0"
+description = "Describe metagenes using an llm."
+readme = "README.md"
+authors = [
+    { name = "Daniel C. Jones", email = "djones3@fredhutch.org" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.4",
+]
+
+[project.optional-dependencies]
+anthropic = [
+    "anthropic>=1.15.0",
+]
+openai = [
+    "openai>=3.31.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
