@@ -98,3 +98,98 @@ def test_notes_and_low_usage():
 
 def test_parse_json_fenced():
     assert parse_json('```json\n{"a": 1}\n```') == {"a": 1}
+
+
+class RefineBackend(FakeBackend):
+    def __init__(self, groups, labels):
+        super().__init__()
+        self.groups, self.labels = groups, labels
+        self.group_calls, self.resolve_calls = [], []
+
+    def complete_json(self, system, user, schema):
+        if "groups" in schema["properties"]:
+            self.group_calls.append(user)
+            return {"groups": self.groups}
+        if "labels" in schema["properties"]:
+            self.resolve_calls.append(user)
+            return {"labels": self.labels}
+        return super().complete_json(system, user, schema)
+
+
+def _desc(i, label, category="cell_type"):
+    from metagene_describer import MetageneDescription
+
+    return MetageneDescription(i, label, "", category, "high")
+
+
+def test_refine():
+    from metagene_describer import refine_labels
+
+    H = np.vstack([make_H(), make_H()[:1]])  # metagene 3 duplicates the T cell metagene
+    descs = [
+        _desc(0, "T cell markers"),
+        _desc(1, "B cell markers"),
+        _desc(2, "X/Y-high", "ambiguous"),
+        _desc(3, "T-cell markers"),
+    ]
+    backend = RefineBackend(
+        groups=[{"concept": "T cells", "indices": [0, 3, 2, 99]}],
+        labels=[
+            {"index": 0, "reason": "same", "label": "T cell markers."},
+            {"index": 3, "reason": "same", "label": "T cell markers"},
+            {"index": 1, "reason": "not in group", "label": "nope"},
+        ],
+    )
+    out = refine_labels(descs, GENES, H, backend=backend)
+    assert [o.label for o in out] == [
+        "T cell markers",
+        "B cell markers",
+        "X/Y-high",
+        "T cell markers",
+    ]
+    assert out[3].initial_label == "T-cell markers" and out[0].initial_label is None
+    assert "X/Y-high" not in backend.group_calls[0]  # ambiguous metagenes aren't sent
+    assert len(backend.resolve_calls) == 1
+    prompt = backend.resolve_calls[0]
+    assert "Metagene 0" in prompt and "Metagene 3" in prompt and "Metagene 2" not in prompt
+    assert "distinguishing genes: none" in prompt  # identical weights
+    assert "1.00\t1.00" in prompt  # cosine similarity
+
+
+def test_exact_duplicates_always_grouped():
+    from metagene_describer.refine import _parse_groups
+
+    descs = [_desc(0, "A"), _desc(1, "a"), _desc(2, "B"), _desc(3, "C")]
+    groups = _parse_groups({"groups": [{"concept": "BC", "indices": [2, 3]}]}, descs)
+    assert sorted(sorted(g.indices) for g in groups) == [[0, 1], [2, 3]]
+    groups = _parse_groups({"groups": [{"concept": "AB", "indices": [1, 2]}]}, descs)
+    assert [sorted(g.indices) for g in groups] == [[0, 1, 2]]
+
+
+def test_distinguishing_genes():
+    from metagene_describer.refine import _Group, resolve_prompt
+    from metagene_describer.summary import gene_specificity, summarize
+
+    H = make_H()
+    H[1, 0] = 0.1  # B cell metagene has a little CD3E
+    summaries = {s.index: s for s in summarize(GENES, H)}
+    descs = {0: _desc(0, "Lymphocytes"), 1: _desc(1, "Lymphocytes")}
+    W = H[:2] / H[:2].sum(axis=1, keepdims=True)
+    spec = gene_specificity(H[:2])
+    prompt = resolve_prompt(_Group("lymphocytes", [0, 1]), descs, summaries, GENES, W, spec)
+    t_line = prompt.split("Metagene 0")[1].split("\n")[2]
+    b_line = prompt.split("Metagene 1")[1].split("\n")[2]
+    assert t_line.startswith("  distinguishing genes: CD3E") and "MS4A1" not in t_line
+    assert "MS4A1" in b_line and "ACTB" not in b_line
+
+
+def test_describe_refine_failure_keeps_results(capsys):
+    class Broken(FakeBackend):
+        def complete_json(self, system, user, schema):
+            if "groups" in schema["properties"]:
+                raise BackendError("bad json")
+            return super().complete_json(system, user, schema)
+
+    out = describe_metagenes(GENES, make_H(), backend=Broken(), refine=True)
+    assert out[0].label == "T cell markers"
+    assert "refinement failed" in capsys.readouterr().err

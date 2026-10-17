@@ -5,11 +5,20 @@ from collections.abc import Mapping, Sequence
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import asdict, dataclass, field
 
+import numpy as np
+
 from .backends import Backend, BackendError, make_backend
 from .prompt import CATEGORIES, CONFIDENCES, SCHEMA, SYSTEM_PROMPT, user_prompt
+from .refine import refine as _refine
 from .summary import MetageneSummary, as_metagene_by_gene, as_usage, summarize
 
-__all__ = ["MetageneDescription", "describe_metagenes", "build_prompts", "to_dataframe"]
+__all__ = [
+    "MetageneDescription",
+    "describe_metagenes",
+    "refine_labels",
+    "build_prompts",
+    "to_dataframe",
+]
 
 
 @dataclass
@@ -21,9 +30,13 @@ class MetageneDescription:
     confidence: str
     cell_types: list[str] = field(default_factory=list)
     key_genes: list[str] = field(default_factory=list)
-    gene_label: str = ""  # top genes by weight * specificity, e.g. "CD3E/CD2/CD3D"; never from the LLM
+    gene_label: str = (
+        ""  # top genes by weight * specificity, e.g. "CD3E/CD2/CD3D"; never from the LLM
+    )
     top_genes: list[str] = field(default_factory=list)
     error: str | None = None  # set when the LLM call failed; label then falls back to gene_label
+    initial_label: str | None = None  # the label before refinement, if refinement changed it
+    refine_reason: str | None = None  # why refinement changed the label
 
 
 def _gene_label(s: MetageneSummary, n: int = 3) -> str:
@@ -33,7 +46,7 @@ def _gene_label(s: MetageneSummary, n: int = 3) -> str:
 
 def _prepare(
     genes, weights, usage, n_top, n_specific, notes
-) -> tuple[list[str], list[MetageneSummary], dict[int, str | None]]:
+) -> tuple[list[str], np.ndarray, np.ndarray | None, list[MetageneSummary], dict[int, str | None]]:
     genes = [str(g) for g in genes]
     H = as_metagene_by_gene(weights, len(genes))
     k = H.shape[0]
@@ -47,7 +60,7 @@ def _prepare(
         if len(notes) != k:
             raise ValueError(f"notes has {len(notes)} entries, but there are {k} metagenes")
         note_map = dict(enumerate(notes))
-    return genes, summaries, note_map
+    return genes, H, usage, summaries, note_map
 
 
 def build_prompts(
@@ -61,10 +74,14 @@ def build_prompts(
     n_specific: int = 10,
 ) -> tuple[str, list[str]]:
     """The system prompt and per-metagene user prompts describe_metagenes would send."""
-    genes, summaries, note_map = _prepare(genes, weights, usage, n_top, n_specific, notes)
+    genes, _, _, summaries, note_map = _prepare(genes, weights, usage, n_top, n_specific, notes)
     users = [
         user_prompt(
-            s, n_genes=len(genes), n_metagenes=len(summaries), context=context, note=note_map.get(s.index)
+            s,
+            n_genes=len(genes),
+            n_metagenes=len(summaries),
+            context=context,
+            note=note_map.get(s.index),
         )
         for s in summaries
     ]
@@ -107,6 +124,7 @@ def describe_metagenes(
     min_usage_share: float = 1e-3,
     max_workers: int = 8,
     max_attempts: int = 2,
+    refine: bool = False,
     verbose: bool = False,
 ) -> list[MetageneDescription]:
     """Label and describe each metagene with an LLM, from its top-weighted genes.
@@ -150,13 +168,19 @@ def describe_metagenes(
     max_attempts : int
         Attempts per metagene when the response is refused, truncated or unparseable. HTTP errors
         such as rate limits are retried by the provider's SDK.
+    refine : bool
+        After describing each metagene, make one more request that sees all the labels together,
+        to differentiate duplicates and reconcile near-duplicates (see refine_labels). If it fails,
+        a warning is printed and the unrefined descriptions are returned.
 
     Returns
     -------
     list of MetageneDescription, in metagene order. A metagene whose request failed has error set,
     label equal to its gene_label, and category "ambiguous".
     """
-    genes, summaries, note_map = _prepare(genes, weights, usage, n_top, n_specific, notes)
+    genes, H, usage_v, summaries, note_map = _prepare(
+        genes, weights, usage, n_top, n_specific, notes
+    )
     if isinstance(backend, str):
         backend = make_backend(backend, model=model, api_key=api_key, base_url=base_url)
     k = len(summaries)
@@ -206,7 +230,49 @@ def describe_metagenes(
         return result
 
     with ThreadPoolExecutor(max_workers=max_workers) as pool:
-        return list(pool.map(run, summaries))
+        results = list(pool.map(run, summaries))
+    if refine:
+        try:
+            by_index = {s.index: s for s in summaries}
+            results = _refine(results, by_index, genes, H, usage_v, backend, context, max_workers)
+        except Exception as e:
+            print(f"warning: label refinement failed: {type(e).__name__}: {e}", file=sys.stderr)
+    return results
+
+
+def refine_labels(
+    descriptions: Sequence[MetageneDescription],
+    genes: Sequence[str],
+    weights,
+    *,
+    usage=None,
+    context: str | None = None,
+    backend: Backend | str = "anthropic",
+    model: str | None = None,
+    api_key: str | None = None,
+    base_url: str | None = None,
+    max_workers: int = 8,
+) -> list[MetageneDescription]:
+    """Revise labels jointly, so that labels for the same concept are worded the same, and
+    metagenes that differ get labels that say how.
+
+    Only confidently labeled metagenes take part (not ambiguous, sample_specific, inactive or
+    failed ones). First, one request groups labels that name the same concept, including
+    near-synonyms; identical labels are always grouped. Then, for each group, a request sees each
+    member's top genes, the genes that distinguish it from the other members (computed from the
+    weights), and the members' pairwise similarity. The model either gives the group one shared
+    wording, or labels that state a real difference; it is told to leave labels identical when the
+    differences are weak. Changed descriptions keep their old label in initial_label and the
+    model's explanation in refine_reason. Descriptions are not rewritten.
+
+    genes, weights, usage and context should be the same as were given to describe_metagenes.
+    Raises BackendError if the grouping response is unusable.
+    """
+    genes, H, usage_v, summaries, _ = _prepare(genes, weights, usage, 30, 10, None)
+    if isinstance(backend, str):
+        backend = make_backend(backend, model=model, api_key=api_key, base_url=base_url)
+    by_index = {s.index: s for s in summaries}
+    return _refine(list(descriptions), by_index, genes, H, usage_v, backend, context, max_workers)
 
 
 def to_dataframe(descriptions: Sequence[MetageneDescription]):

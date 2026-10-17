@@ -75,6 +75,24 @@ strict JSON schema, `"object"` uses JSON mode, and `"prompt"` relies on the prom
 `build_prompts(genes, H, ...)` returns the exact prompts without calling the model, so you can
 inspect them.
 
+### Refining labels jointly
+
+Each metagene is labeled on its own, so similar metagenes often get the same label, or labels like
+"Immediate early stress genes" and "Immediate early response" that differ in wording only.
+`refine=True` (or `refine_labels(descriptions, genes, H, usage=W, context=...)` on existing
+results) adds a joint step:
+
+1. One request sees all the confident labels and groups those that name the same concept.
+2. For each group, a request sees each member's top genes, the genes that distinguish it from the
+   other members, and how similar the members' weights are. The distinguishing genes are computed
+   locally and weighted by specificity, so ubiquitous genes don't show up as differences. The
+   model then either gives the group one shared wording, or labels that state a real difference,
+   e.g. "IgA class-switched B cells" vs "IgG3 class-switched B cells". When the differences are
+   weak, labels stay identical.
+
+Changed labels keep the original in `initial_label`, with the model's reason in `refine_reason`.
+Ambiguous and sample-specific metagenes keep their gene-based labels.
+
 ### Why pass `usage`
 
 NMF doesn't fix the scale of a factor: scaling `W[:, k]` up and `H[k]` down leaves `W H` unchanged.
@@ -98,3 +116,4 @@ Each `MetageneDescription` has:
 | `gene_label` | top 3 genes by weight × specificity, computed locally |
 | `top_genes` | the top genes by weight that the model was shown |
 | `error` | set if the request failed |
+| `initial_label`, `refine_reason` | set when refinement changed the label |

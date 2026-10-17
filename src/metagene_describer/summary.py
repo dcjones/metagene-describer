@@ -48,6 +48,22 @@ def as_usage(usage, k: int) -> np.ndarray:
     return usage
 
 
+def gene_specificity(H: np.ndarray, usage: np.ndarray | None = None) -> np.ndarray:
+    """[k, n_genes] share of each gene's modeled expression attributed to each metagene.
+
+    W H is invariant to rescaling a factor, so H's rows aren't comparable on their own. With usage
+    (the column sums of W), usage[k] * H[k, g] is metagene k's total modeled expression of gene g,
+    which makes specificity exact. Without it, rows are normalized to sum to 1, which treats every
+    metagene as equally used.
+    """
+    row_sums = H.sum(axis=1, keepdims=True)
+    weights = np.divide(H, row_sums, out=np.zeros_like(H), where=row_sums > 0)
+    scale = usage[:, None] if usage is not None else row_sums
+    mass = weights * scale  # modeled expression attributed to each metagene
+    gene_mass = mass.sum(axis=0, keepdims=True)
+    return np.divide(mass, gene_mass, out=np.zeros_like(mass), where=gene_mass > 0)
+
+
 def summarize(
     genes: list[str],
     H: np.ndarray,
@@ -55,21 +71,12 @@ def summarize(
     n_top: int = 30,
     n_specific: int = 10,
 ) -> list[MetageneSummary]:
-    """Per-metagene gene statistics from H [k, n_genes] and optional usage [k].
-
-    W H is invariant to rescaling a factor, so H's rows aren't comparable on their own. With usage
-    (the column sums of W), usage[k] * H[k, g] is metagene k's total modeled expression of gene g,
-    which makes specificity exact. Without it, rows are normalized to sum to 1, which treats every
-    metagene as equally used.
-    """
+    """Per-metagene gene statistics from H [k, n_genes] and optional usage [k] (see
+    gene_specificity)."""
     k = H.shape[0]
     row_sums = H.sum(axis=1, keepdims=True)
     weights = np.divide(H, row_sums, out=np.zeros_like(H), where=row_sums > 0)
-
-    scale = usage[:, None] if usage is not None else row_sums
-    mass = weights * scale  # [k, n_genes] modeled expression attributed to each metagene
-    gene_mass = mass.sum(axis=0, keepdims=True)
-    specificity = np.divide(mass, gene_mass, out=np.zeros_like(mass), where=gene_mass > 0)
+    specificity = gene_specificity(H, usage)
 
     usage_share = None
     if usage is not None and usage.sum() > 0:
