@@ -63,12 +63,18 @@ mixtures can come from neighboring cells or segmentation errors.
 genes (high weight and high specificity) joined by "/" and followed by "-high", e.g. \
 "KRT17/S100A2/LGALS7-high", with no other words. Many metagenes in a dataset can be ambiguous, and \
 gene-based labels are the only way to tell them apart. Do not invent a biological story.
+- NMF often splits a cell type into a core factor and add-on factors (subsets, states, clones), \
+so a metagene can belong to a lineage whose canonical markers sit in another metagene. If several \
+of its specific genes clearly point to a lineage, name the lineage in the label with a qualifier, \
+e.g. "Hepatocytes, CYP2E1-high" or "Astrocyte-like cells (GFAP/AQP4)", with category \
+cell_state, rather than giving a gene-only label. Use a gene-only label only when there is no \
+coherent lineage evidence.
 - A metagene dominated by one gene (it carries a large share of the weight, say 20% or more, or \
 the effective number of genes is small) usually reflects that gene's own variation or a probe or \
 technical effect, not a pathway. Don't name a pathway or cell type just because the dominant gene \
-belongs to one (e.g. PKM alone is not "Glycolysis", EEF1G alone is not "Translation", ATF4 alone \
-is not a stress response when its targets are absent). Use category technical with a label naming \
-the dominant gene or genes, e.g. "EEF1G-high" or "PKM/JPT2-high". The exception is when the other \
+belongs to one (e.g. GAPDH alone is not "Glycolysis", and RPLP0 alone is not "Translation"). \
+Use category technical with a label naming the dominant gene or genes, e.g. "GAPDH-high" or \
+"RPLP0/ENO1-high". The exception is when the other \
 genes with substantial weight and specificity form a coherent program or lineage signature on \
 their own; then name that, and mention the dominant gene in the description.
 - A metagene with a large effective number of genes (hundreds or more) and low specificities \

@@ -1,0 +1,100 @@
+{"index": 0, "grades": {"c0": "correct", "c1": "overreach", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": "c1 invents a myeloid admixture from S100A8/9."}
+{"index": 1, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 2, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 3, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 4, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct"}, "note": ""}
+{"index": 5, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct", "c10": "correct"}, "note": ""}
+{"index": 6, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct"}, "note": ""}
+{"index": 7, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct", "c10": "correct"}, "note": ""}
+{"index": 8, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 9, "grades": {"c0": "correct", "c1": "vague", "c2": "correct", "c3": "correct", "c4": "vague", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "vague", "c9": "vague"}, "note": "Generic squamous differentiation/keratinocyte labels miss the terminal/cornified state."}
+{"index": 10, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct", "c10": "correct"}, "note": ""}
+{"index": 11, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "vague", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": "Gene-only label without the squamous identity."}
+{"index": 12, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct", "c10": "correct"}, "note": ""}
+{"index": 13, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "overreach", "c7": "vague", "c8": "correct", "c9": "correct", "c10": "correct"}, "note": "c6 adds an unsupported hypoxia link; c7 generic epithelial."}
+{"index": 14, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 15, "grades": {"c0": "correct", "c1": "overreach", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": "Basal squamous claim on a diffuse background factor (listed overreach)."}
+{"index": 16, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct"}, "note": ""}
+{"index": 17, "grades": {"c0": "correct", "c1": "vague", "c2": "correct", "c3": "vague", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "vague", "c8": "correct", "c9": "correct", "c10": "correct"}, "note": "Gene-only labels for a named S-phase/nucleotide program."}
+{"index": 18, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 19, "grades": {"c0": "correct", "c1": "correct", "c2": "overreach", "c3": "correct", "c4": "correct"}, "note": "'FABP4 admixture' implies contamination; evidence says FABP4 is from tumor cells."}
+{"index": 20, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct"}, "note": ""}
+{"index": 21, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct"}, "note": ""}
+{"index": 22, "grades": {"c0": "correct", "c1": "correct", "c2": "correct"}, "note": ""}
+{"index": 23, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct", "c10": "correct"}, "note": ""}
+{"index": 24, "grades": {"c0": "vague", "c1": "correct", "c2": "vague", "c3": "vague", "c4": "vague", "c5": "vague", "c6": "vague", "c7": "vague", "c8": "vague"}, "note": "Gene-only labels for a named ribosome biogenesis/RNA processing program."}
+{"index": 25, "grades": {"c0": "correct", "c1": "overreach", "c2": "correct", "c3": "overreach", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct"}, "note": "c1 keratinization ~ cornified (overreach); c3 invents an inflammatory admixture."}
+{"index": 26, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "overreach", "c4": "vague", "c5": "overreach", "c6": "overreach", "c7": "correct", "c8": "overreach"}, "note": "'Secretory' implies glandular epithelium (overreach); c4 generic epithelial barrier without squamous identity."}
+{"index": 27, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "overreach", "c7": "correct"}, "note": "Calls them B cells (listed overreach)."}
+{"index": 28, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 29, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 30, "grades": {"c0": "correct", "c1": "correct", "c2": "overreach", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct", "c10": "correct", "c11": "correct"}, "note": "Myoepithelial identity not supported."}
+{"index": 31, "grades": {"c0": "vague", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct"}, "note": "Drops the basal identity."}
+{"index": 32, "grades": {"c0": "correct", "c1": "correct", "c2": "correct"}, "note": ""}
+{"index": 33, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct"}, "note": ""}
+{"index": 34, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct"}, "note": ""}
+{"index": 35, "grades": {"c0": "vague", "c1": "correct", "c2": "vague", "c3": "correct", "c4": "vague", "c5": "vague", "c6": "vague", "c7": "vague"}, "note": "Generic epithelial/squamous or gene-only labels miss the differentiated squamous state."}
+{"index": 36, "grades": {"c0": "overreach", "c1": "correct", "c2": "overreach", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "vague", "c8": "correct", "c9": "correct", "c10": "correct", "c11": "correct"}, "note": "Explicit G2/M claim for a mixed S+G2/M factor; c7 gene-only."}
+{"index": 37, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 38, "grades": {"c0": "correct", "c1": "vague", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct"}, "note": "Gene-only label for a named stress program."}
+{"index": 39, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct"}, "note": ""}
+{"index": 40, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 41, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct"}, "note": ""}
+{"index": 42, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 43, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "overreach", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct"}, "note": "Terminal differentiation ~ cornified keratinocytes (listed overreach)."}
+{"index": 44, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 45, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 46, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct"}, "note": ""}
+{"index": 47, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 48, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 49, "grades": {"c0": "overreach", "c1": "overreach", "c2": "vague", "c3": "correct", "c4": "correct", "c5": "overreach", "c6": "correct", "c7": "correct", "c8": "vague", "c9": "vague", "c10": "vague"}, "note": "IFN-gamma framing is a listed overreach; gene-only or chemokine-only labels omit the fibroblast identity."}
+{"index": 50, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "overreach", "c5": "overreach", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct", "c10": "overreach"}, "note": "Glandular/luminal subtype not supported (listed overreach)."}
+{"index": 51, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 52, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct"}, "note": ""}
+{"index": 53, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct"}, "note": ""}
+{"index": 54, "grades": {"c0": "correct", "c1": "correct", "c2": "correct"}, "note": ""}
+{"index": 55, "grades": {"c0": "correct", "c1": "correct", "c2": "correct"}, "note": ""}
+{"index": 56, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 57, "grades": {"c0": "correct", "c1": "correct"}, "note": ""}
+{"index": 58, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 59, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 60, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 61, "grades": {"c0": "correct", "c1": "correct"}, "note": ""}
+{"index": 62, "grades": {"c0": "vague", "c1": "vague", "c2": "vague", "c3": "vague", "c4": "vague", "c5": "correct", "c6": "vague", "c7": "vague"}, "note": "Gene-only labels for a named ER stress/UPR program."}
+{"index": 63, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct", "c10": "correct"}, "note": ""}
+{"index": 64, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct"}, "note": ""}
+{"index": 65, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct"}, "note": ""}
+{"index": 66, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct"}, "note": ""}
+{"index": 67, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 68, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "vague", "c5": "vague", "c6": "correct", "c7": "overreach", "c8": "correct", "c9": "correct", "c10": "vague"}, "note": "Gene-only labels lack the lymphocyte identity; c7 claims NK cells though T vs NK is unresolved."}
+{"index": 69, "grades": {"c0": "correct", "c1": "correct"}, "note": ""}
+{"index": 70, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "vague", "c10": "correct", "c11": "correct"}, "note": "Drops the squamous identity."}
+{"index": 71, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct"}, "note": ""}
+{"index": 72, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 73, "grades": {"c0": "correct", "c1": "correct", "c2": "overreach", "c3": "vague", "c4": "correct", "c5": "vague", "c6": "correct", "c7": "correct", "c8": "correct"}, "note": "c2 p53 response is a listed overreach; c3/c5 gene-only labels with nonspecific genes."}
+{"index": 74, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct"}, "note": ""}
+{"index": 75, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 76, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct"}, "note": ""}
+{"index": 77, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 78, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 79, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "vague", "c4": "correct", "c5": "vague", "c6": "correct", "c7": "correct", "c8": "vague", "c9": "correct", "c10": "correct", "c11": "vague"}, "note": "Gene-only labels for a named ER secretory program."}
+{"index": 80, "grades": {"c0": "correct", "c1": "correct"}, "note": ""}
+{"index": 81, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 82, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 83, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 84, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct"}, "note": ""}
+{"index": 85, "grades": {"c0": "correct", "c1": "correct"}, "note": ""}
+{"index": 86, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 87, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 88, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 89, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 90, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 91, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct"}, "note": ""}
+{"index": 92, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 93, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "overreach", "c5": "correct", "c6": "correct", "c7": "correct", "c8": "correct", "c9": "correct", "c10": "correct"}, "note": "Unsupported stress-gene state."}
+{"index": 94, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct"}, "note": ""}
+{"index": 95, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct", "c7": "correct"}, "note": ""}
+{"index": 96, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct"}, "note": ""}
+{"index": 97, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct", "c6": "correct"}, "note": ""}
+{"index": 98, "grades": {"c0": "correct", "c1": "correct", "c2": "correct", "c3": "correct", "c4": "correct", "c5": "correct"}, "note": ""}
+{"index": 99, "grades": {"c0": "correct", "c1": "correct"}, "note": ""}

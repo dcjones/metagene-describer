@@ -109,7 +109,7 @@ Prefer a biological description over gene names when one fits: a lineage ("Monoc
 early response" vs "T cell immediate early response"), a subtype ("Naive CD8 T cells"), an \
 isotype (IgA vs IgG), or an added program ("Naive T cells, interferon-high").
 - If the difference is real but has no good biological name, add the 1-2 most distinguishing \
-genes in parentheses, e.g. "Naive T cell markers (SOX4)". Use only genes from that metagene's \
+genes in parentheses, e.g. "Naive T cell markers (GPR15)". Use only genes from that metagene's \
 distinguishing genes for this, never just its top gene.
 - If members are highly similar or their distinguishing genes are weak or uninformative, give \
 them the same label. Broadly expressed genes (housekeeping, cytoskeletal, ribosomal, \

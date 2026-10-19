@@ -29,14 +29,18 @@ from before that fix are not included.
   - `or-MODEL`: other models through OpenRouter (the OpenAI-compatible backend, with the
     defaults at the time)
   - `lookup-required-b`: a second Haiku run of `lookup-required`
-  - `*-sg`, `*-sg-b`: the same configurations with the rule for metagenes dominated by one gene
-    (now the default prompt)
+  - `*-sg`, `*-sg-b`: the same configurations with a first version of the rule for metagenes
+    dominated by one gene. Its examples (PKM, EEF1G, ATF4) were taken from Xenium metagenes, which
+    leaked answers into the eval, so don't rely on these.
+  - `*-sg2`, `*-sg2-b`: the single-gene rule with clean examples
+  - `*-am2`, `*-am2-b`: the single-gene rule plus the rule for add-on factors of a lineage, with
+    clean examples (the current default prompt)
 - `grades/BATCH/`: blind grades (`prompts/grade.md`). Each batch has the grading inputs
   (`DATASET.jsonl`), the judge's grades (`DATASET.grades.jsonl`) and `key.json`, which maps
   candidates back to variants. Batches are `lookup` (the four first-pass variants), `refine`
   (`nolookup-a` and the two refinements) `models` (`lookup-required` and the OpenRouter
-  models), `single-gene` (Haiku, DeepSeek and gpt-6-luna with and without the single-gene
-  rule) and `single-gene-haiku` (two Haiku runs with and two without it).
+  models), `single-gene` and `single-gene-haiku` (the leaked first version of the single-gene rule;
+  superseded) and `rules-clean` (no rule, single-gene rule, and both rules, with clean examples).
 
 ## Results
 
@@ -71,27 +75,40 @@ DeepSeek v4.1 Flash $0.13, gpt-6-luna $0.23, Haiku 5.5 $0.27, Mistral Small 3.2 
 3.1 Flash Lite $0.55, Qwen 3.6 35B $1.55.
 
 ```
-$ python eval/score.py eval/grades/single-gene
+$ python eval/score.py eval/grades/rules-clean
 all
-  lookup-required                   correct 278  vague  14  overreach   8  wrong   0
-  lookup-required-sg                correct 272  vague  18  overreach  10  wrong   0
+  lookup-required                   correct 281  vague  12  overreach   7  wrong   0
+  lookup-required-b                 correct 281  vague  11  overreach   8  wrong   0
+  lookup-required-sg2               correct 274  vague  18  overreach   8  wrong   0
+  lookup-required-sg2-b             correct 277  vague  15  overreach   8  wrong   0
+  lookup-required-am2               correct 276  vague  13  overreach  11  wrong   0
+  lookup-required-am2-b             correct 285  vague   8  overreach   7  wrong   0
   or-deepseek-v4.1-flash            correct 263  vague  24  overreach  13  wrong   0
-  or-deepseek-v4.1-flash-sg         correct 268  vague  25  overreach   7  wrong   0
-  or-gpt-6-luna                     correct 256  vague  33  overreach  10  wrong   1
-  or-gpt-6-luna-sg                  correct 263  vague  32  overreach   5  wrong   0
-
-$ python eval/score.py eval/grades/single-gene-haiku
-all
-  lookup-required                   correct 281  vague  14  overreach   4  wrong   1
-  lookup-required-b                 correct 279  vague  15  overreach   6  wrong   0
-  lookup-required-sg                correct 273  vague  18  overreach   9  wrong   0
-  lookup-required-sg-b              correct 281  vague  16  overreach   3  wrong   0
+  or-deepseek-v4.1-flash-sg2        correct 266  vague  26  overreach   8  wrong   0
+  or-deepseek-v4.1-flash-am2        correct 270  vague  23  overreach   7  wrong   0
+  or-gpt-6-luna                     correct 259  vague  29  overreach  12  wrong   0
+  or-gpt-6-luna-sg2                 correct 269  vague  27  overreach   4  wrong   0
+  or-gpt-6-luna-am2                 correct 275  vague  15  overreach  10  wrong   0
 ```
 
-The single-gene rule helps DeepSeek and gpt-6-luna, mostly on Xenium. For Haiku its effect is
-within run-to-run variation: two runs of the same prompt differ by up to 8 labels. Totals for the
-same variant also shift by a few labels between batches, because a different judge grades each
-batch, so compare variants only within a batch.
+With both rules (`am2`), DeepSeek gains 7 correct labels and gpt-6-luna 16, and Haiku is
+unchanged within its run-to-run variation: two runs of the same Haiku prompt differ by up to 9
+labels. Totals for the same variant also shift by a few labels between batches, because a
+different judge grades each batch, so compare variants only within a batch.
+
+### Keeping the eval honest
+
+Examples in the prompts must not come from the eval datasets. A prompt example like 'PKM alone is
+not "Glycolysis"' hands the model the answer for any eval metagene dominated by PKM. Before
+evaluating a prompt change, run
+
+```sh
+uv run --group eval python eval/check_prompt_leakage.py
+```
+
+It lists prompt genes that rank in the top 3 of any eval metagene. The hits that remain now are
+canonical markers named in instructions (CCR7, SELL, TCF7, VWF) and examples of ubiquitous genes
+(ACTB, TMSB4X). These don't say what any particular metagene is.
 
 The grades only score each label against its own reference, so they don't measure what refinement
 is for (distinguishing similar metagenes). They show only that refinement doesn't hurt accuracy.

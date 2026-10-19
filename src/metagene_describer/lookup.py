@@ -20,7 +20,8 @@ hypoxia, its core genes). Do this even when the call looks obvious. Read the res
 - A measured marker with negligible weight here that peaks in another metagene argues against \
 the call, unless this metagene looks like an add-on module (a state or program) of a lineage \
 whose core markers sit in that other metagene. NMF often splits a cell type into a core factor \
-and add-on factors; if that is what you see, say so.
+and add-on factors; if that is what you see, name the lineage in the label with a qualifier and \
+say so in the description.
 - For a program (interferon, hypoxia, cell cycle, ...), if its core genes peak in another \
 metagene, this one carries at most a weak share of it; say "weak" or don't name the program.
 - "not measured" means the gene isn't in the data (e.g. not on a targeted panel), so it is not \
