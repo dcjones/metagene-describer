@@ -7,6 +7,7 @@ from dataclasses import asdict, dataclass, field
 
 import numpy as np
 
+from . import lookup as _lookup
 from .backends import Backend, BackendError, make_backend
 from .prompt import CATEGORIES, CONFIDENCES, SCHEMA, SYSTEM_PROMPT, user_prompt
 from .refine import refine as _refine
@@ -30,13 +31,13 @@ class MetageneDescription:
     confidence: str
     cell_types: list[str] = field(default_factory=list)
     key_genes: list[str] = field(default_factory=list)
-    gene_label: str = (
-        ""  # top genes by weight * specificity, e.g. "CD3E/CD2/CD3D"; never from the LLM
-    )
+    # Top genes by weight * specificity, e.g. "CD3E/CD2/CD3D"; computed locally, never by the LLM.
+    gene_label: str = ""
     top_genes: list[str] = field(default_factory=list)
     error: str | None = None  # set when the LLM call failed; label then falls back to gene_label
     initial_label: str | None = None  # the label before refinement, if refinement changed it
     refine_reason: str | None = None  # why refinement changed the label
+    looked_up: list[str] = field(default_factory=list)  # genes the model checked, with lookup=True
 
 
 def _gene_label(s: MetageneSummary, n: int = 3) -> str:
@@ -88,8 +89,10 @@ def build_prompts(
     return SYSTEM_PROMPT, users
 
 
-def _parse_result(data: dict, s: MetageneSummary, gene_label: str) -> MetageneDescription:
-    shown = {g.gene for g in s.top + s.specific}
+def _parse_result(
+    data: dict, s: MetageneSummary, gene_label: str, looked_up: Sequence[str] = ()
+) -> MetageneDescription:
+    shown = {g.gene for g in s.top + s.specific} | set(looked_up)
     category = data.get("category")
     confidence = data.get("confidence")
     label = str(data.get("label") or "").strip().rstrip(".") or gene_label
@@ -100,7 +103,7 @@ def _parse_result(data: dict, s: MetageneSummary, gene_label: str) -> MetageneDe
         category=category if category in CATEGORIES else "ambiguous",
         confidence=confidence if confidence in CONFIDENCES else "low",
         cell_types=[str(c) for c in data.get("cell_types") or []],
-        # Drop any gene the model named that it wasn't shown.
+        # Drop any gene the model named that it wasn't shown or didn't look up.
         key_genes=[str(g) for g in data.get("key_genes") or [] if str(g) in shown],
         gene_label=gene_label,
         top_genes=[g.gene for g in s.top],
@@ -124,6 +127,7 @@ def describe_metagenes(
     min_usage_share: float = 1e-3,
     max_workers: int = 8,
     max_attempts: int = 2,
+    lookup: bool = True,
     refine: bool = False,
     verbose: bool = False,
 ) -> list[MetageneDescription]:
@@ -168,6 +172,13 @@ def describe_metagenes(
     max_attempts : int
         Attempts per metagene when the response is refused, truncated or unparseable. HTTP errors
         such as rate limits are retried by the provider's SDK.
+    lookup : bool
+        Give the model a lookup_genes tool, and require it to check the canonical markers of any
+        cell type, state or program it names (their weight in this metagene and which metagene
+        they peak in) before answering. On the example datasets this cut overreaching labels by
+        about three quarters, at about twice the cost (extra round trips for roughly half the
+        metagenes). The backend must support tools (both built-in backends do); set False for one
+        that doesn't, or to save cost.
     refine : bool
         After describing each metagene, make one more request that sees all the labels together,
         to differentiate duplicates and reconcile near-duplicates (see refine_labels). If it fails,
@@ -184,6 +195,8 @@ def describe_metagenes(
     if isinstance(backend, str):
         backend = make_backend(backend, model=model, api_key=api_key, base_url=base_url)
     k = len(summaries)
+    gene_lookup = _lookup.GeneLookup(genes, H, usage_v) if lookup else None
+    system = SYSTEM_PROMPT + _lookup.PROMPT if lookup else SYSTEM_PROMPT
     if metagenes is not None:
         summaries = [summaries[i] for i in metagenes]
 
@@ -203,10 +216,16 @@ def describe_metagenes(
             s, n_genes=len(genes), n_metagenes=k, context=context, note=note_map.get(s.index)
         )
         result, error = None, None
+        looked_up: list[str] = []
         for _ in range(max_attempts):
             try:
-                data = backend.complete_json(SYSTEM_PROMPT, prompt, SCHEMA)
-                result = _parse_result(data, s, gene_label)
+                if gene_lookup is not None:
+                    tools = [gene_lookup.tool(s.index, looked_up)]
+                    data = backend.complete_json(system, prompt, SCHEMA, tools=tools)
+                else:
+                    data = backend.complete_json(system, prompt, SCHEMA)
+                result = _parse_result(data, s, gene_label, looked_up)
+                result.looked_up = list(dict.fromkeys(looked_up))
                 break
             except BackendError as e:
                 error = str(e)
@@ -282,7 +301,7 @@ def to_dataframe(descriptions: Sequence[MetageneDescription]):
     rows = []
     for d in descriptions:
         row = asdict(d)
-        for key in ("cell_types", "key_genes", "top_genes"):
+        for key in ("cell_types", "key_genes", "top_genes", "looked_up"):
             row[key] = ", ".join(row[key])
         rows.append(row)
     return pd.DataFrame(rows).set_index("index")

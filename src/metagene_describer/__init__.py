@@ -1,4 +1,4 @@
-from .backends import AnthropicBackend, Backend, BackendError, OpenAIBackend, make_backend
+from .backends import AnthropicBackend, Backend, BackendError, OpenAIBackend, Tool, make_backend
 from .describe import (
     MetageneDescription,
     build_prompts,
@@ -18,4 +18,5 @@ __all__ = [
     "AnthropicBackend",
     "OpenAIBackend",
     "make_backend",
+    "Tool",
 ]

@@ -2,9 +2,10 @@
 
 Label and describe [metagene](https://github.com/dcjones/metagene) NMF factors with an LLM.
 
-For each metagene, the model is shown its top genes, each with its weight and specificity. It returns
-a short label ("T cell markers"), a 1–3 sentence description, a category, a confidence, candidate
-cell types, and the genes it based its answer on. Metagenes with no coherent theme (common in tumor
+For each metagene, the model is shown its top genes, each with its weight and specificity. Before
+naming a cell type or program, it checks that call's canonical markers with a gene lookup tool. It
+returns a short label ("T cell markers"), a 1–3 sentence description, a category, a confidence,
+candidate cell types, and the genes it based its answer on. Metagenes with no coherent theme (common in tumor
 samples) are labeled by their dominant genes, e.g. `KRT17/S100A2/LGALS7-high`.
 
 ## Install
@@ -58,7 +59,8 @@ describe_metagenes(genes, H, backend=backend)
 `json_mode` sets how the OpenAI-compatible backend asks for JSON. `"schema"` (the default) uses a
 strict JSON schema, `"object"` uses JSON mode, and `"prompt"` relies on the prompt alone. Use
 `"object"` or `"prompt"` for servers that don't support schemas. Any other object with a
-`complete_json(system, user, schema) -> dict` method also works as a backend.
+`complete_json(system, user, schema, tools=()) -> dict` method also works as a backend; it only
+needs to handle `tools` if you use `lookup=True` (the default).
 
 ### Options
 
@@ -71,6 +73,29 @@ strict JSON schema, `"object"` uses JSON mode, and `"prompt"` relies on the prom
 - `n_top`, `n_specific`: how many genes to show the model.
 - `min_usage_share`: with `usage` given, metagenes below this share of total usage are labeled
   `Inactive` without calling the model.
+- `lookup` (default `True`): let the model look up genes, and require it to check markers before
+  naming a cell type, state or program (see below).
+- `refine` (default `False`): reconcile labels across metagenes (see below).
+
+### Gene lookup
+
+The model sees only each metagene's top genes, so it can't tell on its own whether a call's other
+canonical markers are present. With `lookup=True` it gets a `lookup_genes` tool. For each gene the
+tool returns:
+- its rank, weight and specificity in the metagene being labeled;
+- the metagene where the gene is most specific, with that metagene's top genes;
+- "not measured" if the gene isn't in the dataset, e.g. not on a targeted panel.
+
+The model must use the tool before naming a cell type, state or program. It then sees, for
+example, that PECAM1 and CDH5 peak in another metagene before calling a SOX17-high factor
+endothelial. It also sees when a factor is an add-on module whose lineage markers sit in a sibling
+metagene. No marker lists are built in, so this works for any species or panel; gene symbols are
+matched case-insensitively when there's no exact match.
+
+On three example datasets (300 metagenes, graded against reference annotations), required lookup
+cut labels that claim more than the evidence supports from 19 to 4. The trade-off was a few more
+vague labels: 12 instead of 6–9. It roughly doubles the cost, because about half the metagenes take
+extra round trips. Each result's `looked_up` field lists the genes the model checked.
 
 `build_prompts(genes, H, ...)` returns the exact prompts without calling the model, so you can
 inspect them.
@@ -112,8 +137,9 @@ Each `MetageneDescription` has:
 | `category` | `cell_type`, `cell_state`, `program`, `technical`, `sample_specific`, `ambiguous` (or `inactive`) |
 | `confidence` | `high`, `medium`, `low` |
 | `cell_types` | candidate cell types or states, most likely first |
-| `key_genes` | the most informative genes (only genes the model was shown) |
+| `key_genes` | the most informative genes (only genes the model was shown or looked up) |
 | `gene_label` | top 3 genes by weight × specificity, computed locally |
 | `top_genes` | the top genes by weight that the model was shown |
 | `error` | set if the request failed |
 | `initial_label`, `refine_reason` | set when refinement changed the label |
+| `looked_up` | genes the model checked with the lookup tool |

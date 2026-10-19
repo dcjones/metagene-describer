@@ -22,7 +22,7 @@ class FakeBackend:
         self.calls = []
         self.responses = responses or {}
 
-    def complete_json(self, system, user, schema):
+    def complete_json(self, system, user, schema, tools=()):
         self.calls.append(user)
         r = self.responses.get(len(self.calls))
         if isinstance(r, Exception):
@@ -106,7 +106,7 @@ class RefineBackend(FakeBackend):
         self.groups, self.labels = groups, labels
         self.group_calls, self.resolve_calls = [], []
 
-    def complete_json(self, system, user, schema):
+    def complete_json(self, system, user, schema, tools=()):
         if "groups" in schema["properties"]:
             self.group_calls.append(user)
             return {"groups": self.groups}
@@ -185,7 +185,7 @@ def test_distinguishing_genes():
 
 def test_describe_refine_failure_keeps_results(capsys):
     class Broken(FakeBackend):
-        def complete_json(self, system, user, schema):
+        def complete_json(self, system, user, schema, tools=()):
             if "groups" in schema["properties"]:
                 raise BackendError("bad json")
             return super().complete_json(system, user, schema)
