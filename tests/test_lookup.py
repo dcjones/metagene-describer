@@ -116,3 +116,44 @@ def test_openai_schema_mode_describes_schema_in_prompt():
     request = client.requests[-1]
     assert request["response_format"]["type"] == "json_schema"
     assert '"label"' in request["messages"][0]["content"]
+
+
+def test_openai_tool_rounds_omit_response_format():
+    client = FakeOpenAI()
+    tool = Tool("lookup_genes", "", {}, lambda a: "")
+    OpenAIBackend("m", client=client).complete_json("s", "u", {}, tools=[tool])
+    assert all("response_format" not in r for r in client.requests)
+    assert all("tools" in r for r in client.requests)
+
+
+def test_openai_placeholder_answer_gets_forced_final_request():
+    class Placeholder(FakeOpenAI):
+        def create(self, **kw):
+            self.requests.append(kw)
+            if kw.get("tool_choice") == "none":
+                content = '{"label": "T cells"}'
+            else:
+                content = '{"label": "placeholder"}'
+            msg = NS(tool_calls=None, content=content, refusal=None)
+            return NS(choices=[NS(message=msg, finish_reason="stop")])
+
+    client = Placeholder()
+    tool = Tool("lookup_genes", "", {}, lambda a: "")
+    schema = {"type": "object", "required": ["label"]}
+    out = OpenAIBackend("m", client=client).complete_json("s", "u", schema, tools=[tool])
+    assert out == {"label": "T cells"}
+    final = client.requests[-1]
+    assert final["tool_choice"] == "none" and final["response_format"]["type"] == "json_schema"
+
+
+def test_validate():
+    import pytest
+
+    from metagene_describer.backends import BackendError, validate
+
+    schema = {"required": ["label", "description"]}
+    assert validate({"label": "x", "description": "y"}, schema)
+    with pytest.raises(BackendError, match="missing description"):
+        validate({"label": "x"}, schema)
+    with pytest.raises(BackendError, match="placeholder"):
+        validate({"label": "Placeholder label", "description": "y"}, schema)

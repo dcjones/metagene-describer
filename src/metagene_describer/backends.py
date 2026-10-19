@@ -58,6 +58,23 @@ def parse_json(text: str) -> dict:
     raise BackendError(f"response is not valid JSON: {text[:200]!r}")
 
 
+def validate(data: dict, schema: dict) -> dict:
+    """Check a parsed response has the schema's required fields and no placeholder values.
+
+    Some models, offered tools while a JSON format is enforced, answer with stand-in values like
+    "placeholder" instead of calling the tool.
+    """
+    if not isinstance(data, dict):
+        raise BackendError("response is not a JSON object")
+    missing = [k for k in schema.get("required", []) if k not in data]
+    if missing:
+        raise BackendError(f"response is missing {', '.join(missing)}")
+    for k, v in data.items():
+        if isinstance(v, str) and v.strip().lower().startswith("placeholder"):
+            raise BackendError(f"response has a placeholder {k}: {v[:60]!r}")
+    return data
+
+
 def _schema_instruction(schema: dict) -> str:
     return (
         "\n\nRespond with only a JSON object matching this JSON schema, with no other text:\n"
@@ -146,7 +163,7 @@ class AnthropicBackend:
         text = next((b.text for b in response.content if b.type == "text"), None)
         if text is None:
             raise BackendError("response has no text block")
-        return parse_json(text)
+        return validate(parse_json(text), schema)
 
 
 class OpenAIBackend:
@@ -154,15 +171,18 @@ class OpenAIBackend:
 
     api_key and base_url default to the OPENAI_API_KEY and OPENAI_BASE_URL environment variables.
     The schema is always described in the system prompt, since some servers accept
-    response_format but don't enforce it (OpenRouter providers in particular, around tool calls).
-    json_mode controls what is requested on top of that:
+    response_format but don't enforce it. json_mode controls what is requested on top of that:
       "schema": response_format json_schema with strict=True (best, when supported)
       "object": response_format json_object
       "prompt": no response_format
     Extra keyword arguments (temperature, reasoning_effort, extra_body, ...) are passed to
-    chat.completions.create on every request. With tools (which the server must support), the
-    model may make up to max_tool_rounds rounds of tool calls before it must give its final
-    answer.
+    chat.completions.create on every request.
+
+    With tools (which the server must support), the model may make up to max_tool_rounds rounds
+    of tool calls. response_format isn't sent during those rounds, because with it some models
+    answer with placeholders instead of calling the tool. If the model's answer after the tool
+    rounds isn't valid JSON for the schema, one more request asks for it with tools off and
+    response_format on.
     """
 
     def __init__(
@@ -194,18 +214,25 @@ class OpenAIBackend:
         self, system: str, user: str, schema: dict, tools: Sequence[Tool] = ()
     ) -> dict:
         kwargs = dict(self.request_kwargs)
-        system = system + _schema_instruction(schema)
+        if self.max_tokens is not None:
+            kwargs["max_tokens"] = self.max_tokens
+        format_kwargs = {}
         if self.json_mode == "schema":
-            kwargs["response_format"] = {
+            format_kwargs["response_format"] = {
                 "type": "json_schema",
                 "json_schema": {"name": "metagene_description", "schema": schema, "strict": True},
             }
         elif self.json_mode == "object":
-            kwargs["response_format"] = {"type": "json_object"}
-        if self.max_tokens is not None:
-            kwargs["max_tokens"] = self.max_tokens
-        if tools:
-            kwargs["tools"] = [
+            format_kwargs["response_format"] = {"type": "json_object"}
+        messages: list[dict] = [
+            {"role": "system", "content": system + _schema_instruction(schema)},
+            {"role": "user", "content": user},
+        ]
+        if not tools:
+            return validate(parse_json(self._content(messages, **kwargs, **format_kwargs)), schema)
+
+        tool_kwargs = {
+            "tools": [
                 {
                     "type": "function",
                     "function": {
@@ -216,17 +243,9 @@ class OpenAIBackend:
                 }
                 for t in tools
             ]
-        messages: list[dict] = [
-            {"role": "system", "content": system},
-            {"role": "user", "content": user},
-        ]
-        for round in range(self.max_tool_rounds + 1):
-            if tools and round == self.max_tool_rounds:
-                kwargs["tool_choice"] = "none"  # out of rounds: answer now
-            response = self.client.chat.completions.create(
-                model=self.model, messages=messages, **kwargs
-            )
-            choice = response.choices[0]
+        }
+        for _ in range(self.max_tool_rounds):
+            choice = self._create(messages, **kwargs, **tool_kwargs)
             calls = getattr(choice.message, "tool_calls", None)
             if not calls:
                 break
@@ -239,13 +258,39 @@ class OpenAIBackend:
                 else:
                     text, _ = _run_tool(tools, call.function.name, arguments)
                 messages.append({"role": "tool", "tool_call_id": call.id, "content": text})
+        else:
+            choice = None  # out of tool rounds without an answer
+        if choice is not None and choice.message.content:
+            try:
+                return validate(parse_json(self._check(choice)), schema)
+            except BackendError:
+                messages.append({"role": "assistant", "content": choice.message.content})
+        # Ask for the final answer with tools off and the format enforced.
+        messages.append(
+            {"role": "user", "content": "Give your final answer now, as only the JSON object."}
+        )
+        content = self._content(
+            messages, **kwargs, **tool_kwargs, tool_choice="none", **format_kwargs
+        )
+        return validate(parse_json(content), schema)
+
+    def _create(self, messages: list[dict], **kwargs):
+        response = self.client.chat.completions.create(
+            model=self.model, messages=messages, **kwargs
+        )
+        return response.choices[0]
+
+    def _check(self, choice) -> str:
         if getattr(choice.message, "refusal", None):
             raise BackendError(f"model refused: {choice.message.refusal}")
         if choice.finish_reason == "length":
             raise BackendError("response truncated at max_tokens")
         if not choice.message.content:
             raise BackendError("response is empty")
-        return parse_json(choice.message.content)
+        return choice.message.content
+
+    def _content(self, messages: list[dict], **kwargs) -> str:
+        return self._check(self._create(messages, **kwargs))
 
 
 def make_backend(
