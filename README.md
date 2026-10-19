@@ -43,8 +43,14 @@ describe_metagenes(genes, H, model="claude-sonnet-5-5", api_key="...")
 For an OpenAI-compatible server (OpenAI, OpenRouter, vLLM, Ollama, an institutional gateway):
 
 ```python
-describe_metagenes(genes, H, backend="openai", model="gpt-...", base_url="https://.../v1", api_key="...")
+describe_metagenes(genes, H, backend="openai", model="deepseek/deepseek-v4.1-flash",
+                   base_url="https://openrouter.ai/api/v1", api_key="...")
 ```
+
+The server must support tool calls for the default `lookup=True`. Prefer models that support
+structured outputs. Accuracy varies a lot between models: on the example datasets, Haiku 5.5 was
+the most accurate, DeepSeek v4.1 Flash and gpt-6-luna came close, and several others often gave
+biological stories to technical factors. See `eval/README.md` for the comparison.
 
 For more control, build the backend yourself:
 
