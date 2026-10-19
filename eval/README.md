@@ -27,12 +27,16 @@ from before that fix are not included.
   - `lookup-required`: the current default
   - `refine-haiku`, `refine-sonnet`: `nolookup-a` refined with Haiku 5.5 or Sonnet 5.5
   - `or-MODEL`: other models through OpenRouter (the OpenAI-compatible backend, with the
-    current defaults)
+    defaults at the time)
+  - `lookup-required-b`: a second Haiku run of `lookup-required`
+  - `*-sg`, `*-sg-b`: the same configurations with the rule for metagenes dominated by one gene
+    (now the default prompt)
 - `grades/BATCH/`: blind grades (`prompts/grade.md`). Each batch has the grading inputs
   (`DATASET.jsonl`), the judge's grades (`DATASET.grades.jsonl`) and `key.json`, which maps
   candidates back to variants. Batches are `lookup` (the four first-pass variants), `refine`
-  (`nolookup-a` and the two refinements) and `models` (`lookup-required` and the OpenRouter
-  models).
+  (`nolookup-a` and the two refinements) `models` (`lookup-required` and the OpenRouter
+  models), `single-gene` (Haiku, DeepSeek and gpt-6-luna with and without the single-gene
+  rule) and `single-gene-haiku` (two Haiku runs with and two without it).
 
 ## Results
 
@@ -65,6 +69,29 @@ all
 Approximate cost per 300 metagenes, from token counts and list prices as of October 2026:
 DeepSeek v4.1 Flash $0.13, gpt-6-luna $0.23, Haiku 5.5 $0.27, Mistral Small 3.2 $0.40, Gemini
 3.1 Flash Lite $0.55, Qwen 3.6 35B $1.55.
+
+```
+$ python eval/score.py eval/grades/single-gene
+all
+  lookup-required                   correct 278  vague  14  overreach   8  wrong   0
+  lookup-required-sg                correct 272  vague  18  overreach  10  wrong   0
+  or-deepseek-v4.1-flash            correct 263  vague  24  overreach  13  wrong   0
+  or-deepseek-v4.1-flash-sg         correct 268  vague  25  overreach   7  wrong   0
+  or-gpt-6-luna                     correct 256  vague  33  overreach  10  wrong   1
+  or-gpt-6-luna-sg                  correct 263  vague  32  overreach   5  wrong   0
+
+$ python eval/score.py eval/grades/single-gene-haiku
+all
+  lookup-required                   correct 281  vague  14  overreach   4  wrong   1
+  lookup-required-b                 correct 279  vague  15  overreach   6  wrong   0
+  lookup-required-sg                correct 273  vague  18  overreach   9  wrong   0
+  lookup-required-sg-b              correct 281  vague  16  overreach   3  wrong   0
+```
+
+The single-gene rule helps DeepSeek and gpt-6-luna, mostly on Xenium. For Haiku its effect is
+within run-to-run variation: two runs of the same prompt differ by up to 8 labels. Totals for the
+same variant also shift by a few labels between batches, because a different judge grades each
+batch, so compare variants only within a batch.
 
 The grades only score each label against its own reference, so they don't measure what refinement
 is for (distinguishing similar metagenes). They show only that refinement doesn't hurt accuracy.

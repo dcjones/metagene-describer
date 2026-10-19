@@ -1,0 +1,7882 @@
+{
+ "atera-cervical-cancer/0/c0": {
+  "label": "Epithelial\u2013myeloid mixed signal",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/0/c1": {
+  "label": "Differentiated squamous epithelium",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/0/c2": {
+  "label": "Squamous epithelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/0/c3": {
+  "label": "Squamous epithelial differentiation",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/1/c0": {
+  "label": "C12orf75/GTF2I/RBMX-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/1/c1": {
+  "label": "C12orf75/GCLC/USP11-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/1/c2": {
+  "label": "C12orf75/GTF2I/GCLC-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/2/c0": {
+  "label": "WASHC1/ZNF814/GOLGA8B-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/2/c1": {
+  "label": "WASHC1/GOLGA8B/ZNF814-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/2/c2": {
+  "label": "IST1/PDE4DIP/SNX14-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/2/c3": {
+  "label": "WASHC1/ZNF814/ASTN2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/3/c0": {
+  "label": "IgG-secreting plasma cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/3/c1": {
+  "label": "Plasma cell immunoglobulin program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/3/c2": {
+  "label": "Antibody-secreting plasma cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/3/c3": {
+  "label": "IgG plasma cell markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/3/c4": {
+  "label": "IgG plasma cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/4/c0": {
+  "label": "FDCSP/FABP4/ODAM-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/4/c1": {
+  "label": "FDCSP/ODAM-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/4/c2": {
+  "label": "FDCSP/ODAM/KRT5-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/4/c3": {
+  "label": "FDCSP/ODAM/FABP4-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/4/c4": {
+  "label": "FDCSP/ODAM/AMTN-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/5/c0": {
+  "label": "Fibroblasts, collagen/ECM-producing",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/5/c1": {
+  "label": "Fibroblast ECM matrix program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/5/c2": {
+  "label": "Fibroblasts, collagen-rich stroma",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/5/c3": {
+  "label": "Fibroblast ECM markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/5/c4": {
+  "label": "Matrix-producing fibroblasts",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/5/c5": {
+  "label": "Fibroblast markers",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/6/c0": {
+  "label": "SPP1+ macrophages",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/6/c1": {
+  "label": "SPP1+ tumor-associated macrophages",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/6/c2": {
+  "label": "M2-like tumor-associated macrophages",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/6/c3": {
+  "label": "Macrophages (M2-like TAM)",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/6/c4": {
+  "label": "Lipid-laden SPP1+ macrophages",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/7/c0": {
+  "label": "Mitotic cell-cycle program",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/7/c1": {
+  "label": "Cell cycle histone genes",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/7/c2": {
+  "label": "Cycling cells",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/7/c3": {
+  "label": "Cell cycle G2/M program",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/7/c4": {
+  "label": "Cell cycle / proliferation",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/8/c0": {
+  "label": "IST1/ITCH/CCNL1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/8/c1": {
+  "label": "IST1/ITCH-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/8/c2": {
+  "label": "IST1/ITCH/UBXN11-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/8/c3": {
+  "label": "IST1/UBXN11/SDHA-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/8/c4": {
+  "label": "IST1/ITCH/UQCC1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/9/c0": {
+  "label": "Terminal squamous cornification",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/9/c1": {
+  "label": "Squamous terminal differentiation",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/9/c2": {
+  "label": "Squamous differentiation",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/9/c3": {
+  "label": "Terminal squamous differentiation",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/9/c4": {
+  "label": "Squamous differentiation and cornification",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/10/c0": {
+  "label": "Diffuse background with repeat artifacts",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/10/c1": {
+  "label": "OR4F17/USP17L15/ANKRD30BL-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/10/c2": {
+  "label": "OR4F17/IST1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/10/c3": {
+  "label": "OR4F17-high background",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/10/c4": {
+  "label": "OR4F17/IST1/USP17L15-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/10/c5": {
+  "label": "OR4F17/TRIM49D1/USP17L8-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/11/c0": {
+  "label": "Squamous epithelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/11/c1": {
+  "label": "Differentiated squamous epithelium",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/11/c2": {
+  "label": "Squamous epithelial differentiation",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/11/c3": {
+  "label": "SERPINB13/NECTIN4/FAM83C-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/12/c0": {
+  "label": "ID1/FABP5/KRT5-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/12/c1": {
+  "label": "ID1/KRT5/FGFBP1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/12/c2": {
+  "label": "Basal squamous epithelium markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/12/c3": {
+  "label": "Basal-like tumor epithelium",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/12/c4": {
+  "label": "Basal/squamous epithelial program",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/12/c5": {
+  "label": "Basal squamous epithelial state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/13/c0": {
+  "label": "Basal squamous epithelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/13/c1": {
+  "label": "Basal epithelial hypoxia-like state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/13/c2": {
+  "label": "Epithelial cell markers",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/13/c3": {
+  "label": "KRT15/TNS4/FGFR3-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/13/c4": {
+  "label": "Basal keratinocytes",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/13/c5": {
+  "label": "KRT15/FGFR3/MFSD2A-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/14/c0": {
+  "label": "Interferon-gamma response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/14/c1": {
+  "label": "Interferon response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/14/c2": {
+  "label": "IFN-gamma response program",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/14/c3": {
+  "label": "Interferon-\u03b3 response",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/15/c0": {
+  "label": "KRT5/DSP/PERP-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/15/c1": {
+  "label": "Squamous epithelial keratins",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/15/c2": {
+  "label": "KRT5/PRKX/PRXL2A-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/15/c3": {
+  "label": "KRT5/DSP/KRT15-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/16/c0": {
+  "label": "T cells, Treg-leaning",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/16/c1": {
+  "label": "Regulatory T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/16/c2": {
+  "label": "Regulatory T cells",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/16/c3": {
+  "label": "CD4 T cells and Tregs",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/17/c0": {
+  "label": "PTMA/RRM2/DHFR-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/17/c1": {
+  "label": "G1/S nucleotide synthesis program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/17/c2": {
+  "label": "PTMA/DEK/RRM2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/17/c3": {
+  "label": "Nucleotide biosynthesis / S-phase",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/17/c4": {
+  "label": "RRM2/DHFR/RRM1-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/18/c0": {
+  "label": "Smooth muscle / myofibroblast stroma",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/18/c1": {
+  "label": "Smooth muscle/myofibroblast markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/18/c2": {
+  "label": "Smooth muscle / myofibroblast markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/18/c3": {
+  "label": "Smooth muscle cells",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/19/c0": {
+  "label": "FABP4/ADAM23/PTPRZ1-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/19/c1": {
+  "label": "FABP4/KRT5/CALML3-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/19/c2": {
+  "label": "FABP4/KRT5/RBP1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/20/c0": {
+  "label": "KRT5/DSP/KRT13-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/20/c1": {
+  "label": "KRT5/KRT13/DSP-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/20/c2": {
+  "label": "Squamous epithelial baseline",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/20/c3": {
+  "label": "Squamous epithelial keratins",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/20/c4": {
+  "label": "KRT5/DAPL1/PRKX-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/20/c5": {
+  "label": "Squamous epithelium keratins",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/21/c0": {
+  "label": "TSC22D1/APP/TEAD4-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/21/c1": {
+  "label": "MEIS2/SMAD1/WWTR1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/21/c2": {
+  "label": "SMAD1/MEIS2/TEAD2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/21/c3": {
+  "label": "CD59/HIPK3/APP-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/21/c4": {
+  "label": "SMAD1/MEIS2/PROX1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/22/c0": {
+  "label": "Endothelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/22/c1": {
+  "label": "Endothelial cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/23/c0": {
+  "label": "GABRP/PLAC8/FAM83A-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/23/c1": {
+  "label": "Epithelial p53 stress response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/23/c2": {
+  "label": "S100A9/S100A8/GABRP-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/23/c3": {
+  "label": "S100A9/S100A8/KRT15-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/23/c4": {
+  "label": "Secretory epithelial state",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/23/c5": {
+  "label": "KRT15/GABRP/PLAT-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/24/c0": {
+  "label": "PRKDC/SRSF2/KPNB1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/24/c1": {
+  "label": "PRKDC/NAA15/NOP14-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/24/c2": {
+  "label": "Nuclear housekeeping genes",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/24/c3": {
+  "label": "SRSF2/PRKDC/KPNB1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/25/c0": {
+  "label": "Differentiated squamous epithelium",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/25/c1": {
+  "label": "Squamous differentiation",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/25/c2": {
+  "label": "Squamous epithelial differentiation",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/26/c0": {
+  "label": "ERO1A/TMPRSS2/PRSS22-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/26/c1": {
+  "label": "Mucosal secretory epithelium",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/26/c2": {
+  "label": "Squamous epithelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/26/c3": {
+  "label": "Epithelial secretory defense",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/26/c4": {
+  "label": "Epithelial barrier/secretory state",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/27/c0": {
+  "label": "Plasma cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/27/c1": {
+  "label": "Antibody-secreting cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/27/c2": {
+  "label": "Plasma cell immunoglobulin program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/27/c3": {
+  "label": "Plasma cell immunoglobulin genes",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/28/c0": {
+  "label": "SAT1/TNFSF10/TP53INP2-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/28/c1": {
+  "label": "SAT1/TP53INP2/TNFSF10-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/28/c2": {
+  "label": "SAT1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/29/c0": {
+  "label": "CCNL2/ARGLU1/SUGP2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/29/c1": {
+  "label": "RTEL1/DUT/ARHGAP33-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/29/c2": {
+  "label": "DDX39B/CCNL2/ARHGAP33-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/29/c3": {
+  "label": "DDX39B/CCNL2/ARGLU1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/30/c0": {
+  "label": "Laminin-integrin invasive epithelial program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/30/c1": {
+  "label": "Basal squamous epithelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/30/c2": {
+  "label": "Epithelial matrix adhesion",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/30/c3": {
+  "label": "Basement membrane invasion program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/30/c4": {
+  "label": "Basal/myoepithelial basement membrane",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/30/c5": {
+  "label": "Basal epithelial adhesion",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/31/c0": {
+  "label": "Basal squamous epithelium",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/31/c1": {
+  "label": "Basal squamous epithelium state",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/31/c2": {
+  "label": "Basal epithelial adhesion",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/31/c3": {
+  "label": "TP63-positive basal epithelial state",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/31/c4": {
+  "label": "Basal squamous epithelium markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/31/c5": {
+  "label": "Basal squamous epithelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/32/c0": {
+  "label": "Hypoxia response",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/32/c1": {
+  "label": "Hypoxia/HIF-1 response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/32/c2": {
+  "label": "Hypoxia response program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/33/c0": {
+  "label": "Matrix-remodeling fibroblasts",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/33/c1": {
+  "label": "Matrix-remodeling CAF/myofibroblast",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/33/c2": {
+  "label": "Matrix-remodeling CAFs",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/33/c3": {
+  "label": "Activated myofibroblast ECM program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/33/c4": {
+  "label": "Activated CAF matrix program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/33/c5": {
+  "label": "POSTN+ matrix-remodeling fibroblasts",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/34/c0": {
+  "label": "Interferon-stimulated gene response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/34/c1": {
+  "label": "Interferon-stimulated gene program",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/34/c2": {
+  "label": "Antiviral interferon response",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/34/c3": {
+  "label": "Interferon response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/35/c0": {
+  "label": "Epithelial/keratinocyte markers",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/35/c1": {
+  "label": "EMP1/KRT13/MAL-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/35/c2": {
+  "label": "KRT13/PPL/EMP1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/35/c3": {
+  "label": "EMP1/PPL/KRT80-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/35/c4": {
+  "label": "KRT78/MAL/LIPH-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/35/c5": {
+  "label": "Epithelial differentiation",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/36/c0": {
+  "label": "Mitotic cell cycle genes",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/36/c1": {
+  "label": "Weak cell-cycle program",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/36/c2": {
+  "label": "Mitotic cell cycle module",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/36/c3": {
+  "label": "Proliferation / cell cycle",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/37/c0": {
+  "label": "WSB1/IST1/PDE4DIP-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/37/c1": {
+  "label": "WSB1/DPY19L2/GABBR1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/37/c2": {
+  "label": "DPY19L2/GABBR1/ADAMTS10-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/37/c3": {
+  "label": "WSB1/DPY19L2/ADAMTS10-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/38/c0": {
+  "label": "Stress response with ISR and p53",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/38/c1": {
+  "label": "Cellular stress response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/38/c2": {
+  "label": "Stress-associated response",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/38/c3": {
+  "label": "PMAIP1/ATF3/DDIT3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/38/c4": {
+  "label": "Integrated stress response",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/38/c5": {
+  "label": "PMAIP1/DHRS2/BTG3-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/39/c0": {
+  "label": "Inflammatory secretory epithelial cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/39/c1": {
+  "label": "Inflamed mucinous epithelial state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/39/c2": {
+  "label": "Inflammatory secretory epithelium",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/39/c3": {
+  "label": "Inflamed secretory epithelium",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/40/c0": {
+  "label": "PTMA/RAN/HMGB1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/40/c1": {
+  "label": "PTMA/HMGB1/RAN-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/40/c2": {
+  "label": "PTMA/HMGB1/DEK-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/40/c3": {
+  "label": "PTMA/DDIT4/RAN-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/41/c0": {
+  "label": "S-phase DNA replication",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/41/c1": {
+  "label": "DNA replication / S phase",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/41/c2": {
+  "label": "S phase DNA replication",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/41/c3": {
+  "label": "G1/S DNA replication genes",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/41/c4": {
+  "label": "G1/S proliferation program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/42/c0": {
+  "label": "TRPC4AP/CDK5RAP1/ITCH-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/42/c1": {
+  "label": "ITCH/TRPC4AP/HM13-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/42/c2": {
+  "label": "ITCH/TRPC4AP/CDK5RAP1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/42/c3": {
+  "label": "TRPC4AP/CDK5RAP1/C11orf80-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/43/c0": {
+  "label": "Squamous differentiation",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/43/c1": {
+  "label": "Squamous epithelial differentiation",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/43/c2": {
+  "label": "Differentiated squamous epithelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/43/c3": {
+  "label": "Squamous terminal differentiation",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/44/c0": {
+  "label": "EHBP1L1/CFLAR/CTNND1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/44/c1": {
+  "label": "EHBP1L1/CFLAR/PSTPIP2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/44/c2": {
+  "label": "EHBP1L1/PSTPIP2/PTPRE-high",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/45/c0": {
+  "label": "G2/M cell cycle program",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/45/c1": {
+  "label": "Mitotic cell cycle program",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/45/c2": {
+  "label": "G2/M cell cycle",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/45/c3": {
+  "label": "Cell cycle G2/M program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/45/c4": {
+  "label": "Mitotic cell cycle",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/46/c0": {
+  "label": "PCYOX1/DAG1/ATP2B4-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/46/c1": {
+  "label": "PCYOX1/CD151/KIDINS220-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/46/c2": {
+  "label": "FOSL2/JUN/PCYOX1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/46/c3": {
+  "label": "FOSL2/JUN-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/46/c4": {
+  "label": "FOSL2/JUN/SPTAN1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/47/c0": {
+  "label": "G1/S cell cycle program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/47/c1": {
+  "label": "S phase DNA replication",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/47/c2": {
+  "label": "S-phase DNA replication",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/47/c3": {
+  "label": "G1/S replication program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/48/c0": {
+  "label": "Dendritic cells (cDC2)",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/48/c1": {
+  "label": "Langerhans-like dendritic cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/48/c2": {
+  "label": "Dendritic cell markers (Langerhans/cDC2)",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/48/c3": {
+  "label": "CD1c+ dendritic cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/48/c4": {
+  "label": "Dendritic cells",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/48/c5": {
+  "label": "Dendritic cell markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/49/c0": {
+  "label": "Inflammatory stromal chemokines",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/49/c1": {
+  "label": "Chemokine-rich stromal cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/49/c2": {
+  "label": "CXCL9/CCL19/C7-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/49/c3": {
+  "label": "CCL19+ lymphoid stromal cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/50/c0": {
+  "label": "PERP/SGK1/PLAT-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/50/c1": {
+  "label": "Glandular epithelial state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/50/c2": {
+  "label": "SGK1/PLAT/FOXE1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/50/c3": {
+  "label": "SGK1/PLAT/PERP-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/50/c4": {
+  "label": "SGK1/PLAT/SGPP2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/50/c5": {
+  "label": "SGK1/PLAT/FAM83C-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/51/c0": {
+  "label": "SH3BGRL/TMEM230/EID1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/51/c1": {
+  "label": "SH3BGRL/TMEM230/ISCU-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/51/c2": {
+  "label": "TMEM230/SH3BGRL/EID1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/51/c3": {
+  "label": "TMEM230/SH3BGRL/PSMF1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/52/c0": {
+  "label": "Mature activated dendritic cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/52/c1": {
+  "label": "Mature migratory dendritic cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/52/c2": {
+  "label": "LAMP3+ mature dendritic cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/52/c3": {
+  "label": "Mature dendritic cell activation",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/52/c4": {
+  "label": "Mature DC activation state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/53/c0": {
+  "label": "CD8 T cell markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/53/c1": {
+  "label": "Cytotoxic CD8 effector T cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/53/c2": {
+  "label": "GZMK-positive CD8 T cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/53/c3": {
+  "label": "GZMK+ CD8 T cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/53/c4": {
+  "label": "CD8 cytotoxic T cell markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/53/c5": {
+  "label": "Cytotoxic CD8 T cells",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/54/c0": {
+  "label": "IL1R2/CYP1B1/VWA2-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/54/c1": {
+  "label": "IFNGR1/TSC22D1/IL1R2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/55/c0": {
+  "label": "B2M/PTMA/HLA-B-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/55/c1": {
+  "label": "B2M/HLA-B/PSMB8-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/55/c2": {
+  "label": "B2M/HLA-B/TAP1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/56/c0": {
+  "label": "DDX3X/ANKHD1/USP25-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/56/c1": {
+  "label": "DDX3X/ANKHD1/RBM33-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/56/c2": {
+  "label": "USP25/KAT6A/CAPN7-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/56/c3": {
+  "label": "DDX3X/USP25/ANKHD1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/57/c0": {
+  "label": "B2M/ANXA2/S100A10-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/57/c1": {
+  "label": "ANXA2/S100A10/B2M-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/58/c0": {
+  "label": "TNF/NF-kB inflammatory response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/58/c1": {
+  "label": "TNF/NF-\u03baB inflammatory response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/58/c2": {
+  "label": "NF-\u03baB inflammatory response",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/59/c0": {
+  "label": "SMG1/ZNG1A/EHBP1L1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/59/c1": {
+  "label": "SMG1/EXOSC6/U2AF1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/59/c2": {
+  "label": "SMG1/U2AF1/EXOSC6-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/59/c3": {
+  "label": "SMG1/U2AF1/KCTD13-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/60/c0": {
+  "label": "USP48/CLK1/ASH1L-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/60/c1": {
+  "label": "ASH1L/ZNHIT6/COP1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/60/c2": {
+  "label": "ASH1L/ZNHIT6/USP48-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/61/c0": {
+  "label": "B cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/61/c1": {
+  "label": "B cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/62/c0": {
+  "label": "BTG2/TPD52/SRPRA-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/62/c1": {
+  "label": "BTG2/TPD52/SPATS2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/62/c2": {
+  "label": "BTG2/METTL7A/SPATS2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/62/c3": {
+  "label": "BTG2/EIF2AK3/SPATS2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/62/c4": {
+  "label": "BTG2/METTL7A/HSP90B1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/62/c5": {
+  "label": "BTG2/SRPRA/HYOU1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/63/c0": {
+  "label": "SFRP4/THBS1/MMP2-high fibroblasts",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/63/c1": {
+  "label": "Matrix-remodeling fibroblasts",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/63/c2": {
+  "label": "Stromal fibroblast/CAF markers",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/63/c3": {
+  "label": "SFRP4+ fibroblast state",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/63/c4": {
+  "label": "SFRP4+ stromal fibroblasts",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/63/c5": {
+  "label": "SFRP4/THBS1 fibroblast state",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/64/c0": {
+  "label": "GGNBP2/NKTR/METTL17-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/64/c1": {
+  "label": "MLH3/IP6K2/METTL17-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/64/c2": {
+  "label": "GGNBP2/SON/NKTR-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/65/c0": {
+  "label": "MYH9/TRIP12/YY1AP1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/65/c1": {
+  "label": "NFATC3/GSTK1/SACM1L-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/65/c2": {
+  "label": "SACM1L/GSTK1/NFATC3-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/65/c3": {
+  "label": "MYH9/GSTK1/SACM1L-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/65/c4": {
+  "label": "MYH9/TRIP12/KHDRBS1-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/66/c0": {
+  "label": "Immediate early stress response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/66/c1": {
+  "label": "Immediate early AP-1 response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/66/c2": {
+  "label": "AP-1 immediate early response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/66/c3": {
+  "label": "Immediate-early response",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/67/c0": {
+  "label": "SQSTM1/LGALS3/FBXO32-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/67/c1": {
+  "label": "LGALS3/FBXO32/MTUS1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/67/c2": {
+  "label": "LDAF1/FBXO32/MTUS1-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/67/c3": {
+  "label": "LGALS3/TMBIM1/CD59-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/68/c0": {
+  "label": "NK-like lymphocyte module",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/68/c1": {
+  "label": "NK cell markers",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/68/c2": {
+  "label": "KLRG1/KLRK1/STAT4-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/69/c0": {
+  "label": "Plasmacytoid dendritic cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/69/c1": {
+  "label": "Plasmacytoid dendritic cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/70/c0": {
+  "label": "Inflammatory epithelial state",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/70/c1": {
+  "label": "Inflamed epithelial cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/70/c2": {
+  "label": "Inflammatory squamous epithelium",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/70/c3": {
+  "label": "Differentiated squamous inflamed epithelium",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/70/c4": {
+  "label": "Inflamed squamous epithelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/70/c5": {
+  "label": "Differentiated inflamed squamous epithelium",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/71/c0": {
+  "label": "CLSTN1/FLNA/TXNDC17-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/71/c1": {
+  "label": "CLSTN1/FLNA/MED14-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/71/c2": {
+  "label": "NPM1/PKM/FLNA-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/71/c3": {
+  "label": "NPM1/PKM/SCPEP1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/72/c0": {
+  "label": "PLSCR1/DDIT4/MX1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/72/c1": {
+  "label": "PLSCR1/DDIT4/OAS2-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/72/c2": {
+  "label": "Weak interferon and stress response",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/72/c3": {
+  "label": "PLSCR1/OAS2/DDIT4-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/72/c4": {
+  "label": "PLSCR1/DDIT4/MBD2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/73/c0": {
+  "label": "Epithelial mucin with p53 response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/73/c1": {
+  "label": "Glandular secretory epithelium",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/73/c2": {
+  "label": "Glandular/mucinous epithelium",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/73/c3": {
+  "label": "GDF15/MUC16/GCNT3-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/73/c4": {
+  "label": "Mucinous epithelial state",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/73/c5": {
+  "label": "CD55/MUC1/PLAT-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/74/c0": {
+  "label": "TIA1/OGT/SMIM7-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/74/c1": {
+  "label": "TIA1/CHD6/TOGARAM1-high",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/74/c2": {
+  "label": "TIA1/CHD6/RBM39-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/75/c0": {
+  "label": "ZNF664/MBD2/SMAD2-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/75/c1": {
+  "label": "ZNF664/SMAD2/SZRD1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/75/c2": {
+  "label": "ANAPC5/TRMT112/NDUFA5-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/75/c3": {
+  "label": "ANAPC5/TRMT112/NF2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/75/c4": {
+  "label": "ZNF664/SMAD2/MBD2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/76/c0": {
+  "label": "TMSB4X-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/76/c1": {
+  "label": "TMSB4X/OST4/TMSB4Y-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/76/c2": {
+  "label": "TMSB4X/TMSB4Y/OST4-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/76/c3": {
+  "label": "TMSB4X/CMPK1/DAP-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/77/c0": {
+  "label": "RBM5/SETD5/GATAD1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/77/c1": {
+  "label": "RBM5/SETD5/DUSP11-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/78/c0": {
+  "label": "NAP1L1/PHF21A/NPM1-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/78/c1": {
+  "label": "NPM1/ZFP36L2/NAP1L1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/78/c2": {
+  "label": "NPM1/NAP1L1/PHF21A-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/78/c3": {
+  "label": "NPM1/ZFP36L2/STT3B-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/79/c0": {
+  "label": "ER protein processing",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/79/c1": {
+  "label": "ER folding and secretory machinery",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/79/c2": {
+  "label": "P4HB/HSPA5/CALR-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/79/c3": {
+  "label": "ER secretory pathway program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/79/c4": {
+  "label": "P4HB/ATP2A2/HSPA5-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/79/c5": {
+  "label": "ER secretory/proteostasis genes",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/80/c0": {
+  "label": "ZNG1A/MMS19/NUDT5-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/80/c1": {
+  "label": "ZNG1A/SMG1/ANKHD1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/81/c0": {
+  "label": "Heat-shock stress response",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/81/c1": {
+  "label": "Heat shock response",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/81/c2": {
+  "label": "Heat shock / stress response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/81/c3": {
+  "label": "Heat shock and immediate-early stress",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/81/c4": {
+  "label": "Heat shock and immediate early response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/81/c5": {
+  "label": "Heat shock stress response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/82/c0": {
+  "label": "NPM1/HNRNPF/CDV3-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/82/c1": {
+  "label": "NPM1/CDC73/EIF3A-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/82/c2": {
+  "label": "CDC73/NPM1/EIF3A-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/82/c3": {
+  "label": "NPM1/HNRNPF/EIF3A-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/83/c0": {
+  "label": "RAB7A/TIPARP/SERTAD2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/83/c1": {
+  "label": "RAB7A/RNF11/ACTG1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/83/c2": {
+  "label": "RAB7A/TIPARP/KLF4-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/83/c3": {
+  "label": "RAB7A/ACTG1/TIPARP-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/83/c4": {
+  "label": "RAB7A/TIPARP/ACTG1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/84/c0": {
+  "label": "Pericyte and mural cell markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/84/c1": {
+  "label": "Pericyte/mural cell markers",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/84/c2": {
+  "label": "Pericytes / vascular mural cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/84/c3": {
+  "label": "Mural cell markers",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/85/c0": {
+  "label": "Mast cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/85/c1": {
+  "label": "Mast cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/86/c0": {
+  "label": "ENTPD4/ZNF580/SAFB2-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/86/c1": {
+  "label": "ZNF580/ENTPD4/SAFB2-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/86/c2": {
+  "label": "ENTPD4/ZNF580/SRSF2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/86/c3": {
+  "label": "ENTPD4/ZNF580/SLC7A6-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/87/c0": {
+  "label": "MX1/ASS1/DDIT4-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/87/c1": {
+  "label": "MX1/PLSCR1/DDIT4-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/87/c2": {
+  "label": "MX1/DDIT4/PLSCR1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/88/c0": {
+  "label": "PIK3R1/ITPRIPL2/SESN3-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/88/c1": {
+  "label": "PIK3R1/LAPTM4B/SPRY2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/88/c2": {
+  "label": "PIK3R1/SPRY2/LAPTM4B-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/89/c0": {
+  "label": "NFE2L2/HSPB1/RNF7-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/90/c0": {
+  "label": "PFKFB3/NAIP/ACSL1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/90/c1": {
+  "label": "NAMPT/PFKFB3/NAIP-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/90/c2": {
+  "label": "PFKFB3/NAIP/NAMPT-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/90/c3": {
+  "label": "NAIP/PFKFB3/CLEC7A-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/90/c4": {
+  "label": "NAMPT/PFKFB3/ZFP36L1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/90/c5": {
+  "label": "NAIP/MKNK1/PFKFB3-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/91/c0": {
+  "label": "Macrophage lineage markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/91/c1": {
+  "label": "Macrophage complement program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/91/c2": {
+  "label": "Scavenger macrophage markers",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/91/c3": {
+  "label": "Macrophage markers",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/91/c4": {
+  "label": "M2-like macrophages",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/92/c0": {
+  "label": "SRP9/DAZAP2/UFC1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/92/c1": {
+  "label": "SRP9/DAZAP2/LSP1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/92/c2": {
+  "label": "DDX54/ENOPH1/ATRX-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/92/c3": {
+  "label": "SRP9/ATRX/DDX54-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/93/c0": {
+  "label": "PI16/DKK1-high stromal state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/93/c1": {
+  "label": "Stromal/ECM hormone-responsive",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/93/c2": {
+  "label": "PI16+ fibroblasts",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/93/c3": {
+  "label": "Stromal fibroblast signature",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/93/c4": {
+  "label": "PI16/SFRP4 fibroblast state",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/94/c0": {
+  "label": "SZRD1/CEBPZ/TIMM17A-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/94/c1": {
+  "label": "EIF4G2/SZRD1/ARF6-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/94/c2": {
+  "label": "EIF4G2/SZRD1/CEBPZ-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/95/c0": {
+  "label": "DAZAP2/RPN2/CEP350-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/95/c1": {
+  "label": "DAZAP2/RPN2/TOP1-high",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/95/c2": {
+  "label": "DAZAP2/STAT1/HLA-B-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/95/c3": {
+  "label": "DAZAP2/TOP1/RPN2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/96/c0": {
+  "label": "RAN/GPI/PKM-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/96/c1": {
+  "label": "RAN/GNAS/PLP2-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/96/c2": {
+  "label": "RAN/GNAS/HNRNPF-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/97/c0": {
+  "label": "UBE2D3/SOS1/ATE1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/97/c1": {
+  "label": "SOS1/ATE1/UBE2D3-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/97/c2": {
+  "label": "SOS1/ATE1/SNRPB2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/97/c3": {
+  "label": "UBE2D3/SOS1/EIF3A-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "atera-cervical-cancer/97/c4": {
+  "label": "Diffuse housekeeping background",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/97/c5": {
+  "label": "UBE2D3/SOS1/KIF5B-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/98/c0": {
+  "label": "SOS2/SRP9/DAZAP2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "atera-cervical-cancer/98/c1": {
+  "label": "SRP9/DAZAP2/SOS2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "atera-cervical-cancer/98/c2": {
+  "label": "SRP9/SOS2/DAZAP2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "atera-cervical-cancer/98/c3": {
+  "label": "SRP9/DAZAP2/IFNGR1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "atera-cervical-cancer/99/c0": {
+  "label": "GNAS/KIF5B/UBE2D3-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "atera-cervical-cancer/99/c1": {
+  "label": "GNAS/KIF5B/SOS1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/0/c0": {
+  "label": "VPS45/BTBD7/SLC35F5-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/0/c1": {
+  "label": "Diffuse RNA-processing background",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/0/c2": {
+  "label": "Diffuse nuclear RNA-processing background",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/0/c3": {
+  "label": "DDX5/RBM33/IKBKB-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/1/c0": {
+  "label": "S100A8/A9+ monocytes",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/1/c1": {
+  "label": "Classical monocytes (S100A8/A9)",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/1/c2": {
+  "label": "Classical monocytes",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/1/c3": {
+  "label": "Inflammatory myeloid cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/1/c4": {
+  "label": "Classical monocyte markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/2/c0": {
+  "label": "Na\u00efve B cells",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/2/c1": {
+  "label": "Naive B cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/2/c2": {
+  "label": "Naive B cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/3/c0": {
+  "label": "Cytotoxic NK/\u03b3\u03b4 T cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/3/c1": {
+  "label": "Cytotoxic NK/effector program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/3/c2": {
+  "label": "NK cells (cytotoxic)",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/3/c3": {
+  "label": "NK cell cytotoxicity markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/3/c4": {
+  "label": "Cytotoxic NK cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/4/c0": {
+  "label": "CXCR4/ITPR1/ADK-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/4/c1": {
+  "label": "CXCR4/FCMR/SMAP2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/4/c2": {
+  "label": "Naive lymphocyte quiescence genes",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/4/c3": {
+  "label": "Naive lymphocyte markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/4/c4": {
+  "label": "CXCR4/FCMR/LAPTM5-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/5/c0": {
+  "label": "Monocyte immediate-early response",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/5/c1": {
+  "label": "Activated immature myeloid cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/5/c2": {
+  "label": "Neutrophil/granulocyte markers",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/5/c3": {
+  "label": "Myeloid markers",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/5/c4": {
+  "label": "Classical monocytes with IEG stress",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/5/c5": {
+  "label": "Activated monocytes",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/6/c0": {
+  "label": "Immediate early gene response",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/6/c1": {
+  "label": "Immediate-early response",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/6/c2": {
+  "label": "Immediate early response",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/6/c3": {
+  "label": "Immediate early stress response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/7/c0": {
+  "label": "S100A4/LGALS1/ANXA2-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/7/c1": {
+  "label": "Diffuse cytoskeletal background",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/7/c2": {
+  "label": "ACTB/VIM/TMSB4X-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/7/c3": {
+  "label": "ACTB/VIM/S100A4-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/8/c0": {
+  "label": "Myeloid/macrophage markers",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/8/c1": {
+  "label": "CD16+ monocyte markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/8/c2": {
+  "label": "Monocyte/macrophage markers",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/8/c3": {
+  "label": "FCGR3A+ monocytes",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/8/c4": {
+  "label": "CD16+ monocyte/macrophage markers",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/8/c5": {
+  "label": "Non-classical monocyte markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/9/c0": {
+  "label": "Glucocorticoid response genes",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/9/c1": {
+  "label": "Glucocorticoid response and quiescence",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/9/c2": {
+  "label": "TXNIP/KLF2/TSC22D3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/10/c0": {
+  "label": "T cell core markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/10/c1": {
+  "label": "T cell markers",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/10/c2": {
+  "label": "CD5/CD6/THEMIS-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/10/c3": {
+  "label": "T cell-associated markers",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/10/c4": {
+  "label": "T cell baseline",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/11/c0": {
+  "label": "ACTB/TMSB4X/PFN1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/11/c1": {
+  "label": "ACTB/TMSB4X/LCP1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/11/c2": {
+  "label": "ACTB/PFN1/APOBEC3C-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/11/c3": {
+  "label": "ACTB/TMSB4X/B2M-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/11/c4": {
+  "label": "PFN1/LCP1/CORO1A-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/11/c5": {
+  "label": "ACTB/ACTG1/PFN1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/12/c0": {
+  "label": "Mitochondrial genes",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/13/c0": {
+  "label": "TXNIP/B2M-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/13/c1": {
+  "label": "TXNIP/B2M/PNRC1-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/13/c2": {
+  "label": "TXNIP/B2M/CAPNS1-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/14/c0": {
+  "label": "IL7R/GATA3/CCR4-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/14/c1": {
+  "label": "CD4 T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/14/c2": {
+  "label": "IL7R/VIM/LTB-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/15/c0": {
+  "label": "VIM/AHNAK/CRIP1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/15/c1": {
+  "label": "VIM/CRIP1/AHNAK-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/16/c0": {
+  "label": "Plasmacytoid dendritic cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/16/c1": {
+  "label": "pDC markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/17/c0": {
+  "label": "Immediate early genes",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/17/c1": {
+  "label": "JUNB-associated activation",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/17/c2": {
+  "label": "Immediate early / AP-1 (JUNB) response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/17/c3": {
+  "label": "Immediate early / AP-1 genes",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/17/c4": {
+  "label": "Immediate-early response",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/17/c5": {
+  "label": "Immediate early stress response",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/18/c0": {
+  "label": "TXNIP/ACTB/VIM-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/18/c1": {
+  "label": "TXNIP/CD7/IKZF1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/18/c2": {
+  "label": "TXNIP/CORO1A/CD7-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/19/c0": {
+  "label": "T cell markers, TRBC2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/19/c1": {
+  "label": "T cell markers",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/19/c2": {
+  "label": "T cell receptor/CD3 signature",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/19/c3": {
+  "label": "TRBC2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/20/c0": {
+  "label": "B2M/LAPTM5/IL2RG-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/20/c1": {
+  "label": "B2M/LAPTM5/TXNIP-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/20/c2": {
+  "label": "B2M/NHP2/COX4I1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/20/c3": {
+  "label": "B2M/TXNIP/LAPTM5-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/21/c0": {
+  "label": "Immediate early gene response",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/21/c1": {
+  "label": "Immediate early stress response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/21/c2": {
+  "label": "Immediate early response",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/21/c3": {
+  "label": "Immediate early genes",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/22/c0": {
+  "label": "CXCR4/ACTB/TSC22D3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/22/c1": {
+  "label": "Lymphocyte activation stress program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/22/c2": {
+  "label": "Leukocyte activation and stress response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/22/c3": {
+  "label": "CXCR4/TSC22D3/CD69-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/23/c0": {
+  "label": "IL7R/NELL2/PDE3B-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/23/c1": {
+  "label": "TMSB4X/IL7R/NELL2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/23/c2": {
+  "label": "IL7R/NELL2/TCF7-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/23/c3": {
+  "label": "TMSB4X/TXNIP/IL7R-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/24/c0": {
+  "label": "CD48/TOMM7/ANAPC16-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/24/c1": {
+  "label": "B2M/CXCR4/VIM-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/25/c0": {
+  "label": "TMSB4X/BTG1/DUSP1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/25/c1": {
+  "label": "Dissociation stress response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/25/c2": {
+  "label": "TMSB4X/BTG1/PNRC1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/25/c3": {
+  "label": "TMSB4X/BTG1/KLF6-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/26/c0": {
+  "label": "Cytotoxic CD8 T/NK cells",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/26/c1": {
+  "label": "GZMH/CD8A/FCRL6-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/26/c2": {
+  "label": "Cytotoxic CD8 effector T/NK",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/26/c3": {
+  "label": "Diffuse cytotoxic effector program",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/26/c4": {
+  "label": "Cytotoxic effector T/NK cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/26/c5": {
+  "label": "Cytotoxic lymphocytes",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/27/c0": {
+  "label": "Immediate early gene response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/27/c1": {
+  "label": "FOS/JUNB/KLF2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/27/c2": {
+  "label": "FOS/JUNB immediate early response",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/27/c3": {
+  "label": "FOS-high immediate early response",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/27/c4": {
+  "label": "Immediate early genes",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/27/c5": {
+  "label": "FOS-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/28/c0": {
+  "label": "BOD1L1/SP140L/ARPC1B-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/28/c1": {
+  "label": "ARPC1B/SP140L/BOD1L1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/28/c2": {
+  "label": "TMSB4X/TXNIP/MT-CO2-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/28/c3": {
+  "label": "TMSB4X/ARPC1B/SP140L-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/29/c0": {
+  "label": "MAIT / ROR\u03b3t+ T cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/29/c1": {
+  "label": "MAIT-like T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/29/c2": {
+  "label": "MAIT-like T cells",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/29/c3": {
+  "label": "MAIT / innate-like T cells",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/30/c0": {
+  "label": "CD4 memory T cell markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/30/c1": {
+  "label": "CD4 T cell markers (CCR4/GATA3)",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/30/c2": {
+  "label": "CCR4/AQP3/CCR8-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/30/c3": {
+  "label": "CCR4/KLF2/IL32-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/30/c4": {
+  "label": "CCR4+ helper T cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/30/c5": {
+  "label": "CCR4/CD4/CD5-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/31/c0": {
+  "label": "Platelet markers",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/31/c1": {
+  "label": "Platelet/megakaryocyte markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/32/c0": {
+  "label": "T cell markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/32/c1": {
+  "label": "SPOCK2/FYB1/KLF2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/32/c2": {
+  "label": "KLF2/SPOCK2/TMSB4X-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/32/c3": {
+  "label": "SPOCK2/BCL11B/CD2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/32/c4": {
+  "label": "SPOCK2/BCL11B/TNIK-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/32/c5": {
+  "label": "Resting T cell markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/33/c0": {
+  "label": "JUN/NFKBIA/ZFP36L1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/33/c1": {
+  "label": "JUN/NFKBIA/JUND-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/33/c2": {
+  "label": "JUN/IER5/NFKBIA-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/33/c3": {
+  "label": "Immediate early stress response",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/33/c4": {
+  "label": "JUN/NFKBIA/AHNAK-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/34/c0": {
+  "label": "NK cell markers",
+  "variants": [
+   "lookup-required-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/34/c1": {
+  "label": "NK/\u03b3\u03b4 T-cell markers",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/34/c2": {
+  "label": "NK cell cytotoxic program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/34/c3": {
+  "label": "NK cells (NKG2A+, CD56)",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/34/c4": {
+  "label": "NK/NKT cytotoxic lymphocyte markers",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/35/c0": {
+  "label": "LCP1/CORO1A/RAC2-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/35/c1": {
+  "label": "ACTB/TMSB4X/LCP1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/35/c2": {
+  "label": "ACTB/LCP1/ACTG1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/36/c0": {
+  "label": "KLF2/TXNIP-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/36/c1": {
+  "label": "KLF2/CORO1A/LAPTM5-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/36/c2": {
+  "label": "KLF2/TMSB4X/CORO1A-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/36/c3": {
+  "label": "KLF2/SRM/NOP16-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/36/c4": {
+  "label": "KLF2/TMSB4X/TMSB10-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/37/c0": {
+  "label": "AKNA/ARHGEF1/IKZF1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/37/c1": {
+  "label": "TSPAN32/ADAMTS10/RAP1GAP2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/37/c2": {
+  "label": "TSPAN32/NLRC3/ZAP70-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/37/c3": {
+  "label": "ZAP70/IKZF1/CORO1A-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/38/c0": {
+  "label": "TMSB4X/ARHGEF1/CORO1A-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/38/c1": {
+  "label": "LENG8/ARHGAP4/LSP1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/38/c2": {
+  "label": "CORO1A/LSP1/LENG8-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/39/c0": {
+  "label": "Regulatory T cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/39/c1": {
+  "label": "Regulatory T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/40/c0": {
+  "label": "FOS/FTH1/DUSP1-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/40/c1": {
+  "label": "FTH1/FOS/CTSB-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/40/c2": {
+  "label": "FOS/FTH1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/41/c0": {
+  "label": "IER2/ZFP36/DUSP1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/41/c1": {
+  "label": "Immediate early response",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/41/c2": {
+  "label": "IER2/ZFP36/NR4A1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/41/c3": {
+  "label": "Immediate-early response",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/41/c4": {
+  "label": "Weak immediate-early response",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/42/c0": {
+  "label": "TRBC1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/42/c1": {
+  "label": "T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/43/c0": {
+  "label": "PTGDS/FGFBP2/S100B-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/43/c1": {
+  "label": "FGFBP2+ NK cell state",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/43/c2": {
+  "label": "PTGDS/S100B/LCNL1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/43/c3": {
+  "label": "Cytotoxic effector state",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/44/c0": {
+  "label": "IER2/KLF2/RSRP1-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/44/c1": {
+  "label": "IER2/H4C16/MYBBP1A-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/44/c2": {
+  "label": "IER2/KLF2/JUNB-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/45/c0": {
+  "label": "CD74/ITGA4/CDCA7-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/45/c1": {
+  "label": "CD74/LAPTM5/ITGA4-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/45/c2": {
+  "label": "CD74/LAPTM5/CD52-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/45/c3": {
+  "label": "ITGA4/CDCA7/SMC4-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/46/c0": {
+  "label": "Classical monocyte markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/46/c1": {
+  "label": "Myeloid cell markers",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/46/c2": {
+  "label": "Monocyte/macrophage markers",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/46/c3": {
+  "label": "FGL2/TYMP/SERPINA1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/47/c0": {
+  "label": "ZFP36L2/TSC22D3/DDIT4-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/47/c1": {
+  "label": "ZFP36L2/DDIT4/CRELD2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/47/c2": {
+  "label": "ZFP36L2/DDIT4/TSC22D3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/48/c0": {
+  "label": "GZMK+ effector memory CD8 T",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/48/c1": {
+  "label": "GZMK+ effector memory T cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/48/c2": {
+  "label": "GZMK-positive effector T cells",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/48/c3": {
+  "label": "GZMK+ CD8 effector memory T",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/49/c0": {
+  "label": "CRIP1/ANXA1/MYADM-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/49/c1": {
+  "label": "CRIP1/AHNAK/ANXA1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/50/c0": {
+  "label": "B cell markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/50/c1": {
+  "label": "Class-switched B cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/50/c2": {
+  "label": "Class-switched memory B cells",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/51/c0": {
+  "label": "BTG1/MT-ND1/MT-ATP6-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/51/c1": {
+  "label": "BTG1/MT-ND1/PPIA-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/51/c2": {
+  "label": "BTG1/TXNIP/MT-ATP6-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/52/c0": {
+  "label": "Naive-like T-cell program",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/52/c1": {
+  "label": "Naive T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/52/c2": {
+  "label": "Naive T cell signature",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/52/c3": {
+  "label": "TCF7/CCR7/LEF1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/53/c0": {
+  "label": "B cell markers with stress genes",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/53/c1": {
+  "label": "Atypical memory B cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/53/c2": {
+  "label": "B cells, memory/class-switched",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/53/c3": {
+  "label": "B cell markers",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/53/c4": {
+  "label": "B cell lineage",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/54/c0": {
+  "label": "IL32/TCF7/RNF157-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/54/c1": {
+  "label": "TCF7/IL32/LEF1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/54/c2": {
+  "label": "Naive T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/54/c3": {
+  "label": "TCF7/IL32/RNF157-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/54/c4": {
+  "label": "IL32/TCF7/ZFP36L2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/55/c0": {
+  "label": "Immediate early gene response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/55/c1": {
+  "label": "Immediate early AP-1 response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/55/c2": {
+  "label": "Immediate early stress response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/55/c3": {
+  "label": "FOSB-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/55/c4": {
+  "label": "Immediate-early response",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/56/c0": {
+  "label": "TCF7/LEF1 T-cell state",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/56/c1": {
+  "label": "Naive-like T cell markers",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/56/c2": {
+  "label": "Naive T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/56/c3": {
+  "label": "TCF7/IL7R/LEF1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/56/c4": {
+  "label": "TCF7/NELL2/LEF1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/57/c0": {
+  "label": "Type I interferon response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/57/c1": {
+  "label": "Interferon response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/58/c0": {
+  "label": "MT-CO3/BTG1/MCL1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/58/c1": {
+  "label": "MT-CO3/BTG1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/58/c2": {
+  "label": "BTG1/GSDMB/PARP15-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/59/c0": {
+  "label": "Diffuse pan-T cell baseline",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/59/c1": {
+  "label": "T cell lineage signature",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/59/c2": {
+  "label": "ST8SIA1/ICOS/TRAF1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/59/c3": {
+  "label": "Diffuse T cell baseline",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/59/c4": {
+  "label": "ST8SIA1/TRAF1/ICOS-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/59/c5": {
+  "label": "Resting T cell markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/60/c0": {
+  "label": "EVL/PNRC1/CELF2-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/60/c1": {
+  "label": "EVL/CLEC2D/IKZF1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/60/c2": {
+  "label": "EVL/CD52/IKZF1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/60/c3": {
+  "label": "EVL/HERC4/MPHOSPH9-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/61/c0": {
+  "label": "T cell markers",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/61/c1": {
+  "label": "Pan-T cell markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/61/c2": {
+  "label": "TRAC/CD3E/CD3D-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/61/c3": {
+  "label": "T-cell markers",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/62/c0": {
+  "label": "ARRDC3/ENO2/MTX3-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/62/c1": {
+  "label": "ARRDC3/MRNIP/ZRANB2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/62/c2": {
+  "label": "PNRC1/EEF2/CHD2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/62/c3": {
+  "label": "PNRC1/KLF2/IKZF3-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/63/c0": {
+  "label": "H1-10-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/63/c1": {
+  "label": "H1-10/H1-2/PNRC1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/63/c2": {
+  "label": "H1-10/H1-2/H1-3-high",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/64/c0": {
+  "label": "TCF7/IL32/CD7-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/64/c1": {
+  "label": "TCF7/CCR7/BCL11B-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/64/c2": {
+  "label": "TCF7/OBSCN/NELL2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/64/c3": {
+  "label": "Naive T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/64/c4": {
+  "label": "TCF7/TCEA3/EPHA1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/65/c0": {
+  "label": "PSME2/PPIA/RBM8A-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/65/c1": {
+  "label": "JUND/PPIA/UBC-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/65/c2": {
+  "label": "JUND/MBNL1/UBC-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/65/c3": {
+  "label": "PSME2/PPIA/H3-3B-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/65/c4": {
+  "label": "JUND/TXNIP/MCL1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/66/c0": {
+  "label": "Naive CD4 T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/66/c1": {
+  "label": "LRRN3/NOG/ANKRD55-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/66/c2": {
+  "label": "Resting/naive T cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/66/c3": {
+  "label": "Naive T cell markers",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/67/c0": {
+  "label": "ETS1/MYC/LEF1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/67/c1": {
+  "label": "T cell markers (ETS1/LEF1/TRAT1)",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/67/c2": {
+  "label": "ETS1/MYC/SESN3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/67/c3": {
+  "label": "DACT1/EDA/ADTRP-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/67/c4": {
+  "label": "T cell survival and signaling module",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/68/c0": {
+  "label": "CORO1A/ZAP70/ARHGEF1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/68/c1": {
+  "label": "EVL/ITPKB/ZAP70-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/68/c2": {
+  "label": "EVL/OBSCN/PGGHG-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/68/c3": {
+  "label": "ZAP70/CORO1A/SKAP1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/68/c4": {
+  "label": "MT-CO2/EVL/EEF2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/69/c0": {
+  "label": "NELL2/CD8A/KLRK1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/69/c1": {
+  "label": "NELL2/FCGBP/CD8B2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/69/c2": {
+  "label": "T cell markers",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/69/c3": {
+  "label": "TCF7/NELL2/IL7R-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/69/c4": {
+  "label": "Naive T cell markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/69/c5": {
+  "label": "Naive CD8 T cell markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/70/c0": {
+  "label": "Mitochondrial and ambient RNA",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/70/c1": {
+  "label": "MT-CO2/FXYD5/ETS1-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/70/c2": {
+  "label": "Mitochondrial genes",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/71/c0": {
+  "label": "SELL/CD52/IKZF1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/71/c1": {
+  "label": "SELL/IKZF1/CD52-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/71/c2": {
+  "label": "SELL/TMSB4X/B2M-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/71/c3": {
+  "label": "SELL/H1-10/CD52-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/72/c0": {
+  "label": "Hemoglobin/RBC ambient RNA",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/72/c1": {
+  "label": "Erythroid ambient RNA",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/72/c2": {
+  "label": "CD52/B2M/TMSB4X-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/72/c3": {
+  "label": "HBB/HBA2/SLC4A1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/72/c4": {
+  "label": "CD52/PTPRC/ARHGDIB-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/73/c0": {
+  "label": "JUND/SELL/RSRP1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/73/c1": {
+  "label": "JUND/SELL/KLF2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/73/c2": {
+  "label": "Quiescent lymphocyte program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/73/c3": {
+  "label": "JUND/TSC22D3/KLF2-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/74/c0": {
+  "label": "KLRG1/CD8A/TIGIT-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/74/c1": {
+  "label": "NKG7/KLRK1/KLRG1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/74/c2": {
+  "label": "Cytotoxic CD8/NK signature",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/74/c3": {
+  "label": "Cytotoxic T/NK cell markers",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/74/c4": {
+  "label": "CD8 effector memory T cells",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/74/c5": {
+  "label": "KLRG1/CD8A/KLRC4-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/75/c0": {
+  "label": "EDA/FHIT/MAL-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/75/c1": {
+  "label": "LTB/TRAC/IL7R-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/75/c2": {
+  "label": "LTB/MAL/FHIT-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/75/c3": {
+  "label": "EDA/FHIT/INPP4B-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/75/c4": {
+  "label": "Naive T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/76/c0": {
+  "label": "ITGA4/TNFAIP3/ID2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/76/c1": {
+  "label": "ITGA4/ZAP70/CD52-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/76/c2": {
+  "label": "ITGA4/LSP1/CD52-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/76/c3": {
+  "label": "ITGA4/TNFAIP3/CD52-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/76/c4": {
+  "label": "ITGA4/TNFAIP3/LSP1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/76/c5": {
+  "label": "ITGA4/SUN2/TNFAIP3-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/77/c0": {
+  "label": "Myeloid/DC antigen presentation",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/77/c1": {
+  "label": "cDC2-like antigen-presenting cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/77/c2": {
+  "label": "cDC2 dendritic cell markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/77/c3": {
+  "label": "CD74/LYZ/CST3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/77/c4": {
+  "label": "Dendritic cell markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/77/c5": {
+  "label": "cDC2-associated markers",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/78/c0": {
+  "label": "SNAI3/FAM89B/CDC25B-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/78/c1": {
+  "label": "EEF2/EEF1G/UBA52-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/78/c2": {
+  "label": "CDC25B/SH3BP1/SNAI3-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/78/c3": {
+  "label": "EEF2/EEF1G/TMSB4X-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/79/c0": {
+  "label": "IL7R/SELL/SESN3-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/79/c1": {
+  "label": "IL7R/SELL/TCF7-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/79/c2": {
+  "label": "Naive T-cell program",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/79/c3": {
+  "label": "Naive T cell markers",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/79/c4": {
+  "label": "Naive CD4 T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/80/c0": {
+  "label": "NF-\u03baB signaling",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/80/c1": {
+  "label": "NF-kB activation program",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/80/c2": {
+  "label": "Weak NF-\u03baB signal",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/80/c3": {
+  "label": "NFKBIA/NFKB2/RELB-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/81/c0": {
+  "label": "DDX21/MYBBP1A/NOP16-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/81/c1": {
+  "label": "KLF6/LCP1/CYTIP-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/81/c2": {
+  "label": "KLF6/DDX21/NOP16-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/82/c0": {
+  "label": "Mitochondrial genes",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/82/c1": {
+  "label": "Mitochondrial/RNA-content background",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/82/c2": {
+  "label": "Mitochondrial gene content",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/83/c0": {
+  "label": "CORO1A/DOK2/SH3BP1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/83/c1": {
+  "label": "CORO1A/ARHGEF1/SPN-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/83/c2": {
+  "label": "CORO1A/DOK2/PTPN7-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/84/c0": {
+  "label": "Cytokine-STAT5 signaling",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/84/c1": {
+  "label": "CISH/PIM1/SOCS2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/84/c2": {
+  "label": "Cytokine STAT5-responsive lymphocytes",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/84/c3": {
+  "label": "PIM1/CISH/SOCS2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/84/c4": {
+  "label": "Cytokine response",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/85/c0": {
+  "label": "Hematopoietic progenitors",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/85/c1": {
+  "label": "HSPC progenitor markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/85/c2": {
+  "label": "Hematopoietic progenitor cells",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/86/c0": {
+  "label": "CD4 T cell add-on program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/86/c1": {
+  "label": "CD4 T cell add-on state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/86/c2": {
+  "label": "Activated T-cell module",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/86/c3": {
+  "label": "LTB/MAF/ZC3H12D-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/86/c4": {
+  "label": "T-cell-associated module",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/87/c0": {
+  "label": "LSP1/OAZ1/ADGRE5-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/87/c1": {
+  "label": "UTY/KDM5D/DDX3Y-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/87/c2": {
+  "label": "KDM5D/DDX3Y/UTY-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/87/c3": {
+  "label": "LSP1/ITGAL/LAPTM5-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/87/c4": {
+  "label": "LSP1/CORO1A/LAPTM5-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/88/c0": {
+  "label": "IKZF1/UCP2/BTG2-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/89/c0": {
+  "label": "Activation and stress response",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/89/c1": {
+  "label": "Lymphocyte feedback response",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/89/c2": {
+  "label": "DUSP2/CXCR4/TNFAIP3-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/89/c3": {
+  "label": "DUSP2/SH2D2A/FOSL2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/89/c4": {
+  "label": "DUSP2/FOSL2/SH2D2A-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/89/c5": {
+  "label": "DUSP2/FOSL2/ENC1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/90/c0": {
+  "label": "SYNE2/KLRG1/SAMD3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/90/c1": {
+  "label": "KLRG1/SYTL2/SAMD3-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/90/c2": {
+  "label": "TMSB4X/SYNE2/ARHGDIB-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/90/c3": {
+  "label": "KLRG1/SAMD3/SYTL2-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/90/c4": {
+  "label": "KLRG1/SAMD3/SYNE2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/90/c5": {
+  "label": "KLRG1/SAMD3/FCMR-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/91/c0": {
+  "label": "Y chromosome genes (male)",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/91/c1": {
+  "label": "Male Y chromosome genes",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/91/c2": {
+  "label": "UTY/DDX3Y/KDM5D-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/92/c0": {
+  "label": "RAC2/WDR82/FAM111A-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/92/c1": {
+  "label": "B2M/RAC2/TMSB4X-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/92/c2": {
+  "label": "RAC2/ARHGEF1/IKZF1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/92/c3": {
+  "label": "RAC2/B2M/ARHGEF1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/93/c0": {
+  "label": "Cycling cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/93/c1": {
+  "label": "Cell-cycle proliferation",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/93/c2": {
+  "label": "Cycling cells (S-phase)",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/93/c3": {
+  "label": "S-phase proliferation program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/93/c4": {
+  "label": "Cell cycle proliferation program",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/94/c0": {
+  "label": "T cell add-on cytoskeletal state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/94/c1": {
+  "label": "Resting T cell markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/94/c2": {
+  "label": "MAF/GIMAP4/SH3BGRL3-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/94/c3": {
+  "label": "TMSB4X/EVL/PFN1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/94/c4": {
+  "label": "MAF/BCL2L11/GIMAP4-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/94/c5": {
+  "label": "TMSB4X/PFN1/CORO1A-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/95/c0": {
+  "label": "BTG2/SOCS3/NFKBIZ-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/95/c1": {
+  "label": "BTG2/SOCS3/CD69-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/95/c2": {
+  "label": "BTG2/SOCS3/SLC2A3-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/95/c3": {
+  "label": "BTG2/KLF2/CD69-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/95/c4": {
+  "label": "Lymphocyte activation response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/96/c0": {
+  "label": "CD44/UCP2/CD37-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/96/c1": {
+  "label": "CD44/UCP2/CDC42SE1-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/96/c2": {
+  "label": "CD44/UCP2/H1-4-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/97/c0": {
+  "label": "Quiescent lymphocyte program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/97/c1": {
+  "label": "CDC25B/RASA3/ARHGEF1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/97/c2": {
+  "label": "CDC25B/RASA3/S1PR4-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/97/c3": {
+  "label": "KLF2/TXNIP/CDC25B-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/97/c4": {
+  "label": "KLF2/TXNIP/ARHGEF1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/97/c5": {
+  "label": "Quiescent lymphocyte state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/98/c0": {
+  "label": "Inflammatory NF-kB activation in monocytes",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/98/c1": {
+  "label": "NF-kB inflammatory activation",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/98/c2": {
+  "label": "Inflammatory monocytes",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/98/c3": {
+  "label": "Inflammatory NF-kB response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/98/c4": {
+  "label": "Inflammatory monocyte activation",
+  "variants": [
+   "lookup-required-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/99/c0": {
+  "label": "Interferon response IRF1/STAT1",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/99/c1": {
+  "label": "Interferon response / antigen presentation",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/99/c2": {
+  "label": "Interferon response",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "scrnaseq-aging-pbmc-250k/99/c3": {
+  "label": "IFN-gamma response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/0/c0": {
+  "label": "EEF1G/EIF3C/TMEM14C-high",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/0/c1": {
+  "label": "EEF1G-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/0/c2": {
+  "label": "EEF1G-high housekeeping factor",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/1/c0": {
+  "label": "H19-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/1/c1": {
+  "label": "H19/KLK6/MEST-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/1/c2": {
+  "label": "H19/KLK6/PGM1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/2/c0": {
+  "label": "CTHRC1+ cancer-associated fibroblasts",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/2/c1": {
+  "label": "Myofibroblastic CAFs",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/2/c2": {
+  "label": "Activated fibroblast matrix program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/2/c3": {
+  "label": "Cancer-associated fibroblast matrix program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/2/c4": {
+  "label": "Activated fibroblasts",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/2/c5": {
+  "label": "Fibroblasts / CAFs",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/3/c0": {
+  "label": "CD47/EPCAM/MSI1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/3/c1": {
+  "label": "CD47-high epithelial tumor cells",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/3/c2": {
+  "label": "CD47-high epithelial cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/3/c3": {
+  "label": "CD47/EPCAM/CLDN7-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/3/c4": {
+  "label": "CD47-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/4/c0": {
+  "label": "Vascular smooth muscle",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/4/c1": {
+  "label": "Smooth muscle contractile genes",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/4/c2": {
+  "label": "Smooth muscle cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/5/c0": {
+  "label": "PI16-like fibroblasts",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/5/c1": {
+  "label": "Fibroblasts / CAFs, C7-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/5/c2": {
+  "label": "PI16+ fibroblasts",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/5/c3": {
+  "label": "PI16+ CD34+ fibroblasts",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/5/c4": {
+  "label": "Quiescent fibroblast markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/5/c5": {
+  "label": "Fibroblast markers (C7/DCN/PI16)",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/6/c0": {
+  "label": "PLXNB1/RGL3/PTPN13-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/6/c1": {
+  "label": "PLXNB1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/7/c0": {
+  "label": "SFRP4/TIMP3 stromal fibroblast subset",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/7/c1": {
+  "label": "Matrix-remodeling CAF state",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/7/c2": {
+  "label": "SFRP4+ matrix-remodeling CAFs",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/7/c3": {
+  "label": "SFRP4/COMP fibroblast subset",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/7/c4": {
+  "label": "Matrix-remodeling CAFs",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/8/c0": {
+  "label": "SND1/RARA/DDX10-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/9/c0": {
+  "label": "Hypoxia/HIF response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/9/c1": {
+  "label": "Hypoxia response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/10/c0": {
+  "label": "ADAMTS1/TGFBR2/LAMC1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/10/c1": {
+  "label": "TGF-beta ECM remodeling",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/10/c2": {
+  "label": "ECM remodeling",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/10/c3": {
+  "label": "ADAMTS1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/11/c0": {
+  "label": "CD8 T cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/11/c1": {
+  "label": "T cell markers",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/11/c2": {
+  "label": "Cytotoxic resident T cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/11/c3": {
+  "label": "Cytotoxic T/NK lymphocyte markers",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/12/c0": {
+  "label": "Macrophages (M2-like TAMs)",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/12/c1": {
+  "label": "Macrophage lineage markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/12/c2": {
+  "label": "C1QC+ macrophages",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/12/c3": {
+  "label": "M2-like tumor-associated macrophages",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/12/c4": {
+  "label": "Macrophage markers",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/13/c0": {
+  "label": "H3F3B single-gene factor",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/13/c1": {
+  "label": "H3F3B-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/13/c2": {
+  "label": "H3F3B/USP7/WBP2-high",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/14/c0": {
+  "label": "Pericytes / vascular mural cells",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/14/c1": {
+  "label": "Pericytes (vascular mural cells)",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/14/c2": {
+  "label": "Pericyte/mural cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/14/c3": {
+  "label": "Pericyte markers",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/15/c0": {
+  "label": "ER and lysosomal trafficking",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/15/c1": {
+  "label": "LAPTM4B/DNAJC10/MXRA7-high",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/15/c2": {
+  "label": "LAPTM4B-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/16/c0": {
+  "label": "Inflammatory NF-\u03baB/cytokine program",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/16/c1": {
+  "label": "Inflammatory NF-kB response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/16/c2": {
+  "label": "LCN2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/16/c3": {
+  "label": "LCN2-high inflammatory state",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/17/c0": {
+  "label": "S phase cell cycle program",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/17/c1": {
+  "label": "S-phase proliferation program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/17/c2": {
+  "label": "Cell cycle S/G2M",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/17/c3": {
+  "label": "S-phase DNA replication",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/17/c4": {
+  "label": "Cell cycle S-phase",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/18/c0": {
+  "label": "POSTN-high matrix CAFs",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/18/c1": {
+  "label": "Periostin-high activated fibroblasts",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/18/c2": {
+  "label": "POSTN-high CAFs",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/18/c3": {
+  "label": "POSTN-high myofibroblastic CAF",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/18/c4": {
+  "label": "POSTN+ activated fibroblasts",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/18/c5": {
+  "label": "POSTN-high activated fibroblasts",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/19/c0": {
+  "label": "G2/M cell cycle",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/19/c1": {
+  "label": "Mitotic cell cycle",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/19/c2": {
+  "label": "Cell cycle G2/M program",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/19/c3": {
+  "label": "G2/M cell cycle program",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/20/c0": {
+  "label": "SLC40A1/AVPI1/TNS4-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/20/c1": {
+  "label": "SLC40A1/AVPI1/TMEM173-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/20/c2": {
+  "label": "SLC40A1/RAB11FIP1/AVPI1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/20/c3": {
+  "label": "SLC40A1/AVPI1/MAOA-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/21/c0": {
+  "label": "PKM/JPT2/GIPC1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/21/c1": {
+  "label": "PKM/JPT2/NRAS-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/21/c2": {
+  "label": "PKM/JPT2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/21/c3": {
+  "label": "PKM-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/22/c0": {
+  "label": "HNRNPD/IRAK1/SORD-high",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/22/c1": {
+  "label": "HNRNPD-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/22/c2": {
+  "label": "HNRNPD/LIG3/SKP2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/23/c0": {
+  "label": "Interferon response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/24/c0": {
+  "label": "APP/BACE2/CLCN3-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/24/c1": {
+  "label": "APP/LAMP2/CLCN3-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/24/c2": {
+  "label": "APP-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/24/c3": {
+  "label": "APP/ADAM10/BACE2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/25/c0": {
+  "label": "EMT-like tumour epithelial state",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/25/c1": {
+  "label": "TFPI2/ANXA3/TGM2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/25/c2": {
+  "label": "Invasive tumor cell state",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/25/c3": {
+  "label": "Invasive epithelial state",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/25/c4": {
+  "label": "TFPI2/TGM2/LAMC2-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/25/c5": {
+  "label": "Invasive epithelial tumor cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/26/c0": {
+  "label": "Mesenchymal ECM remodeling program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/26/c1": {
+  "label": "ECM remodeling and invasion",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/26/c2": {
+  "label": "ECM remodeling and invasion program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/26/c3": {
+  "label": "ECM remodeling",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/26/c4": {
+  "label": "Hypoxia and matrix remodeling",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/27/c0": {
+  "label": "UCHL1/NQO1/PSMD2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/27/c1": {
+  "label": "Antioxidant response",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/27/c2": {
+  "label": "UCHL1/NQO1/CDKN2A-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/27/c3": {
+  "label": "UCHL1/SOD1/CDKN2A-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/28/c0": {
+  "label": "ATP5F1A/GNAI2/KIF5B-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/28/c1": {
+  "label": "ATP5F1A/DAP3/DDX21-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/28/c2": {
+  "label": "ATP5F1A/DAP3/GNAI2-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/29/c0": {
+  "label": "SOX2-OT/ALG11/OSGIN1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/29/c1": {
+  "label": "SOX2-OT/SOST/OSGIN1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/29/c2": {
+  "label": "SOX2-OT/OSGIN1/DUX4-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/29/c3": {
+  "label": "SOX2-OT/SOST/ALG11-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/29/c4": {
+  "label": "SOX2-OT-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/30/c0": {
+  "label": "YWHAZ/REST/DOK5-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/30/c1": {
+  "label": "REST/DOK5/ZCCHC3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/30/c2": {
+  "label": "DOK5/REST/R3HDM1-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/30/c3": {
+  "label": "YWHAZ/ARF6/NIPSNAP1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/30/c4": {
+  "label": "DOK5/REST/ZCCHC3-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/31/c0": {
+  "label": "SULF1/TSPAN3/MYH10-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/31/c1": {
+  "label": "Adhesion and cytoskeletal remodeling",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/31/c2": {
+  "label": "SULF1/MYH10/CLSTN3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/31/c3": {
+  "label": "SULF1/MYH10/TSPAN3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/32/c0": {
+  "label": "ESR1/PVT1/PABPC1L-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/33/c0": {
+  "label": "NOTCH2NLA/BCL2L2/PI4KA-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/34/c0": {
+  "label": "OSR2/AKT3/BNC2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/34/c1": {
+  "label": "NBL1/PTGIS/OSR2-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/34/c2": {
+  "label": "PTGIS/NBL1/OSR2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/35/c0": {
+  "label": "SNHG15/UGT2B7/PTH2R-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/35/c1": {
+  "label": "SNHG15/UGT2B7/CRIPT-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/35/c2": {
+  "label": "SNHG15/CRIPT/UGT2B7-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/36/c0": {
+  "label": "NORAD/RNF26/ARL8B-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/36/c1": {
+  "label": "NORAD lncRNA abundance factor",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/36/c2": {
+  "label": "NORAD-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/36/c3": {
+  "label": "NORAD/ARL8B/PITHD1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/37/c0": {
+  "label": "HNRNPA1L2-driven technical factor",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/37/c1": {
+  "label": "HNRNPA1L2-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/37/c2": {
+  "label": "HNRNPA1L2/MRPL45/IPO5-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/37/c3": {
+  "label": "HNRNPA1L2/MRPL45/PTPN11-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/38/c0": {
+  "label": "HNRNPM/ILF3/RAF1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/38/c1": {
+  "label": "HNRNPM/ILF3/PSPC1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/39/c0": {
+  "label": "Inflammatory NF-\u03baB activation",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/39/c1": {
+  "label": "Inflammatory NF-kB stress response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/39/c2": {
+  "label": "NF-kB inflammatory stress response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/39/c3": {
+  "label": "NAMPT-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/39/c4": {
+  "label": "NAMPT/PTGS2 inflammatory stress",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/40/c0": {
+  "label": "CCN1/CCN2-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/40/c1": {
+  "label": "YAP/TAZ activation and immediate early",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/40/c2": {
+  "label": "YAP/TAZ and immediate-early response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/40/c3": {
+  "label": "Immediate-early stress response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/40/c4": {
+  "label": "Matricellular wound response",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/40/c5": {
+  "label": "Immediate early stress response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/41/c0": {
+  "label": "CP-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/41/c1": {
+  "label": "CP/DSG2/BCAM-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/41/c2": {
+  "label": "CP-high epithelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/41/c3": {
+  "label": "Epithelial adhesion",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/42/c0": {
+  "label": "CCT8/KPNB1/CD200-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/42/c1": {
+  "label": "KPNB1/CCT8/KHDRBS1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/42/c2": {
+  "label": "KPNB1/CCT8/CD200-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/42/c3": {
+  "label": "CCT8/KPNB1/KHDRBS1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/43/c0": {
+  "label": "SESN3/KCNMA1/PIK3R1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/43/c1": {
+  "label": "GAS6/KCNMA1/SESN3-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/43/c2": {
+  "label": "GAS6/MYC/KCNMA1-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/44/c0": {
+  "label": "Endothelial cell markers",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/44/c1": {
+  "label": "Endothelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/45/c0": {
+  "label": "SRSF1/CSNK2A1/HOXB4-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/45/c1": {
+  "label": "SRSF1/HOXB4/UTP23-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/45/c2": {
+  "label": "SRSF1/HOXB4/SIGMAR1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/45/c3": {
+  "label": "SRSF1/HOXB4/DVL2-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/46/c0": {
+  "label": "PRKCI/TFRC/DKC1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/46/c1": {
+  "label": "PRKCI/MECOM/TFRC-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/46/c2": {
+  "label": "PRKCI/DKC1/MYEF2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/46/c3": {
+  "label": "PRKCI-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/46/c4": {
+  "label": "PRKCI/MECOM/EIF4G1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/47/c0": {
+  "label": "Ovarian epithelial tumor cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/47/c1": {
+  "label": "Ovarian carcinoma epithelium",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/47/c2": {
+  "label": "MUC16/PAX8/CELSR2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/47/c3": {
+  "label": "Ovarian tumor epithelial cells",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/47/c4": {
+  "label": "M\u00fcllerian tumor cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/47/c5": {
+  "label": "Ovarian tumor epithelium (PAX8/MUC16)",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/48/c0": {
+  "label": "CYP4B1/XPR1/ALCAM-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/48/c1": {
+  "label": "CYP4B1/XPR1/ALPL-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/48/c2": {
+  "label": "CYP4B1/ALPL/ACPP-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/49/c0": {
+  "label": "SOX17+ endothelial module",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/49/c1": {
+  "label": "SOX17/KIAA1324/LPAR3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/49/c2": {
+  "label": "USP53/SOX17/KIAA1324-high",
+  "variants": [
+   "lookup-required",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/49/c3": {
+  "label": "SOX17/MECOM M\u00fcllerian epithelium",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/49/c4": {
+  "label": "SOX17/USP53/LPAR3-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/50/c0": {
+  "label": "CTNNB1/CSNK1A1/CDC73-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/50/c1": {
+  "label": "CTNNB1/CSNK1A1/FUS-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/50/c2": {
+  "label": "CTNNB1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/51/c0": {
+  "label": "TUBB/CALM3/IDH2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/51/c1": {
+  "label": "TUBB/LDHA/CALM3-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/51/c2": {
+  "label": "TUBB/LDHA-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/51/c3": {
+  "label": "TUBB-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/52/c0": {
+  "label": "HNRNPH1/SYNCRIP/POLDIP2-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/52/c1": {
+  "label": "HNRNPH1/SYNCRIP/RBBP4-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/52/c2": {
+  "label": "Housekeeping RNA-processing content",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/53/c0": {
+  "label": "Matrix-producing fibroblasts",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/53/c1": {
+  "label": "Fibroblast ECM program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/53/c2": {
+  "label": "Elastic matrix fibroblasts",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/53/c3": {
+  "label": "ECM remodeling fibroblast state",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/53/c4": {
+  "label": "Fibroblast ECM genes",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/53/c5": {
+  "label": "THBS1-high fibroblasts",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/54/c0": {
+  "label": "ADNP/SSBP3/NUDT21-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/54/c1": {
+  "label": "ADNP/SSBP3/IARS2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/54/c2": {
+  "label": "ADNP/SSBP3/CACUL1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/54/c3": {
+  "label": "ADNP/TOP2B/SSBP3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/54/c4": {
+  "label": "ADNP/TOP2B/LAMP1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/55/c0": {
+  "label": "MYL9/IMPDH2/SOX9-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/55/c1": {
+  "label": "FAM107A/KCNK15/PART1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/55/c2": {
+  "label": "KCNK15/PART1/FAM107A-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/55/c3": {
+  "label": "SOX9/FAM107A/PLCB1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/55/c4": {
+  "label": "MYL9/FBLN5/TGFB2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/56/c0": {
+  "label": "EIF4A1/MMADHC/SEPTIN9-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/56/c1": {
+  "label": "EIF4A1-high diffuse background",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/56/c2": {
+  "label": "EIF4A1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/56/c3": {
+  "label": "EIF4A1/PAK1IP1/SNRPB-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/57/c0": {
+  "label": "Nucleolar ribosome biogenesis program",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/57/c1": {
+  "label": "Ribosome biogenesis and metabolism",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/57/c2": {
+  "label": "FBL-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/57/c3": {
+  "label": "Nucleolar RNA processing",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/57/c4": {
+  "label": "FBL/IMPDH2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/58/c0": {
+  "label": "HSPA8/FECH/GPBP1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/58/c1": {
+  "label": "HSPA8/GPBP1/FECH-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/58/c2": {
+  "label": "HSPA8-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/58/c3": {
+  "label": "HSPA8/EIF3C/GPBP1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/59/c0": {
+  "label": "IGFBP2-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/59/c1": {
+  "label": "IGFBP2/NREP/TWSG1-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/60/c0": {
+  "label": "PTGES3/HSPD1/GSR-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/60/c1": {
+  "label": "PTGES3/NME1/TP53-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/60/c2": {
+  "label": "PTGES3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/60/c3": {
+  "label": "Chaperone and proteostasis genes",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/60/c4": {
+  "label": "Chaperone and protein folding program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/61/c0": {
+  "label": "SSB/GART/SIN3A-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/61/c1": {
+  "label": "SSB/GMPS/DPM1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/62/c0": {
+  "label": "AMOTL2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/62/c1": {
+  "label": "AMOTL2/ANKRD33B/TIPARP-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/63/c0": {
+  "label": "AHCY-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/63/c1": {
+  "label": "AHCY/EPCAM/HMGA1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/63/c2": {
+  "label": "AHCY/NIPSNAP1/ATIC-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/63/c3": {
+  "label": "AHCY/NIPSNAP1/HMGA1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/64/c0": {
+  "label": "RAC1/PEA15/RAP1A-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/64/c1": {
+  "label": "RAC1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/64/c2": {
+  "label": "RAC1/PEA15-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/64/c3": {
+  "label": "RAC1/GSTO1/ACSL4-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/65/c0": {
+  "label": "EIF4G1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/65/c1": {
+  "label": "EIF4G1/PSMD3/TOP1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/65/c2": {
+  "label": "PSMD3/TOP1/RANBP2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/66/c0": {
+  "label": "GOLPH3/NUMA1/HSF1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/66/c1": {
+  "label": "NUMA1/AKAP8/GOLPH3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/66/c2": {
+  "label": "NUMA1/GOLPH3/RAB5A-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/66/c3": {
+  "label": "NUMA1/DAZAP2/AKAP8-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/66/c4": {
+  "label": "GOLPH3/NUMA1/RAB5A-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/67/c0": {
+  "label": "Chaperone protein folding program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/67/c1": {
+  "label": "Chaperone heat shock response",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/67/c2": {
+  "label": "Chaperone/protein folding",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/67/c3": {
+  "label": "Chaperone/protein folding program",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/67/c4": {
+  "label": "Chaperone protein folding",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/68/c0": {
+  "label": "Actomyosin cytoskeleton",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/68/c1": {
+  "label": "Actin cytoskeleton program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/68/c2": {
+  "label": "MYH9-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/68/c3": {
+  "label": "MYH9/MYL9-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/68/c4": {
+  "label": "Actomyosin cytoskeleton program",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/69/c0": {
+  "label": "EMX2/LRRC47/NUAK2-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/70/c0": {
+  "label": "SOST/LENG8/OGT-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/70/c1": {
+  "label": "OGT/SOST/XPA-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/70/c2": {
+  "label": "SOST/OGT/XPA-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/71/c0": {
+  "label": "PRRC2A/APPBP2/GIGYF1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/71/c1": {
+  "label": "HSPB1/PRRC2A/CHD3-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/71/c2": {
+  "label": "PRRC2A/CHD3/APPBP2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/71/c3": {
+  "label": "PRRC2A/HSPB1/CHD3-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/72/c0": {
+  "label": "TMEM123/BIRC2/WWP1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/72/c1": {
+  "label": "TMEM123/BIRC2/APMAP-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/72/c2": {
+  "label": "TMEM123/BIRC2-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/73/c0": {
+  "label": "Stress/immediate early response",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/73/c1": {
+  "label": "p21 inflammatory stress",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/73/c2": {
+  "label": "Stress and cytokine response",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/73/c3": {
+  "label": "Immediate early stress response",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/73/c4": {
+  "label": "Immediate-early stress/SASP program",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/74/c0": {
+  "label": "THSD4/C2orf88/TM9SF4-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/74/c1": {
+  "label": "THSD4/C2orf88-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/74/c2": {
+  "label": "THSD4/C2orf88/MYCL-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/75/c0": {
+  "label": "SFPQ/RBMX-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/75/c1": {
+  "label": "SFPQ/RBMX/GUSB-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/76/c0": {
+  "label": "Epithelial cell markers",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/76/c1": {
+  "label": "Epithelial adhesion add-on program",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/76/c2": {
+  "label": "Epithelial adhesion",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/76/c3": {
+  "label": "Epithelial junction and kallikrein program",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/76/c4": {
+  "label": "Epithelial cells, DHCR24-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/77/c0": {
+  "label": "SOD1/HDAC2/PRPF8-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/77/c1": {
+  "label": "SOD1/HDAC2/ECHS1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/78/c0": {
+  "label": "COL18A1/KRAS/ERGIC2-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/78/c1": {
+  "label": "ERGIC2/HEXIM1/KRAS-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/79/c0": {
+  "label": "Ciliated epithelial cells",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/79/c1": {
+  "label": "Multiciliated cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/79/c2": {
+  "label": "Ciliated epithelial cell markers",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/80/c0": {
+  "label": "CTBP1/SNRNP200/CUL4A-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/80/c1": {
+  "label": "CTBP1/CUL4A/USP10-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/80/c2": {
+  "label": "CTBP1/SNRNP200/HSPA9-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/81/c0": {
+  "label": "CBX3-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/81/c1": {
+  "label": "CBX3/PSMD10/YY1-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/81/c2": {
+  "label": "CBX3/ZCCHC10/PSMD10-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/81/c3": {
+  "label": "CBX3/AP2M1/HMGN3-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/82/c0": {
+  "label": "PROCR/RGS4/BNC1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/82/c1": {
+  "label": "PROCR/RGS4/DSC3-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/82/c2": {
+  "label": "CLDN1/PROCR/PRG4-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/82/c3": {
+  "label": "Mesothelial cells",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/82/c4": {
+  "label": "CLDN1/CCDC80/PROCR-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/83/c0": {
+  "label": "ECPAS/CREB1/CENPB-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/83/c1": {
+  "label": "ECPAS/POLR2C/CFDP1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/83/c2": {
+  "label": "ECPAS/CREB1/CDC34-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/83/c3": {
+  "label": "ECPAS/EIF3A/POLR2C-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/83/c4": {
+  "label": "ECPAS/CREB1/POLR2C-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/84/c0": {
+  "label": "HSPD1/CCT3/HMGA1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/84/c1": {
+  "label": "HSPD1/HSPA9/CCT3-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/84/c2": {
+  "label": "HSPD1/NME1/IFT57-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/84/c3": {
+  "label": "IFT57/NME1/RAN-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/84/c4": {
+  "label": "IFT57/NME1/RUVBL1-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/84/c5": {
+  "label": "HSPD1/IFT57/NME1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/85/c0": {
+  "label": "PLXNB2/IL1R1/INPPL1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/85/c1": {
+  "label": "PLXNB2/IL1R1/CSF1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/85/c2": {
+  "label": "PLXNB2/IL1R1-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/86/c0": {
+  "label": "XRCC6/PSMD4/NOLC1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/86/c1": {
+  "label": "XRCC6/PSMD4/RPF1-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/86/c2": {
+  "label": "XRCC6/RHOA/PARK7-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/87/c0": {
+  "label": "PDCD6/GCN1/CUL5-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/87/c1": {
+  "label": "XPO1/PDCD6/GCN1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/87/c2": {
+  "label": "XPO1/PDCD6/TMX2-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/88/c0": {
+  "label": "ATF4 integrated stress response",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/88/c1": {
+  "label": "ATF4-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/88/c2": {
+  "label": "ATF4 stress response",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/88/c3": {
+  "label": "ATF4/EIF2S1/DNAJB4-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/89/c0": {
+  "label": "RANBP9/AKT2/PPP2R1A-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/89/c1": {
+  "label": "CSNK2B/RANBP9/AKT2-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/89/c2": {
+  "label": "RANBP9/AKT2/PITPNB-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/89/c3": {
+  "label": "RANBP9/PITPNB/AKT2-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/90/c0": {
+  "label": "DNA replication",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/90/c1": {
+  "label": "S-phase DNA replication",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/90/c2": {
+  "label": "DNA replication S-phase",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/91/c0": {
+  "label": "NOTCH2/MAL2/PEG10-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/91/c1": {
+  "label": "Secretory epithelial (FOLR1/MAL2)",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/91/c2": {
+  "label": "MAL2/FOLR1/NOTCH2-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/91/c3": {
+  "label": "FOLR1+ tumor epithelium",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/91/c4": {
+  "label": "MAL2+ epithelial tumor cells",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/91/c5": {
+  "label": "Epithelial tumor cells",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/92/c0": {
+  "label": "NCOR1/ZNF512/ARHGEF2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/92/c1": {
+  "label": "NCOR1/ZNF512/DNMT3A-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/92/c2": {
+  "label": "NCOR1/ARHGEF2/SEMA4C-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/92/c3": {
+  "label": "ZNF512/CRYZL1/DNMT3A-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/93/c0": {
+  "label": "CCT3/CCDC6/HIPK2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/93/c1": {
+  "label": "CCT3-high",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/93/c2": {
+  "label": "CCT3/PHB2/NOC3L-high",
+  "variants": [
+   "lookup-required"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/93/c3": {
+  "label": "CCT3/HIPK2/NOC3L-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/93/c4": {
+  "label": "CCT3/PHB2-high",
+  "variants": [
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/94/c0": {
+  "label": "ER protein folding",
+  "variants": [
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/94/c1": {
+  "label": "ER protein-folding program",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/94/c2": {
+  "label": "ER stress / proteostasis",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/94/c3": {
+  "label": "ER protein folding program",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/95/c0": {
+  "label": "ANKRD13A/HEXA/MARK2-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/95/c1": {
+  "label": "ANKRD13A/MARK2/TBL2-high",
+  "variants": [
+   "or-gpt-6-luna"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/95/c2": {
+  "label": "ANKRD13A/HEXA/MAPK1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/96/c0": {
+  "label": "DAZAP1/NBN/NAIP-high",
+  "variants": [
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/96/c1": {
+  "label": "ARF1/NUS1/DAZAP1-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/96/c2": {
+  "label": "PPFIA1/MTREX/TRIM27-high",
+  "variants": [
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/96/c3": {
+  "label": "NBN/DAZAP1/MTREX-high",
+  "variants": [
+   "or-deepseek-v4.1-flash"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/97/c0": {
+  "label": "HNRNPUL1/CLTC/ROCK1-high",
+  "variants": [
+   "or-deepseek-v4.1-flash",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/97/c1": {
+  "label": "HNRNPUL1/CLTC/NONO-high",
+  "variants": [
+   "lookup-required-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/97/c2": {
+  "label": "HNRNPUL1/CLTC/SP3-high",
+  "variants": [
+   "lookup-required",
+   "or-deepseek-v4.1-flash-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/98/c0": {
+  "label": "CTNND1/POGZ/IGF1R-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ },
+ "xenium-5k-ovarian-cancer/99/c0": {
+  "label": "SF3B1/CREBBP/SMARCA2-high",
+  "variants": [
+   "lookup-required",
+   "lookup-required-sg",
+   "or-deepseek-v4.1-flash",
+   "or-deepseek-v4.1-flash-sg",
+   "or-gpt-6-luna",
+   "or-gpt-6-luna-sg"
+  ]
+ }
+}

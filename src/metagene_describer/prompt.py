@@ -63,6 +63,14 @@ mixtures can come from neighboring cells or segmentation errors.
 genes (high weight and high specificity) joined by "/" and followed by "-high", e.g. \
 "KRT17/S100A2/LGALS7-high", with no other words. Many metagenes in a dataset can be ambiguous, and \
 gene-based labels are the only way to tell them apart. Do not invent a biological story.
+- A metagene dominated by one gene (it carries a large share of the weight, say 20% or more, or \
+the effective number of genes is small) usually reflects that gene's own variation or a probe or \
+technical effect, not a pathway. Don't name a pathway or cell type just because the dominant gene \
+belongs to one (e.g. PKM alone is not "Glycolysis", EEF1G alone is not "Translation", ATF4 alone \
+is not a stress response when its targets are absent). Use category technical with a label naming \
+the dominant gene or genes, e.g. "EEF1G-high" or "PKM/JPT2-high". The exception is when the other \
+genes with substantial weight and specificity form a coherent program or lineage signature on \
+their own; then name that, and mention the dominant gene in the description.
 - A metagene with a large effective number of genes (hundreds or more) and low specificities \
 throughout is usually a diffuse background factor (broad baseline expression, RNA content), not a \
 program. Say so in the description, and treat it as ambiguous unless the specific genes show a \
