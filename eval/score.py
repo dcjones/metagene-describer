@@ -25,7 +25,7 @@ for path in sorted(glob.glob(f"{gdir}/*.grades.jsonl")):
                     total[v][g] += 1
     print(d)
     for v in variants:
-        print(f"  {v:10s} " + "  ".join(f"{g} {per[v][g]:3d}" for g in GRADES))
+        print(f"  {v:33s} " + "  ".join(f"{g} {per[v][g]:3d}" for g in GRADES))
 print("all")
 for v in variants:
-    print(f"  {v:10s} " + "  ".join(f"{g} {total[v][g]:3d}" for g in GRADES))
+    print(f"  {v:33s} " + "  ".join(f"{g} {total[v][g]:3d}" for g in GRADES))

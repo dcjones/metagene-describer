@@ -26,10 +26,13 @@ from before that fix are not included.
   - `lookup-optional`: lookup tool available but not required (an earlier prompt)
   - `lookup-required`: the current default
   - `refine-haiku`, `refine-sonnet`: `nolookup-a` refined with Haiku 5.5 or Sonnet 5.5
+  - `or-MODEL`: other models through OpenRouter (the OpenAI-compatible backend, with the
+    current defaults)
 - `grades/BATCH/`: blind grades (`prompts/grade.md`). Each batch has the grading inputs
   (`DATASET.jsonl`), the judge's grades (`DATASET.grades.jsonl`) and `key.json`, which maps
-  candidates back to variants. Batches are `lookup` (the four first-pass variants) and `refine`
-  (`nolookup-a` and the two refinements).
+  candidates back to variants. Batches are `lookup` (the four first-pass variants), `refine`
+  (`nolookup-a` and the two refinements) and `models` (`lookup-required` and the OpenRouter
+  models).
 
 ## Results
 
@@ -47,6 +50,21 @@ all
   refine-haiku    correct 272  vague   7  overreach  19  wrong   2
   refine-sonnet   correct 270  vague   8  overreach  20  wrong   2
 ```
+
+```
+$ python eval/score.py eval/grades/models
+all
+  lookup-required                   correct 285  vague  11  overreach   4  wrong   0
+  or-deepseek-v4.1-flash            correct 269  vague  19  overreach  12  wrong   0
+  or-gemini-3.1-flash-lite          correct 247  vague  15  overreach  38  wrong   0
+  or-gpt-6-luna                     correct 264  vague  24  overreach  12  wrong   0
+  or-mistral-small-3.2-24b-instruct correct 177  vague  21  overreach  95  wrong   7
+  or-qwen3.6-35b-a3b                correct 215  vague  17  overreach  62  wrong   6
+```
+
+Approximate cost per 300 metagenes, from token counts and list prices as of October 2026:
+DeepSeek v4.1 Flash $0.13, gpt-6-luna $0.23, Haiku 5.5 $0.27, Mistral Small 3.2 $0.40, Gemini
+3.1 Flash Lite $0.55, Qwen 3.6 35B $1.55.
 
 The grades only score each label against its own reference, so they don't measure what refinement
 is for (distinguishing similar metagenes). They show only that refinement doesn't hurt accuracy.
