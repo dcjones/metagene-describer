@@ -105,3 +105,14 @@ def test_describe_with_lookup():
     out = describe_metagenes(GENES, make_H(), backend=LookupBackend(), lookup=True, metagenes=[0])
     assert out[0].looked_up == ["MS4A1", "CD3E"]
     assert out[0].key_genes == ["CD3E", "MS4A1"]  # looked-up genes are allowed, unknown dropped
+
+
+def test_openai_schema_mode_describes_schema_in_prompt():
+    # Some OpenAI-compatible servers accept response_format but don't enforce it.
+    client = FakeOpenAI()
+    client.requests.append({})  # skip the tool-call turn
+    schema = {"type": "object", "properties": {"label": {"type": "string"}}}
+    OpenAIBackend("m", client=client).complete_json("sys", "u", schema)
+    request = client.requests[-1]
+    assert request["response_format"]["type"] == "json_schema"
+    assert '"label"' in request["messages"][0]["content"]

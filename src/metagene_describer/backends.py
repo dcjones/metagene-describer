@@ -153,10 +153,12 @@ class OpenAIBackend:
     """Any OpenAI-compatible chat completions endpoint (OpenAI, OpenRouter, vLLM, Ollama, ...).
 
     api_key and base_url default to the OPENAI_API_KEY and OPENAI_BASE_URL environment variables.
-    json_mode controls how JSON output is requested, since servers differ in what they support:
+    The schema is always described in the system prompt, since some servers accept
+    response_format but don't enforce it (OpenRouter providers in particular, around tool calls).
+    json_mode controls what is requested on top of that:
       "schema": response_format json_schema with strict=True (best, when supported)
-      "object": response_format json_object, with the schema described in the system prompt
-      "prompt": no response_format; the schema is described in the system prompt only
+      "object": response_format json_object
+      "prompt": no response_format
     Extra keyword arguments (temperature, reasoning_effort, extra_body, ...) are passed to
     chat.completions.create on every request. With tools (which the server must support), the
     model may make up to max_tool_rounds rounds of tool calls before it must give its final
@@ -192,15 +194,14 @@ class OpenAIBackend:
         self, system: str, user: str, schema: dict, tools: Sequence[Tool] = ()
     ) -> dict:
         kwargs = dict(self.request_kwargs)
+        system = system + _schema_instruction(schema)
         if self.json_mode == "schema":
             kwargs["response_format"] = {
                 "type": "json_schema",
                 "json_schema": {"name": "metagene_description", "schema": schema, "strict": True},
             }
-        else:
-            system = system + _schema_instruction(schema)
-            if self.json_mode == "object":
-                kwargs["response_format"] = {"type": "json_object"}
+        elif self.json_mode == "object":
+            kwargs["response_format"] = {"type": "json_object"}
         if self.max_tokens is not None:
             kwargs["max_tokens"] = self.max_tokens
         if tools:
