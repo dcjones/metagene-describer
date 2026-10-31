@@ -130,3 +130,57 @@ python eval/score.py eval/grades/NEW-batch
 
 To build a reference for a new dataset, add it to `datasets.py`, write annotator inputs with
 `reference_inputs.py DATASET DIR`, and annotate per `prompts/annotate.md`.
+
+## Cluster labels
+
+`describe_clusters` is scored on the PBMC dataset, whose cells have published reference cell
+types. These tables come from rules in `$METAGENE_EXAMPLES/../Snakefile`. Their rows are in the
+same cell order as the metagene run:
+- `celltypes/scrnaseq-aging-pbmc-250k-celltypes.parquet` (`pbmc_250k_celltypes`): reference cell
+  types for the 250k downsampled cells, matched by barcode from the full table.
+- `results/DATASET/leiden-expr-r2.0.parquet` (`leiden_expression`): Leiden clusters (resolution 2,
+  seed 0) from the standard scanpy pipeline on log-normalized expression. 29 clusters.
+- `results/DATASET/metagene-k100-leiden-r2.0.parquet` (`leiden_metagene`): Leiden clusters on
+  each cell's metagene composition. 24 clusters.
+
+`cluster_reference.py` places the 37 reference cell types in a hierarchy. Its levels are
+compartment, lineage (T, NK, B, monocyte, DC…), subset (CD4, CD8, MAIT/γδ, CD56dim/bright…),
+state (naive, memory, Treg) and fine state (central vs effector memory). `score_clusters.py` maps
+each distinct label onto that hierarchy with one blind request that sees only label text
+(`claude-opus-5-5`, cached in `clusters/label-nodes.json`). A label naming alternatives (e.g. "CD8
+T/NK cells") maps to several nodes, and each gets an equal share of the credit. At each level,
+each cell is then graded correct, wrong, or unresolved (the label stops above that level), from its
+cluster's label and its reference type. The oracle row gives each cluster its majority reference
+type: the best one label per cluster can do, given how pure the clusters are.
+
+```sh
+uv run --group eval python eval/run_clusters.py scrnaseq-aging-pbmc-250k \
+    eval/results/scrnaseq-aging-pbmc-250k.lookup-required-am2.tsv \
+    eval/clusters/results/scrnaseq-aging-pbmc-250k.expr.NEW.tsv
+uv run --group eval python eval/score_clusters.py scrnaseq-aging-pbmc-250k \
+    eval/clusters/results/scrnaseq-aging-pbmc-250k.expr.*.tsv [--detail]
+```
+
+Results (`expr` clusters, Haiku 5.5, metagene labels from `lookup-required-am2`). Each level shows
+% of cells correct / wrong / unresolved:
+
+| | lineage | subset | state | fine state |
+|---|---|---|---|---|
+| oracle | 99.1 / 0.9 / 0 | 96.7 / 3.3 / 0 | 89.0 / 11.0 / 0 | 79.4 / 20.6 / 0 |
+| v1 | 94.9 / 5.0 / 0.1 | 68.9 / 8.1 / 23.1 | 45.4 / 24.0 / 30.6 | 23.7 / 48.1 / 28.2 |
+| v1-b | 98.3 / 1.6 / 0.1 | 67.8 / 4.2 / 28.1 | 34.1 / 15.7 / 50.2 | 10.2 / 21.8 / 68.0 |
+| v2 | 98.3 / 1.6 / 0.1 | 88.4 / 4.9 / 6.7 | 61.8 / 21.6 / 16.5 | 23.7 / 43.1 / 33.1 |
+| v2-b | 98.3 / 1.6 / 0.1 | 84.5 / 4.7 / 10.9 | 56.6 / 21.3 / 22.2 | 23.7 / 42.6 / 33.7 |
+
+v1 is the first prompt. v2 adds three rules:
+- the label should be as specific as the description, since it is a call about most of the cells;
+- name the favored identity rather than "A/B" unless both are about equally supported;
+- decide between two states of one lineage by their relative strength.
+
+It also tells the refinement step never to broaden or hedge a label to match another cluster. In
+v1, refinement had turned a correct "CD8 cytotoxic effector T cells" into "CD8 T/NK cells".
+
+One cluster changes the score by up to 12% of cells, so compare runs against the run-to-run
+spread (v1 vs v1-b). The largest remaining error is one 27k-cell cluster of effector/central
+memory CD4 T cells, labeled "naive/central memory-like" in every run. Its naive CD4 metagenes
+together outweigh its one CD4 memory metagene, and only its top genes point to memory.

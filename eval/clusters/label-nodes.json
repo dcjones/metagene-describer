@@ -1,0 +1,246 @@
+{
+ "B cells (class-switched memory)": [
+  "memory B cell"
+ ],
+ "B cells (memory-leaning, stress genes)": [
+  "memory B cell"
+ ],
+ "B cells (naive and class-switched memory)": [
+  "naive B cell",
+  "memory B cell"
+ ],
+ "CD34+ hematopoietic progenitor cells": [
+  "progenitor cell"
+ ],
+ "CD34+ hematopoietic progenitor cells (+ B cell signal)": [
+  "progenitor cell"
+ ],
+ "CD34+ hematopoietic progenitors (+ B cell signal)": [
+  "progenitor cell"
+ ],
+ "CD34+ progenitor cells (+ B cell signal)": [
+  "progenitor cell"
+ ],
+ "CD4 T cells": [
+  "CD4 T cell"
+ ],
+ "CD4 T cells (memory-leaning)": [
+  "memory CD4 T cell"
+ ],
+ "CD4 T cells (memory-like)": [
+  "memory CD4 T cell"
+ ],
+ "CD4 T cells (naive-leaning, CTLA4/CD28-high state)": [
+  "naive CD4 T cell"
+ ],
+ "CD4 T cells (naive/central memory-like)": [
+  "naive CD4 T cell",
+  "central memory CD4 T cell"
+ ],
+ "CD4 T cells with regulatory subset (FOXP3+)": [
+  "CD4 T cell",
+  "regulatory T cell"
+ ],
+ "CD4 T cells, memory-like": [
+  "memory CD4 T cell"
+ ],
+ "CD4 T cells, naive/memory-like": [
+  "naive CD4 T cell",
+  "memory CD4 T cell"
+ ],
+ "CD8 cytotoxic effector T cells": [
+  "CD8 T cell"
+ ],
+ "CD8 cytotoxic effector T cells, cytotoxic-high": [
+  "CD8 T cell"
+ ],
+ "CD8 effector memory T cells (mixed CD4 T signal)": [
+  "effector memory CD8 T cell"
+ ],
+ "Class-switched memory B cells": [
+  "memory B cell"
+ ],
+ "Class-switched memory B cells, FCRL5-high": [
+  "memory B cell"
+ ],
+ "Class-switched memory B cells, FCRL5/IGHG3-high": [
+  "memory B cell"
+ ],
+ "Classical monocytes": [
+  "classical monocyte"
+ ],
+ "Classical monocytes (+ dendritic cell signal)": [
+  "classical monocyte"
+ ],
+ "Classical monocytes (+ some DC-like signal)": [
+  "classical monocyte"
+ ],
+ "Classical monocytes (immediate-early high)": [
+  "classical monocyte"
+ ],
+ "Classical monocytes (inflammatory activated)": [
+  "classical monocyte"
+ ],
+ "Classical monocytes (inflammatory response-high)": [
+  "classical monocyte"
+ ],
+ "Classical monocytes, DC signal-high": [
+  "classical monocyte"
+ ],
+ "Classical monocytes, activated inflammatory": [
+  "classical monocyte"
+ ],
+ "Classical monocytes, immediate early-high": [
+  "classical monocyte"
+ ],
+ "Classical monocytes, inflammatory response-high": [
+  "classical monocyte"
+ ],
+ "Classical monocytes, some DC signal": [
+  "classical monocyte"
+ ],
+ "Cytotoxic CD8 effector T cells": [
+  "CD8 T cell"
+ ],
+ "Cytotoxic CD8 effector T cells (NK-like overlap)": [
+  "CD8 T cell"
+ ],
+ "Cytotoxic NK cells": [
+  "NK cell"
+ ],
+ "Cytotoxic NK cells (CD56dim CD16+)": [
+  "CD56dim NK cell"
+ ],
+ "Cytotoxic NK cells (CD56dim CD16-high)": [
+  "CD56dim NK cell"
+ ],
+ "Cytotoxic NK cells (CD56dim CD16high)": [
+  "CD56dim NK cell"
+ ],
+ "Cytotoxic NK cells (CD56dim)": [
+  "CD56dim NK cell"
+ ],
+ "Cytotoxic NK cells (CD8 effector T overlap)": [
+  "NK cell"
+ ],
+ "Cytotoxic NK cells (CD8 effector overlap)": [
+  "NK cell"
+ ],
+ "Cytotoxic effector CD8 T/NK cells": [
+  "CD8 T cell",
+  "NK cell"
+ ],
+ "Cytotoxic effector T/NK cells": [
+  "T cell",
+  "NK cell"
+ ],
+ "Dendritic cells (CLEC10A-high cDC2-like)": [
+  "cDC2"
+ ],
+ "Dendritic cells (CLEC10A-high)": [
+  "cDC2"
+ ],
+ "Dendritic cells (CLEC10A-high, cDC2-like)": [
+  "cDC2"
+ ],
+ "Dendritic cells, CLEC10A-high": [
+  "cDC2"
+ ],
+ "Effector CD8 T and NK cells": [
+  "CD8 T cell",
+  "NK cell"
+ ],
+ "GZMK-high CD8 effector memory T cells": [
+  "effector memory CD8 T cell"
+ ],
+ "MAIT-like T cells": [
+  "MAIT cell"
+ ],
+ "MAIT-like T cells (CD8 effector memory signal)": [
+  "MAIT cell"
+ ],
+ "MAIT-like innate-like T cells": [
+  "MAIT cell"
+ ],
+ "NK cells": [
+  "NK cell"
+ ],
+ "NK cells (NK-enriched cytotoxic lymphocytes)": [
+  "NK cell"
+ ],
+ "NK cells (with NK-like T signal)": [
+  "NK cell"
+ ],
+ "NK cells (with some gamma-delta T-like signal)": [
+  "NK cell"
+ ],
+ "Naive B cells": [
+  "naive B cell"
+ ],
+ "Naive CD4 T cells": [
+  "naive CD4 T cell"
+ ],
+ "Naive CD4 T cells (IEG-low)": [
+  "naive CD4 T cell"
+ ],
+ "Naive CD4 T cells (central-memory-like)": [
+  "naive CD4 T cell",
+  "central memory CD4 T cell"
+ ],
+ "Naive CD4 T cells (interferon-stimulated)": [
+  "naive CD4 T cell"
+ ],
+ "Naive CD4 T cells (quiescent)": [
+  "naive CD4 T cell"
+ ],
+ "Naive CD4 T cells (resting, central-memory-like)": [
+  "naive CD4 T cell",
+  "central memory CD4 T cell"
+ ],
+ "Naive CD8 T cells": [
+  "naive CD8 T cell"
+ ],
+ "Naive T cells": [
+  "T cell"
+ ],
+ "Naive T cells (CD4-leaning)": [
+  "naive CD4 T cell"
+ ],
+ "Naive T cells (interferon-stimulated)": [
+  "T cell"
+ ],
+ "Naive T cells, interferon-high": [
+  "T cell"
+ ],
+ "Non-classical monocytes (CD16+)": [
+  "non-classical monocyte"
+ ],
+ "Non-classical monocytes (FCGR3A+)": [
+  "non-classical monocyte"
+ ],
+ "Non-classical monocytes (FCGR3A-high)": [
+  "non-classical monocyte"
+ ],
+ "Plasmacytoid dendritic cells": [
+  "plasmacytoid dendritic cell"
+ ],
+ "Plasmacytoid dendritic cells (minor CD34+ signal)": [
+  "plasmacytoid dendritic cell"
+ ],
+ "Platelets (megakaryocyte-lineage signature)": [
+  "platelet"
+ ],
+ "Platelets/megakaryocytes": [
+  "platelet"
+ ],
+ "Regulatory T cells (CD4 memory-like)": [
+  "memory regulatory T cell"
+ ],
+ "Regulatory T cells (FOXP3+ CD4)": [
+  "regulatory T cell"
+ ],
+ "T cells (mixed CD4 and CD8 memory)": [
+  "memory CD4 T cell",
+  "memory CD8 T cell"
+ ]
+}
