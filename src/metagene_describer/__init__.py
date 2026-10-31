@@ -1,3 +1,4 @@
+from .clusters import ClusterDescription, build_cluster_prompts, describe_clusters
 from .backends import AnthropicBackend, Backend, BackendError, OpenAIBackend, Tool, make_backend
 from .describe import (
     MetageneDescription,
@@ -10,6 +11,9 @@ from .describe import (
 __all__ = [
     "describe_metagenes",
     "refine_labels",
+    "describe_clusters",
+    "build_cluster_prompts",
+    "ClusterDescription",
     "build_prompts",
     "to_dataframe",
     "MetageneDescription",

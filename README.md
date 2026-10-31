@@ -149,3 +149,47 @@ Each `MetageneDescription` has:
 | `error` | set if the request failed |
 | `initial_label`, `refine_reason` | set when refinement changed the label |
 | `looked_up` | genes the model checked with the lookup tool |
+
+## Labeling clusters
+
+Once the metagenes are described, `describe_clusters` labels cell clusters (e.g. Leiden clusters)
+from their metagene composition:
+
+```python
+from metagene_describer import describe_clusters
+
+clusters = describe_clusters(
+    adata.obs["leiden"],   # one cluster label per cell
+    descriptions,          # from describe_metagenes
+    gene_names,
+    result.H,
+    result.W,
+    context="Human cervical cancer, Xenium 5k panel, tumor and adjacent normal tissue",
+)
+df = to_dataframe(clusters)
+```
+
+`W[i, k] * H[k].sum()` is the modeled count that metagene k contributes to cell i, which puts
+metagenes on a common scale. For each cluster, the model sees:
+- its largest metagenes, plus the most enriched of the rest. Each is shown with its share of the
+  cluster's modeled counts, its fold over all other cells, the fraction of the cluster's cells in
+  which it makes up at least 10% of the cell, and the cluster where its share is largest;
+- each of those metagenes' label, category, key genes and description;
+- the cluster's top modeled genes, as a check on the metagene labels.
+
+The prompt treats `cell_type` metagenes as identity, `cell_state` and `program` metagenes as
+qualifiers, and `technical` ones as noise. It also asks the model to judge foreign-lineage signal:
+ignore small amounts, note moderate amounts in `contaminants`, and put large amounts in the label,
+e.g. "Fibroblasts (+ macrophage signal)". Clusters where no lineage dominates are categorized as
+`mixed`. Many clusters are expected to share a label. With `refine=True` (the default), one final
+request sees every cluster's label and composition, makes the wording consistent, and adds
+qualifiers where clusters with the same identity clearly differ.
+
+`notes` takes a `{cluster: str}` dict, e.g. `{"7": "85% of cells from patient P3"}`.
+`build_cluster_prompts` returns the prompts without calling the model.
+
+Each `ClusterDescription` has `cluster`, `n_cells`, `label`, `description`, `category`
+(`cell_type`, `cell_state`, `mixed`, `technical`, `ambiguous`), `confidence`, `cell_types`,
+`key_metagenes`, `contaminants`, `metagene_label` (the fallback label, built from the labels of
+the largest informative metagenes), `top_metagenes`, `error`, and `initial_label` /
+`refine_reason`.

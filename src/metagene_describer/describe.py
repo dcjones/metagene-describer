@@ -294,14 +294,17 @@ def refine_labels(
     return _refine(list(descriptions), by_index, genes, H, usage_v, backend, context, max_workers)
 
 
-def to_dataframe(descriptions: Sequence[MetageneDescription]):
-    """Descriptions as a pandas DataFrame indexed by metagene, with list fields joined by ", "."""
+def to_dataframe(descriptions):
+    """Metagene or cluster descriptions as a pandas DataFrame, indexed by metagene or cluster, with
+    list fields joined by ", "."""
     import pandas as pd
 
     rows = []
     for d in descriptions:
         row = asdict(d)
-        for key in ("cell_types", "key_genes", "top_genes", "looked_up"):
-            row[key] = ", ".join(row[key])
+        for key, value in row.items():
+            if isinstance(value, list):
+                row[key] = ", ".join(str(v) for v in value)
         rows.append(row)
-    return pd.DataFrame(rows).set_index("index")
+    df = pd.DataFrame(rows)
+    return df.set_index("index" if "index" in df.columns else "cluster")
