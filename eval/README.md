@@ -133,21 +133,31 @@ To build a reference for a new dataset, add it to `datasets.py`, write annotator
 
 ## Cluster labels
 
-`describe_clusters` is scored on the PBMC dataset, whose cells have published reference cell
-types. These tables come from rules in `$METAGENE_EXAMPLES/../Snakefile`. Their rows are in the
-same cell order as the metagene run:
+`describe_clusters` is scored on two datasets with reference cell types: the PBMC dataset
+(published annotation) and `atera-cervical-cancer-50k`, a 50k-cell region of the Atera cervical
+cancer demo segmented with proseg, with the vendor's cell groups matched by `original_cell_id`.
+These tables come from rules in `$METAGENE_EXAMPLES/../Snakefile`. Their rows are in the same cell
+order as the metagene run:
 - `celltypes/scrnaseq-aging-pbmc-250k-celltypes.parquet` (`pbmc_250k_celltypes`): reference cell
   types for the 250k downsampled cells, matched by barcode from the full table.
 - `results/DATASET/leiden-expr-r2.0.parquet` (`leiden_expression`): Leiden clusters (resolution 2,
   seed 0) from the standard scanpy pipeline on log-normalized expression. 29 clusters.
 - `results/DATASET/metagene-k100-leiden-r2.0.parquet` (`leiden_metagene`): Leiden clusters on
   each cell's metagene composition. 24 clusters.
+- `data/atera-cervical-cancer-50k.zarr` (`atera_cervical_50k_data`), its metagene run, and
+  `celltypes/atera-cervical-cancer-50k-celltypes.parquet` (`atera_cervical_50k_celltypes`; 8 cells
+  have no vendor group). Its clusters are `leiden-expr-r1.0` (52 clusters).
 
-`cluster_reference.py` places the 37 reference cell types in a hierarchy. Its levels are
-compartment, lineage (T, NK, B, monocyte, DC…), subset (CD4, CD8, MAIT/γδ, CD56dim/bright…),
-state (naive, memory, Treg) and fine state (central vs effector memory). `score_clusters.py` maps
+`cluster_reference.py` places each dataset's reference cell types in a hierarchy. For PBMC, the
+levels are compartment, lineage (T, NK, B, monocyte, DC…), subset (CD4, CD8, MAIT/γδ,
+CD56dim/bright…), state (naive, memory, Treg) and fine state (central vs effector memory). For
+cervix, they are compartment (immune, stromal, epithelial), lineage (T, B/plasma, myeloid,
+fibroblast, smooth muscle, endothelial, squamous/tumor, glandular) and subset (the vendor's T cell
+groups, B vs plasma, macrophage/DC/neutrophil/mast, the fibroblast types, and the vendor's seven
+tumor states). The vendor groups "OR4F17+ Cells" and "Detachment" aren't cell types and are left
+unscored. `score_clusters.py` maps
 each distinct label onto that hierarchy with one blind request that sees only label text
-(`claude-opus-5-5`, cached in `clusters/label-nodes.json`). A label naming alternatives (e.g. "CD8
+(`claude-opus-5-5`, cached per hierarchy in `clusters/label-nodes.json`). A label naming alternatives (e.g. "CD8
 T/NK cells") maps to several nodes, and each gets an equal share of the credit. At each level,
 each cell is then graded correct, wrong, or unresolved (the label stops above that level), from its
 cluster's label and its reference type. The oracle row gives each cluster its majority reference
@@ -184,3 +194,37 @@ One cluster changes the score by up to 12% of cells, so compare runs against the
 spread (v1 vs v1-b). The largest remaining error is one 27k-cell cluster of effector/central
 memory CD4 T cells, labeled "naive/central memory-like" in every run. Its naive CD4 metagenes
 together outweigh its one CD4 memory metagene, and only its top genes point to memory.
+
+v3 and later were tuned on Atera as well (`--res 1.0`, metagene labels from
+`atera-cervical-cancer-50k.lookup-required-am2`), with PBMC checked for regressions:
+- v3: a cluster dominated by a program still has a lineage, so find it ("Cycling epithelial
+  cells"); and contamination must rest on a listed foreign-lineage metagene, not on single genes.
+  v2 had called S100A8/A9 in squamous epithelium "myeloid signal".
+- v4: the listed metagenes are grouped as lineage (cell_type, cell_state), program, and other, so
+  identity evidence comes first.
+- v5: a metagene labeled "A/B" leaves the choice open; decide it from the other metagenes and the
+  top genes.
+
+| Atera | compartment | lineage | subset |
+|---|---|---|---|
+| oracle | 86.6 / 13.4 / 0 | 76.6 / 23.4 / 0 | 49.0 / 51.0 / 0 |
+| v2, v2-b | 74.3–74.8 / 15–16 / 9–11 | 64.8 / 23–24 / 11–12 | 16–26 / 44–47 / 28–41 |
+| v3, v3-b | 75.1–82.3 / 17–18 / 0–8 | 65.7–73.6 / 25 / 1–10 | 20–26 / 42–47 / 27–38 |
+| v4, v4-b | 82.3 / 17.7 / 0 | 73.5–73.6 / 25.5 / 1 | 21–22 / 52 / 26 |
+| v5, v5-b | 81.8–82.3 / 17–18 / 0–1 | 73.0–73.6 / 25 / 1–2 | 25.6 / 48 / 26–27 |
+
+| PBMC | lineage | subset | state |
+|---|---|---|---|
+| v4, v4-b | 96.2–97.0 / 2.9–3.7 / 0.1 | 80.0–89.9 / 7.0–7.1 / 3–13 | 61.6–66.7 / 25–26 / 8–13 |
+| v5, v5-b | 97.0–98.6 / 1.3–2.9 / 0.1 | 84.8–94.1 / 5.4–8.6 / 0.5–7 | 62.9–77.6 / 22–27 / 0–10 |
+
+The Atera oracle is low: even with each cluster given its majority vendor group, only 77% of cells
+are right at lineage level. The vendor annotated the full dataset with its own segmentation, and
+about 30 of the 52 clusters have under 150 cells and a near-uniform mix of vendor groups. Read the
+subset level with care. Most of it is the vendor's tumor-state vocabulary (dyskeratotic,
+differentiating, metabolic-invasive basal…), which the labels aren't expected to reproduce. Known
+gaps:
+- No metagene was annotated as neutrophils or mast cells, so those cells end up in low-quality or
+  mixed clusters.
+- The small, mixed clusters are mostly labeled "Fibroblasts".
+- The 7.7k-cell T cell cluster that is 58% cytotoxic T is labeled as Tregs.

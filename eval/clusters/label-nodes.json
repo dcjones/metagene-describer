@@ -1,246 +1,1243 @@
 {
- "B cells (class-switched memory)": [
-  "memory B cell"
- ],
- "B cells (memory-leaning, stress genes)": [
-  "memory B cell"
- ],
- "B cells (naive and class-switched memory)": [
-  "naive B cell",
-  "memory B cell"
- ],
- "CD34+ hematopoietic progenitor cells": [
-  "progenitor cell"
- ],
- "CD34+ hematopoietic progenitor cells (+ B cell signal)": [
-  "progenitor cell"
- ],
- "CD34+ hematopoietic progenitors (+ B cell signal)": [
-  "progenitor cell"
- ],
- "CD34+ progenitor cells (+ B cell signal)": [
-  "progenitor cell"
- ],
- "CD4 T cells": [
-  "CD4 T cell"
- ],
- "CD4 T cells (memory-leaning)": [
-  "memory CD4 T cell"
- ],
- "CD4 T cells (memory-like)": [
-  "memory CD4 T cell"
- ],
- "CD4 T cells (naive-leaning, CTLA4/CD28-high state)": [
-  "naive CD4 T cell"
- ],
- "CD4 T cells (naive/central memory-like)": [
-  "naive CD4 T cell",
-  "central memory CD4 T cell"
- ],
- "CD4 T cells with regulatory subset (FOXP3+)": [
-  "CD4 T cell",
-  "regulatory T cell"
- ],
- "CD4 T cells, memory-like": [
-  "memory CD4 T cell"
- ],
- "CD4 T cells, naive/memory-like": [
-  "naive CD4 T cell",
-  "memory CD4 T cell"
- ],
- "CD8 cytotoxic effector T cells": [
-  "CD8 T cell"
- ],
- "CD8 cytotoxic effector T cells, cytotoxic-high": [
-  "CD8 T cell"
- ],
- "CD8 effector memory T cells (mixed CD4 T signal)": [
-  "effector memory CD8 T cell"
- ],
- "Class-switched memory B cells": [
-  "memory B cell"
- ],
- "Class-switched memory B cells, FCRL5-high": [
-  "memory B cell"
- ],
- "Class-switched memory B cells, FCRL5/IGHG3-high": [
-  "memory B cell"
- ],
- "Classical monocytes": [
-  "classical monocyte"
- ],
- "Classical monocytes (+ dendritic cell signal)": [
-  "classical monocyte"
- ],
- "Classical monocytes (+ some DC-like signal)": [
-  "classical monocyte"
- ],
- "Classical monocytes (immediate-early high)": [
-  "classical monocyte"
- ],
- "Classical monocytes (inflammatory activated)": [
-  "classical monocyte"
- ],
- "Classical monocytes (inflammatory response-high)": [
-  "classical monocyte"
- ],
- "Classical monocytes, DC signal-high": [
-  "classical monocyte"
- ],
- "Classical monocytes, activated inflammatory": [
-  "classical monocyte"
- ],
- "Classical monocytes, immediate early-high": [
-  "classical monocyte"
- ],
- "Classical monocytes, inflammatory response-high": [
-  "classical monocyte"
- ],
- "Classical monocytes, some DC signal": [
-  "classical monocyte"
- ],
- "Cytotoxic CD8 effector T cells": [
-  "CD8 T cell"
- ],
- "Cytotoxic CD8 effector T cells (NK-like overlap)": [
-  "CD8 T cell"
- ],
- "Cytotoxic NK cells": [
-  "NK cell"
- ],
- "Cytotoxic NK cells (CD56dim CD16+)": [
-  "CD56dim NK cell"
- ],
- "Cytotoxic NK cells (CD56dim CD16-high)": [
-  "CD56dim NK cell"
- ],
- "Cytotoxic NK cells (CD56dim CD16high)": [
-  "CD56dim NK cell"
- ],
- "Cytotoxic NK cells (CD56dim)": [
-  "CD56dim NK cell"
- ],
- "Cytotoxic NK cells (CD8 effector T overlap)": [
-  "NK cell"
- ],
- "Cytotoxic NK cells (CD8 effector overlap)": [
-  "NK cell"
- ],
- "Cytotoxic effector CD8 T/NK cells": [
-  "CD8 T cell",
-  "NK cell"
- ],
- "Cytotoxic effector T/NK cells": [
-  "T cell",
-  "NK cell"
- ],
- "Dendritic cells (CLEC10A-high cDC2-like)": [
-  "cDC2"
- ],
- "Dendritic cells (CLEC10A-high)": [
-  "cDC2"
- ],
- "Dendritic cells (CLEC10A-high, cDC2-like)": [
-  "cDC2"
- ],
- "Dendritic cells, CLEC10A-high": [
-  "cDC2"
- ],
- "Effector CD8 T and NK cells": [
-  "CD8 T cell",
-  "NK cell"
- ],
- "GZMK-high CD8 effector memory T cells": [
-  "effector memory CD8 T cell"
- ],
- "MAIT-like T cells": [
-  "MAIT cell"
- ],
- "MAIT-like T cells (CD8 effector memory signal)": [
-  "MAIT cell"
- ],
- "MAIT-like innate-like T cells": [
-  "MAIT cell"
- ],
- "NK cells": [
-  "NK cell"
- ],
- "NK cells (NK-enriched cytotoxic lymphocytes)": [
-  "NK cell"
- ],
- "NK cells (with NK-like T signal)": [
-  "NK cell"
- ],
- "NK cells (with some gamma-delta T-like signal)": [
-  "NK cell"
- ],
- "Naive B cells": [
-  "naive B cell"
- ],
- "Naive CD4 T cells": [
-  "naive CD4 T cell"
- ],
- "Naive CD4 T cells (IEG-low)": [
-  "naive CD4 T cell"
- ],
- "Naive CD4 T cells (central-memory-like)": [
-  "naive CD4 T cell",
-  "central memory CD4 T cell"
- ],
- "Naive CD4 T cells (interferon-stimulated)": [
-  "naive CD4 T cell"
- ],
- "Naive CD4 T cells (quiescent)": [
-  "naive CD4 T cell"
- ],
- "Naive CD4 T cells (resting, central-memory-like)": [
-  "naive CD4 T cell",
-  "central memory CD4 T cell"
- ],
- "Naive CD8 T cells": [
-  "naive CD8 T cell"
- ],
- "Naive T cells": [
-  "T cell"
- ],
- "Naive T cells (CD4-leaning)": [
-  "naive CD4 T cell"
- ],
- "Naive T cells (interferon-stimulated)": [
-  "T cell"
- ],
- "Naive T cells, interferon-high": [
-  "T cell"
- ],
- "Non-classical monocytes (CD16+)": [
-  "non-classical monocyte"
- ],
- "Non-classical monocytes (FCGR3A+)": [
-  "non-classical monocyte"
- ],
- "Non-classical monocytes (FCGR3A-high)": [
-  "non-classical monocyte"
- ],
- "Plasmacytoid dendritic cells": [
-  "plasmacytoid dendritic cell"
- ],
- "Plasmacytoid dendritic cells (minor CD34+ signal)": [
-  "plasmacytoid dendritic cell"
- ],
- "Platelets (megakaryocyte-lineage signature)": [
-  "platelet"
- ],
- "Platelets/megakaryocytes": [
-  "platelet"
- ],
- "Regulatory T cells (CD4 memory-like)": [
-  "memory regulatory T cell"
- ],
- "Regulatory T cells (FOXP3+ CD4)": [
-  "regulatory T cell"
- ],
- "T cells (mixed CD4 and CD8 memory)": [
-  "memory CD4 T cell",
-  "memory CD8 T cell"
- ]
+ "cervix": {
+  "Activated fibroblasts": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (+ lymphoid signal)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (+ minor plasma cells)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (+ minor squamous signal)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (CAF-like ECM)": [
+   "cancer-associated fibroblast"
+  ],
+  "Activated fibroblasts (ECM-high stroma)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (ECM-high)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (ECM-remodeling)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (ECM-remodeling, SMC add-on)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (ECM-remodeling, minor lymphoid spillover)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (ECM-remodeling, smooth muscle-like signal)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (minor plasma cell signal)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (smooth muscle-like stroma)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts (smooth muscle-like)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts, ECM-remodeling": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts, ECM-remodeling (+ minor plasma signal)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts, ECM-remodeling (+ minor squamous signal)": [
+   "fibroblast"
+  ],
+  "Activated fibroblasts, ECM-remodeling (minor plasma signal)": [
+   "fibroblast"
+  ],
+  "Activated smooth muscle-like stroma (+ minor T cell signal)": [
+   "smooth muscle cell"
+  ],
+  "Activated stromal cells (IFN-gamma response)": [
+   "stromal cell"
+  ],
+  "Activated stromal cells (IFN-inflamed)": [
+   "stromal cell"
+  ],
+  "Activated stromal cells (smooth muscle-like)": [
+   "smooth muscle cell"
+  ],
+  "Ambiguous IFN-gamma response with stroma (immunoglobulin signal)": [
+   "stromal cell"
+  ],
+  "Ambiguous diffuse background cells": [
+   "cell"
+  ],
+  "Ambiguous diffuse background cluster (weak basal epithelial signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Ambiguous, inflamed squamous epithelial signal (low quality)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Ambiguous, weak squamous epithelium signal": [
+   "squamous epithelial or tumor cell"
+  ],
+  "B cells (germinal center / follicular subset)": [
+   "B cell"
+  ],
+  "B cells (germinal center subset)": [
+   "B cell"
+  ],
+  "B cells (germinal center-leaning)": [
+   "B cell"
+  ],
+  "B cells (germinal center-like subset)": [
+   "B cell"
+  ],
+  "B cells (germinal center/follicular subset)": [
+   "B cell"
+  ],
+  "B cells (germinal-center subset enriched)": [
+   "B cell"
+  ],
+  "Basal squamous epithelial cells": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Basal-like squamous epithelium + diffuse background": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Cancer-associated fibroblasts (+ myeloid signal)": [
+   "cancer-associated fibroblast"
+  ],
+  "Cancer-associated fibroblasts (ECM-remodeling)": [
+   "cancer-associated fibroblast"
+  ],
+  "Cancer-associated fibroblasts (minor B-cell signal)": [
+   "cancer-associated fibroblast"
+  ],
+  "Cycling cells (proliferating, lineage unclear)": [
+   "cell"
+  ],
+  "Cycling cells, histone and mitotic high (uncertain lineage)": [
+   "cell"
+  ],
+  "Cycling cells, histone and mitotic program (lineage unclear)": [
+   "cell"
+  ],
+  "Cycling squamous epithelial cells": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Cycling squamous epithelial cells (tumor-like)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Differentiated squamous epithelial cells": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelial cells (S100A8/A9-high)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelial cells (inflamed)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelial cells (inflamed, hypoxic)": [
+   "differentiating tumor cell",
+   "hypoxic tumor cell"
+  ],
+  "Differentiated squamous epithelial cells (inflamed, weak)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (+ T cell and fibroblast contamination)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (+ hypoxic, inflamed)": [
+   "differentiating tumor cell",
+   "hypoxic tumor cell"
+  ],
+  "Differentiated squamous epithelium (+ inflammatory S100A8/A9 signal)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (+ neutrophil signal)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (+ stromal signal)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (+ tumor epithelium)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (NF-kB inflamed)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (S100A8/9-high)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (S100A8/A9 inflammatory signal)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (S100A8/A9-high)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (hypoxic)": [
+   "differentiating tumor cell",
+   "hypoxic tumor cell"
+  ],
+  "Differentiated squamous epithelium (hypoxic, inflamed)": [
+   "differentiating tumor cell",
+   "hypoxic tumor cell"
+  ],
+  "Differentiated squamous epithelium (inflamed)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (inflamed, cycling subset)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (inflamed, hypoxic)": [
+   "differentiating tumor cell",
+   "hypoxic tumor cell"
+  ],
+  "Differentiated squamous epithelium (inflamed, low quality)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (inflamed, low signal)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (inflamed, noisy)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (inflammatory-high)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (low signal)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium (noisy, low quality)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium, S100A8/A9-high": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium, inflamed (+ macrophage background)": [
+   "differentiating tumor cell"
+  ],
+  "Differentiated squamous epithelium, inflamed (hypoxic)": [
+   "differentiating tumor cell",
+   "hypoxic tumor cell"
+  ],
+  "Differentiated squamous epithelium, inflamed (sparse cluster)": [
+   "differentiating tumor cell"
+  ],
+  "Diffuse low-specificity background cells (ambiguous)": [
+   "cell"
+  ],
+  "Endothelial cells (+ pericyte signal)": [
+   "endothelial cell"
+  ],
+  "Endothelial cells (+ pericyte-like signal)": [
+   "endothelial cell"
+  ],
+  "Fibroblast ECM + diffuse background (low confidence)": [
+   "fibroblast"
+  ],
+  "Fibroblast ECM + smooth muscle stroma (low confidence)": [
+   "fibroblast",
+   "smooth muscle cell"
+  ],
+  "Fibroblast ECM + smooth muscle stroma (low signal)": [
+   "fibroblast",
+   "smooth muscle cell"
+  ],
+  "Fibroblast/endothelial mixture (+ IFN response)": [
+   "fibroblast",
+   "endothelial cell"
+  ],
+  "Fibroblast/macrophage mixture (+ T and plasma signal)": [
+   "fibroblast",
+   "macrophage"
+  ],
+  "Fibroblast/macrophage mixture (plasma cell signal)": [
+   "fibroblast",
+   "macrophage"
+  ],
+  "Fibroblast/plasma cell mixture": [
+   "fibroblast",
+   "plasma cell"
+  ],
+  "Fibroblast/plasma cell mixture (doublet-like)": [
+   "fibroblast",
+   "plasma cell"
+  ],
+  "Fibroblast/plasma cell mixture (possible doublets)": [
+   "fibroblast",
+   "plasma cell"
+  ],
+  "Fibroblast/squamous epithelial mixture (+ lymphoid signal)": [
+   "fibroblast",
+   "squamous epithelial or tumor cell"
+  ],
+  "Fibroblast/squamous epithelium mixture": [
+   "fibroblast",
+   "squamous epithelial or tumor cell"
+  ],
+  "Fibroblast/squamous epithelium mixture (+ minor T/plasma signal)": [
+   "fibroblast",
+   "squamous epithelial or tumor cell"
+  ],
+  "Fibroblasts": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ CD8 T cell signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ IFN-gamma response)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ IFN-gamma response, endothelial signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ diffuse background)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ endothelial signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ immune and epithelial signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ lymphoid signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ macrophage signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ macrophage signal, diffuse background)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ minor T cell signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ minor immune and epithelial signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ minor lymphocyte signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ minor myeloid signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ myeloid signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ plasma cell signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ smooth muscle-like stroma)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ sparse immune doublets)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (+ sparse lymphocyte signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (CAF-like ECM-remodeling)": [
+   "cancer-associated fibroblast"
+  ],
+  "Fibroblasts (ECM-high, activated state)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-high, diffuse background)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-high, minor T cell signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-high, minor myeloid signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-high, technical noise)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-high, technical signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-remodeling, low-purity)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-rich stroma)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-rich stroma, immune spillover)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-rich stromal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-rich, activated)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-rich, low-quality cluster)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-rich, smooth muscle-like)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (ECM-rich, stress-activated)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (IFN-gamma response)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (IFN-gamma response, endothelial signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated ECM, smooth muscle-like)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated ECM-high, diffuse background)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated ECM-remodeling leaning)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated ECM-remodeling subset)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated ECM-remodeling)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated stroma)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated stromal state)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated, ECM-high)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated, ECM-remodeling)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated, ECM-remodeling), diffuse background": [
+   "fibroblast"
+  ],
+  "Fibroblasts (activated, smooth muscle-like add-on)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (diffuse background, weak identity)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (low-quality, diffuse signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (low-usage, diffuse background)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (minor CD8 T cell signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (smooth muscle-like stroma)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (stromal ECM-high)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (stromal, smooth muscle-like)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (technical-heavy, weak signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (weak signal, diffuse background)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (weak stromal signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (weak stromal signal, diffuse background)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (weak, diffuse background)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (weak, diffuse signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts (weak, with T cell signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts / smooth muscle stroma (+ T cell doublets)": [
+   "fibroblast",
+   "smooth muscle cell"
+  ],
+  "Fibroblasts / stromal cells (+ plasma cell signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts / stromal cells (low confidence)": [
+   "fibroblast",
+   "stromal cell"
+  ],
+  "Fibroblasts and smooth muscle stroma (+ minor T cell signal)": [
+   "fibroblast",
+   "smooth muscle cell"
+  ],
+  "Fibroblasts with diffuse background (+ macrophage signal)": [
+   "fibroblast"
+  ],
+  "Fibroblasts, activated ECM (+ plasma cell signal)": [
+   "fibroblast"
+  ],
+  "Glandular epithelial cells with fibroblast signal (mixed)": [
+   "endocervical glandular cell",
+   "fibroblast"
+  ],
+  "Glandular epithelial/fibroblast mixture (low confidence)": [
+   "endocervical glandular cell",
+   "fibroblast"
+  ],
+  "Glandular epithelium/fibroblast mixture": [
+   "endocervical glandular cell",
+   "fibroblast"
+  ],
+  "Glandular epithelium/fibroblast mixture (doublet-like)": [
+   "endocervical glandular cell",
+   "fibroblast"
+  ],
+  "Glandular secretory epithelial cells (+ fibroblast signal)": [
+   "endocervical glandular cell"
+  ],
+  "IgG plasma cells (ER stress high)": [
+   "plasma cell"
+  ],
+  "Inflamed squamous epithelial cells (+ immune signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Inflamed squamous epithelial cells (NF-kB high)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Inflamed squamous epithelial cells (NF-kB response)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Inflamed squamous epithelial cells (low quality)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Inflamed squamous epithelium (NF-kB/TNF high)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Low-quality cells (faint squamous epithelial signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Low-quality cells (faint squamous signal)": [
+   "cell"
+  ],
+  "Low-quality cells (weak stromal signal)": [
+   "stromal cell"
+  ],
+  "Low-quality cells, no clear lineage": [
+   "cell"
+  ],
+  "Low-quality cells, weak squamous epithelial signal": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Low-quality cells, weak squamous signal": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Low-quality cells, weak squamous signal (technical)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Low-quality cluster, technical signal dominant": [
+   "cell"
+  ],
+  "Low-quality diffuse background (weak squamous epithelial)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Low-quality stromal cells (technical signal)": [
+   "stromal cell"
+  ],
+  "Low-quality stromal-leaning cells (technical signal)": [
+   "stromal cell"
+  ],
+  "Low-quality technical cluster (weak stromal signal)": [
+   "stromal cell"
+  ],
+  "Low-quality technical signal (weak epithelial)": [
+   "epithelial cell"
+  ],
+  "Low-quality, weak basal epithelium signal": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Low-specificity mixture (IgG plasma cell signal)": [
+   "cell"
+  ],
+  "Myeloid cells (tumor-associated macrophages)": [
+   "macrophage"
+  ],
+  "NF-kB inflammatory response (IgG plasma signal)": [
+   "cell"
+  ],
+  "NF-kB/TNF-responsive cells (lineage unresolved)": [
+   "cell"
+  ],
+  "Plasma cells (+ inflammatory NF-kB signal)": [
+   "plasma cell"
+  ],
+  "Plasma cells (IgG-high, ER stress program)": [
+   "plasma cell"
+  ],
+  "Plasma cells (IgG-high, ER stress-active)": [
+   "plasma cell"
+  ],
+  "Plasma cells (weak, diffuse background)": [
+   "plasma cell"
+  ],
+  "Regulatory T cells": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (CD3+ T cell cluster)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (CD4 T cell lineage)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (CD4 T cell-like)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (CD4 T cells with CD8 subset)": [
+   "regulatory T cell",
+   "cytotoxic T cell"
+  ],
+  "Regulatory T cells (CD4 Treg)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (CD4+ T cell-like)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (CD4/CD8 T mixture)": [
+   "regulatory T cell",
+   "cytotoxic T cell"
+  ],
+  "Regulatory T cells (CD8 T subset)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (CD8 cytotoxic subset)": [
+   "regulatory T cell",
+   "cytotoxic T cell"
+  ],
+  "Regulatory T cells (T cell lineage, diffuse background)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (mixed with CD8 T cells)": [
+   "regulatory T cell",
+   "cytotoxic T cell"
+  ],
+  "Regulatory T cells (noisy, low-signal cluster)": [
+   "regulatory T cell"
+  ],
+  "S-phase program + Squamous differentiation (low confidence)": [
+   "differentiating tumor cell"
+  ],
+  "Smooth muscle / fibroblast stroma (+ T cell doublets)": [
+   "smooth muscle cell",
+   "fibroblast"
+  ],
+  "Smooth muscle / myofibroblast stroma": [
+   "smooth muscle cell",
+   "fibroblast"
+  ],
+  "Smooth muscle-like stromal cells (+ T cell signal)": [
+   "smooth muscle cell"
+  ],
+  "Squamous differentiated epithelium (low quality)": [
+   "differentiating tumor cell"
+  ],
+  "Squamous differentiation + G1/S program": [
+   "differentiating tumor cell"
+  ],
+  "Squamous differentiation + diffuse background (low confidence)": [
+   "differentiating tumor cell"
+  ],
+  "Squamous differentiation + diffuse background (low quality)": [
+   "differentiating tumor cell"
+  ],
+  "Squamous differentiation + hypoxia state (weak)": [
+   "differentiating tumor cell",
+   "hypoxic tumor cell"
+  ],
+  "Squamous differentiation + plasma cells": [
+   "differentiating tumor cell",
+   "plasma cell"
+  ],
+  "Squamous differentiation, inflamed + T cell markers": [
+   "differentiating tumor cell"
+  ],
+  "Squamous epithelial / stromal mixture": [
+   "squamous epithelial or tumor cell",
+   "stromal cell"
+  ],
+  "Squamous epithelial cells": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (+ S100A8/A9 myeloid signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (+ T cell and fibroblast signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (+ stromal and lymphoid signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (+ stromal signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (KRT5/KRT13-high, stromal spillover)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (NF-kB inflammatory, low quality)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (S100A8/A9-high)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (differentiated, S100A8/A9-high)": [
+   "differentiating tumor cell"
+  ],
+  "Squamous epithelial cells (differentiated, low confidence)": [
+   "differentiating tumor cell"
+  ],
+  "Squamous epithelial cells (diffuse, stromal signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (hypoxia/basal-like state)": [
+   "hypoxic tumor cell"
+  ],
+  "Squamous epithelial cells (hypoxia/differentiated state)": [
+   "hypoxic tumor cell",
+   "differentiating tumor cell"
+  ],
+  "Squamous epithelial cells (hypoxia/stress state)": [
+   "hypoxic tumor cell"
+  ],
+  "Squamous epithelial cells (hypoxia/stress state, low confidence)": [
+   "hypoxic tumor cell"
+  ],
+  "Squamous epithelial cells (hypoxic, differentiated)": [
+   "hypoxic tumor cell",
+   "differentiating tumor cell"
+  ],
+  "Squamous epithelial cells (inflamed, low purity)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (inflamed, low quality)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (inflamed, superficial)": [
+   "differentiating tumor cell"
+  ],
+  "Squamous epithelial cells (low quality, weak signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (superficial differentiation)": [
+   "differentiating tumor cell"
+  ],
+  "Squamous epithelial cells (technical-dominated, low quality)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (weak signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells (weak, diffuse signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells, inflamed (+ stromal signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial cells, inflamed/stressed (+ stroma signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelial-leaning, mostly diffuse (low quality)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelium + technical signal (low confidence)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelium, NF-kB inflamed (+ T cell signal)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelium, NF-kB/TNF-high (low confidence)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelium, inflamed and hypoxic (differentiated)": [
+   "hypoxic tumor cell",
+   "differentiating tumor cell"
+  ],
+  "Squamous epithelium, inflammatory NF-kB state": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelium-like, weak signal (ambiguous)": [
+   "squamous epithelial or tumor cell"
+  ],
+  "Squamous epithelium/fibroblast mixture": [
+   "squamous epithelial or tumor cell",
+   "fibroblast"
+  ],
+  "Squamous epithelium/fibroblast mixture (+ T cell signal)": [
+   "squamous epithelial or tumor cell",
+   "fibroblast"
+  ],
+  "Squamous epithelium/fibroblast mixture (+ plasma signal)": [
+   "squamous epithelial or tumor cell",
+   "fibroblast"
+  ],
+  "Squamous epithelium/fibroblast mixture (low quality)": [
+   "squamous epithelial or tumor cell",
+   "fibroblast"
+  ],
+  "Squamous epithelium/stroma mixture (+ plasma signal)": [
+   "squamous epithelial or tumor cell",
+   "stromal cell"
+  ],
+  "Squamous epithelium/stroma mixture (diffuse)": [
+   "squamous epithelial or tumor cell",
+   "stromal cell"
+  ],
+  "Squamous epithelium/stroma mixture (low confidence)": [
+   "squamous epithelial or tumor cell",
+   "stromal cell"
+  ],
+  "Squamous epithelium/stroma mixture (small cluster)": [
+   "squamous epithelial or tumor cell",
+   "stromal cell"
+  ],
+  "Squamous/plasma cell mixture (inflamed)": [
+   "squamous epithelial or tumor cell",
+   "plasma cell"
+  ],
+  "Stromal cells (IFN-gamma response)": [
+   "stromal cell"
+  ],
+  "Stromal cells with IFN-gamma response": [
+   "stromal cell"
+  ],
+  "Stromal cells, fibroblast-like (weak signal)": [
+   "fibroblast"
+  ],
+  "Stromal fibroblasts (+ plasma cell signal)": [
+   "fibroblast"
+  ],
+  "Stromal fibroblasts (smooth muscle-like, activated)": [
+   "fibroblast"
+  ],
+  "Stromal/endothelial mixture (IFN-gamma response)": [
+   "stromal cell",
+   "endothelial cell"
+  ],
+  "Superficial squamous epithelial cells (+ T cell and stromal signal)": [
+   "differentiating tumor cell"
+  ],
+  "T cells (+ fibroblast signal)": [
+   "T cell"
+  ],
+  "T cells (+ fibroblast stromal signal)": [
+   "T cell"
+  ],
+  "T cells (+ fibroblast/stromal signal)": [
+   "T cell"
+  ],
+  "T cells (+ stromal signal)": [
+   "T cell"
+  ],
+  "T cells (Treg-enriched, some CD8)": [
+   "regulatory T cell",
+   "cytotoxic T cell"
+  ],
+  "T cells (low quality, + stromal signal)": [
+   "T cell"
+  ],
+  "T cells (regulatory T cell-enriched)": [
+   "regulatory T cell"
+  ],
+  "T lymphocytes (+ stromal signal)": [
+   "T cell"
+  ],
+  "Tumor-associated macrophages (CLEC10A/FCGR2A-high myeloid subset)": [
+   "macrophage"
+  ],
+  "Tumor-associated macrophages (cDC2-like subset)": [
+   "macrophage"
+  ],
+  "Tumor-associated macrophages (myeloid)": [
+   "macrophage"
+  ],
+  "Tumor-associated macrophages (myeloid, CLEC10A-high subset)": [
+   "macrophage"
+  ],
+  "Weak stromal signal (fibroblast/smooth muscle)": [
+   "fibroblast",
+   "smooth muscle cell"
+  ]
+ },
+ "pbmc": {
+  "Activated classical monocytes": [
+   "classical monocyte"
+  ],
+  "B cells (FCRL5/IGHG3-high state)": [
+   "memory B cell"
+  ],
+  "B cells (class-switched memory)": [
+   "memory B cell"
+  ],
+  "B cells (class-switched memory-skewed)": [
+   "memory B cell"
+  ],
+  "B cells (memory-leaning, stress genes)": [
+   "memory B cell"
+  ],
+  "B cells (naive and class-switched memory)": [
+   "naive B cell",
+   "memory B cell"
+  ],
+  "CD34+ hematopoietic progenitor cells": [
+   "progenitor cell"
+  ],
+  "CD34+ hematopoietic progenitor cells (+ B cell signal)": [
+   "progenitor cell"
+  ],
+  "CD34+ hematopoietic progenitors (+ B cell signal)": [
+   "progenitor cell"
+  ],
+  "CD34+ progenitor cells (+ B cell signal)": [
+   "progenitor cell"
+  ],
+  "CD4 T cells": [
+   "CD4 T cell"
+  ],
+  "CD4 T cells (memory-leaning)": [
+   "memory CD4 T cell"
+  ],
+  "CD4 T cells (memory-like)": [
+   "memory CD4 T cell"
+  ],
+  "CD4 T cells (memory-like, some MAIT-like)": [
+   "memory CD4 T cell",
+   "MAIT cell"
+  ],
+  "CD4 T cells (naive-leaning, CTLA4/CD28-high state)": [
+   "naive CD4 T cell"
+  ],
+  "CD4 T cells (naive/central memory-like)": [
+   "naive CD4 T cell",
+   "central memory CD4 T cell"
+  ],
+  "CD4 T cells (naive/memory-like)": [
+   "naive CD4 T cell",
+   "memory CD4 T cell"
+  ],
+  "CD4 T cells with regulatory subset (FOXP3+)": [
+   "CD4 T cell",
+   "regulatory T cell"
+  ],
+  "CD4 T cells, memory-like": [
+   "memory CD4 T cell"
+  ],
+  "CD4 T cells, naive/central-memory-like": [
+   "naive CD4 T cell",
+   "central memory CD4 T cell"
+  ],
+  "CD4 T cells, naive/memory-like": [
+   "naive CD4 T cell",
+   "memory CD4 T cell"
+  ],
+  "CD4 memory T cells": [
+   "memory CD4 T cell"
+  ],
+  "CD8 cytotoxic effector T cells": [
+   "CD8 T cell"
+  ],
+  "CD8 cytotoxic effector T cells (some NK overlap)": [
+   "CD8 T cell"
+  ],
+  "CD8 cytotoxic effector T cells, NK-like": [
+   "effector memory CD8 T cell"
+  ],
+  "CD8 cytotoxic effector T cells, cytotoxic-high": [
+   "CD8 T cell"
+  ],
+  "CD8 effector memory T cells (mixed CD4 T signal)": [
+   "effector memory CD8 T cell"
+  ],
+  "Class-switched memory B cells": [
+   "memory B cell"
+  ],
+  "Class-switched memory B cells, FCRL5-high": [
+   "memory B cell"
+  ],
+  "Class-switched memory B cells, FCRL5/IGHG3-high": [
+   "memory B cell"
+  ],
+  "Classical monocytes": [
+   "classical monocyte"
+  ],
+  "Classical monocytes (+ dendritic cell signal)": [
+   "classical monocyte"
+  ],
+  "Classical monocytes (+ some DC signal)": [
+   "classical monocyte"
+  ],
+  "Classical monocytes (+ some DC-like signal)": [
+   "classical monocyte"
+  ],
+  "Classical monocytes (immediate-early high)": [
+   "classical monocyte"
+  ],
+  "Classical monocytes (immediate-early-high)": [
+   "classical monocyte"
+  ],
+  "Classical monocytes (inflammatory activated)": [
+   "classical monocyte"
+  ],
+  "Classical monocytes (inflammatory response-high)": [
+   "classical monocyte"
+  ],
+  "Classical monocytes (some DC mixing)": [
+   "classical monocyte"
+  ],
+  "Classical monocytes, DC signal-high": [
+   "classical monocyte"
+  ],
+  "Classical monocytes, DC-like signal": [
+   "classical monocyte"
+  ],
+  "Classical monocytes, activated inflammatory": [
+   "classical monocyte"
+  ],
+  "Classical monocytes, immediate early-high": [
+   "classical monocyte"
+  ],
+  "Classical monocytes, inflammatory": [
+   "classical monocyte"
+  ],
+  "Classical monocytes, inflammatory response-high": [
+   "classical monocyte"
+  ],
+  "Classical monocytes, inflammatory-activated": [
+   "classical monocyte"
+  ],
+  "Classical monocytes, some DC signal": [
+   "classical monocyte"
+  ],
+  "Conventional dendritic cells (CLEC10A-high)": [
+   "cDC2"
+  ],
+  "Cytotoxic CD8 effector T cells": [
+   "CD8 T cell"
+  ],
+  "Cytotoxic CD8 effector T cells (NK-like overlap)": [
+   "CD8 T cell"
+  ],
+  "Cytotoxic CD8 effector T/NK cells": [
+   "effector memory CD8 T cell",
+   "NK cell"
+  ],
+  "Cytotoxic NK cells": [
+   "NK cell"
+  ],
+  "Cytotoxic NK cells (CD56dim CD16+)": [
+   "CD56dim NK cell"
+  ],
+  "Cytotoxic NK cells (CD56dim CD16-high)": [
+   "CD56dim NK cell"
+  ],
+  "Cytotoxic NK cells (CD56dim CD16high)": [
+   "CD56dim NK cell"
+  ],
+  "Cytotoxic NK cells (CD56dim)": [
+   "CD56dim NK cell"
+  ],
+  "Cytotoxic NK cells (CD56dim/CD16-high)": [
+   "CD56dim NK cell"
+  ],
+  "Cytotoxic NK cells (CD8 effector T overlap)": [
+   "NK cell"
+  ],
+  "Cytotoxic NK cells (CD8 effector overlap)": [
+   "NK cell"
+  ],
+  "Cytotoxic NK cells (some CD8 effector T overlap)": [
+   "NK cell"
+  ],
+  "Cytotoxic effector CD8 T cells": [
+   "effector memory CD8 T cell"
+  ],
+  "Cytotoxic effector CD8 T cells (NK-like overlap)": [
+   "effector memory CD8 T cell"
+  ],
+  "Cytotoxic effector CD8 T/NK cells": [
+   "CD8 T cell",
+   "NK cell"
+  ],
+  "Cytotoxic effector CD8 T/NK cells (NK-like)": [
+   "CD8 T cell",
+   "NK cell"
+  ],
+  "Cytotoxic effector T/NK cells": [
+   "T cell",
+   "NK cell"
+  ],
+  "Dendritic cells (CLEC10A-high cDC2-like)": [
+   "cDC2"
+  ],
+  "Dendritic cells (CLEC10A-high)": [
+   "cDC2"
+  ],
+  "Dendritic cells (CLEC10A-high, cDC2-like)": [
+   "cDC2"
+  ],
+  "Dendritic cells (cDC2-like)": [
+   "cDC2"
+  ],
+  "Dendritic cells, CLEC10A-high": [
+   "cDC2"
+  ],
+  "Dendritic cells, CLEC10A-high (cDC2-like)": [
+   "cDC2"
+  ],
+  "Effector CD8 T and NK cells": [
+   "CD8 T cell",
+   "NK cell"
+  ],
+  "Effector CD8 T cells (NK-like overlap)": [
+   "CD8 T cell"
+  ],
+  "GZMK-high CD8 effector memory T cells": [
+   "effector memory CD8 T cell"
+  ],
+  "GZMK-high CD8 effector memory T cells (mixed CD4 T signal)": [
+   "effector memory CD8 T cell"
+  ],
+  "MAIT-like T cells": [
+   "MAIT cell"
+  ],
+  "MAIT-like T cells (CD8 effector memory signal)": [
+   "MAIT cell"
+  ],
+  "MAIT-like innate-like T cells": [
+   "MAIT cell"
+  ],
+  "NK cells": [
+   "NK cell"
+  ],
+  "NK cells (NK-enriched cytotoxic lymphocytes)": [
+   "NK cell"
+  ],
+  "NK cells (NKG7/GNLY cytotoxic, possible gamma-delta T-like)": [
+   "NK cell",
+   "gamma-delta T cell"
+  ],
+  "NK cells (cytotoxic, with some NK-like T signal)": [
+   "NK cell"
+  ],
+  "NK cells (some NK-like T cells)": [
+   "NK cell"
+  ],
+  "NK cells (with NK-like T signal)": [
+   "NK cell"
+  ],
+  "NK cells (with some gamma-delta T-like signal)": [
+   "NK cell"
+  ],
+  "Naive B cells": [
+   "naive B cell"
+  ],
+  "Naive CD4 T cells": [
+   "naive CD4 T cell"
+  ],
+  "Naive CD4 T cells (IEG-low)": [
+   "naive CD4 T cell"
+  ],
+  "Naive CD4 T cells (central-memory-like)": [
+   "naive CD4 T cell",
+   "central memory CD4 T cell"
+  ],
+  "Naive CD4 T cells (interferon-stimulated)": [
+   "naive CD4 T cell"
+  ],
+  "Naive CD4 T cells (quiescent)": [
+   "naive CD4 T cell"
+  ],
+  "Naive CD4 T cells (resting, central-memory-like)": [
+   "naive CD4 T cell",
+   "central memory CD4 T cell"
+  ],
+  "Naive CD4 T cells, interferon-high": [
+   "naive CD4 T cell"
+  ],
+  "Naive CD4 T cells, interferon-stimulated": [
+   "naive CD4 T cell"
+  ],
+  "Naive CD8 T cells": [
+   "naive CD8 T cell"
+  ],
+  "Naive T cells": [
+   "T cell"
+  ],
+  "Naive T cells (CD4-leaning)": [
+   "naive CD4 T cell"
+  ],
+  "Naive T cells (interferon-high)": [
+   "T cell"
+  ],
+  "Naive T cells (interferon-stimulated)": [
+   "T cell"
+  ],
+  "Naive T cells, interferon-high": [
+   "T cell"
+  ],
+  "Non-classical monocytes (CD16+)": [
+   "non-classical monocyte"
+  ],
+  "Non-classical monocytes (FCGR3A+)": [
+   "non-classical monocyte"
+  ],
+  "Non-classical monocytes (FCGR3A-high)": [
+   "non-classical monocyte"
+  ],
+  "Plasmacytoid dendritic cells": [
+   "plasmacytoid dendritic cell"
+  ],
+  "Plasmacytoid dendritic cells (minor CD34+ signal)": [
+   "plasmacytoid dendritic cell"
+  ],
+  "Platelets": [
+   "platelet"
+  ],
+  "Platelets (megakaryocyte-derived)": [
+   "platelet"
+  ],
+  "Platelets (megakaryocyte-lineage signature)": [
+   "platelet"
+  ],
+  "Platelets/megakaryocytes": [
+   "platelet"
+  ],
+  "Regulatory CD4 T cells (FOXP3/IL2RA)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (CD4 memory-like)": [
+   "memory regulatory T cell"
+  ],
+  "Regulatory T cells (CD4+ FOXP3+)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (FOXP3+ CD4)": [
+   "regulatory T cell"
+  ],
+  "Regulatory T cells (FOXP3/IL2RA)": [
+   "regulatory T cell"
+  ],
+  "T cells (mixed CD4 and CD8 memory)": [
+   "memory CD4 T cell",
+   "memory CD8 T cell"
+  ]
+ }
 }

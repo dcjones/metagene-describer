@@ -12,6 +12,8 @@ DATASETS = {
     "scrnaseq-aging-pbmc-250k": "Human PBMCs from donors of varying ages, 10x scRNA-seq",
     "atera-cervical-cancer": "Human cervical cancer, Atera spatial transcriptomics, whole transcriptome",
     "xenium-5k-ovarian-cancer": "Human high-grade serous ovarian cancer, 10x Xenium Prime 5k panel, FFPE",
+    # A 50k-cell region of the Atera cervical cancer demo, segmented with proseg (segreg benchmark).
+    "atera-cervical-cancer-50k": "Human cervical cancer, Atera spatial transcriptomics, whole transcriptome, FFPE",
 }
 
 
