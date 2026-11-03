@@ -17,14 +17,21 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 from datasets import DATASETS, load  # noqa: E402
 
-from metagene_describer import lookup, prompt, refine
+from metagene_describer import clusters, lookup, prompt, refine
 
 p = argparse.ArgumentParser()
 p.add_argument("--top", type=int, default=3)
 a = p.parse_args()
 
 text = "\n".join(
-    [prompt.SYSTEM_PROMPT, lookup.PROMPT, refine.GROUP_SYSTEM_PROMPT, refine.RESOLVE_SYSTEM_PROMPT]
+    [
+        prompt.SYSTEM_PROMPT,
+        lookup.PROMPT,
+        refine.GROUP_SYSTEM_PROMPT,
+        refine.RESOLVE_SYSTEM_PROMPT,
+        clusters.SYSTEM_PROMPT,
+        clusters.REFINE_SYSTEM_PROMPT,
+    ]
 )
 tokens = set(re.findall(r"\b[A-Z][A-Z0-9-]{2,}\b", text))
 found = False

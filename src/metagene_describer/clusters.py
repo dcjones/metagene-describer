@@ -65,9 +65,11 @@ matrix. Each cell's expression is modeled as a sum of metagenes (factors), and e
 already been annotated from its genes. Your annotations become the cell type labels of the \
 dataset, so they must be accurate and calibrated, not merely plausible.
 
-For one cluster you are given its size and its metagene composition. For each listed metagene:
+For one cluster you are given its size and its metagene composition: its largest metagenes and \
+the most enriched of the rest, grouped by their annotated category (lineage, program, other) and \
+ordered by share within each group. For each listed metagene:
 - share: the share of the cluster's modeled counts that comes from the metagene. Shares sum to \
-100% over all metagenes; only the largest and the most enriched are listed.
+100% over all metagenes.
 - cells: the fraction of the cluster's cells in which the metagene accounts for at least 10% of the \
 cell's modeled counts. A metagene with a modest share in most cells is part of these cells' \
 expression, or diffuse contamination of all of them. One with a large share in a minority of cells \
@@ -84,7 +86,9 @@ How to read the composition:
 - Identity comes from cell_type metagenes, and from cell_state metagenes that name a lineage. \
 cell_state and program metagenes (cycling, interferon response, stress, hypoxia) can add a \
 qualifier to an identity, e.g. "Cycling CD8 T cells", but don't define one. A program alone does \
-not make a cell type.
+not make a cell type. When a program dominates a cluster, its cells still have a lineage: look for \
+it in the other metagenes and the top genes, and label the cluster with it ("Cycling epithelial \
+cells"). Say the lineage is unclear only when nothing beyond the program points to one.
 - technical metagenes (mitochondrial, ribosomal, single-gene, diffuse background) say nothing \
 about identity. Look past them. If they dominate the cluster and no lineage is clear, the cluster \
 is probably low quality: use category technical.
@@ -113,6 +117,10 @@ mixed and name both, e.g. "Macrophage/fibroblast mixture". Doublets usually show
 strongly in a fraction of the cells; segmentation spillover usually shows it weakly in most cells.
 These thresholds are guides, not rules. Weigh how lineage-specific the foreign metagene is, how \
 many cells carry it, and the dataset context.
+A contamination call must rest on a listed metagene annotated as the foreign lineage, with its \
+share. Don't infer contamination from individual genes: many genes associated with one lineage are \
+also expressed by others in some states, and a gene that is part of the cluster's own metagenes is \
+the cluster's own expression.
 
 Rules:
 - Be calibrated. Name a subtype or state only when a metagene or the top genes support it. \
@@ -124,7 +132,9 @@ confidence to say how sure you are. The label should be as specific as your desc
 description says the cluster leans toward a subset, so should the label.
 - When two related identities are possible and the evidence favors one (its lineage markers are \
 among the top genes or in an enriched metagene, and the other's are not), name the favored one. \
-Name both, e.g. "A/B cells", only when they are about equally supported.
+Name both, e.g. "A/B cells", only when they are about equally supported. This also applies when \
+a metagene's own label names two identities: a metagene labeled "A/B" leaves the choice open, so \
+decide it from the cluster's other lineage metagenes and top genes.
 - When metagenes for two subsets or states of the same lineage are both present, decide between \
 them by their relative share, enrichment and how many cells carry them, not by whether each is \
 present at all. Markers shared between related states don't decide it.
@@ -354,6 +364,22 @@ def _fmt_fold(x: float | None) -> str:
     return ">100x" if x > 100 else f"{x:.1f}x"
 
 
+# The listed metagenes are shown in these groups, so that the evidence for identity comes first.
+METAGENE_GROUPS = [
+    "Lineage metagenes (cell_type, cell_state)",
+    "Program metagenes",
+    "Other metagenes (technical, sample_specific, ambiguous, unannotated)",
+]
+
+
+def _metagene_group(category: str | None) -> str:
+    if category in ("cell_type", "cell_state"):
+        return METAGENE_GROUPS[0]
+    if category == "program":
+        return METAGENE_GROUPS[1]
+    return METAGENE_GROUPS[2]
+
+
 def cluster_prompt(
     summary: ClusterSummary,
     descriptions: Mapping[int, MetageneDescription],
@@ -373,26 +399,33 @@ def cluster_prompt(
     if note:
         lines.append(f"Analyst note: {note.strip()}")
     lines.append("")
-    lines.append("Metagenes (largest share first, then the most enriched of the rest):")
-    for s in summary.metagenes:
-        d = descriptions.get(s.index)
-        head = (
-            f"M{s.index}  share {_pct(s.share)}, in {_pct(s.prevalence)} of cells, "
-            f"fold {_fmt_fold(s.fold)}"
-        )
-        if d is None:
-            lines.append(f"{head}  (not annotated)")
-        else:
-            lines.append(f'{head}  "{d.label}" [{d.category}, {d.confidence}]')
-            genes = d.key_genes or d.top_genes[:8]
-            if genes:
-                lines.append(f"    key genes: {', '.join(genes)}")
-            if d.description:
-                lines.append(f"    {d.description}")
-        if s.peak is not None:
-            lines.append(f"    largest share in cluster {s.peak[0]} ({_pct(s.peak[1])})")
-    if summary.genes:
+    groups: dict[str, list[MetageneShare]] = {g: [] for g in METAGENE_GROUPS}
+    for m in summary.metagenes:
+        d = descriptions.get(m.index)
+        groups[_metagene_group(d.category if d is not None else None)].append(m)
+    for title, members in groups.items():
+        if not members:
+            continue
+        lines.append(f"{title}:")
+        for s in sorted(members, key=lambda m: -m.share):
+            d = descriptions.get(s.index)
+            head = (
+                f"M{s.index}  share {_pct(s.share)}, in {_pct(s.prevalence)} of cells, "
+                f"fold {_fmt_fold(s.fold)}"
+            )
+            if d is None:
+                lines.append(f"{head}  (not annotated)")
+            else:
+                lines.append(f'{head}  "{d.label}" [{d.category}, {d.confidence}]')
+                genes = d.key_genes or d.top_genes[:8]
+                if genes:
+                    lines.append(f"    key genes: {', '.join(genes)}")
+                if d.description:
+                    lines.append(f"    {d.description}")
+            if s.peak is not None:
+                lines.append(f"    largest share in cluster {s.peak[0]} ({_pct(s.peak[1])})")
         lines.append("")
+    if summary.genes:
         lines.append("Top modeled genes (gene, share of the cluster's counts, fold over rest):")
         for g, x, f in summary.genes:
             lines.append(f"{g}\t{_pct(x, 2)}\t{_fmt_fold(f)}")
