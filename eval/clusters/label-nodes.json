@@ -81,6 +81,9 @@
   "Ambiguous, weak squamous epithelium signal": [
    "squamous epithelial or tumor cell"
   ],
+  "B cells": [
+   "B cell"
+  ],
   "B cells (germinal center / follicular subset)": [
    "B cell"
   ],
@@ -230,6 +233,9 @@
   ],
   "Diffuse low-specificity background cells (ambiguous)": [
    "cell"
+  ],
+  "Endothelial cells": [
+   "endothelial cell"
   ],
   "Endothelial cells (+ pericyte signal)": [
    "endothelial cell"
@@ -488,6 +494,10 @@
   "Fibroblasts, activated ECM (+ plasma cell signal)": [
    "fibroblast"
   ],
+  "Fibroblasts/smooth muscle cells": [
+   "fibroblast",
+   "smooth muscle cell"
+  ],
   "Glandular epithelial cells with fibroblast signal (mixed)": [
    "endocervical glandular cell",
    "fibroblast"
@@ -570,6 +580,12 @@
   "Low-specificity mixture (IgG plasma cell signal)": [
    "cell"
   ],
+  "Macrophages": [
+   "macrophage"
+  ],
+  "Mixed": [
+   "cell"
+  ],
   "Myeloid cells (tumor-associated macrophages)": [
    "macrophage"
   ],
@@ -578,6 +594,9 @@
   ],
   "NF-kB/TNF-responsive cells (lineage unresolved)": [
    "cell"
+  ],
+  "Plasma cells": [
+   "plasma cell"
   ],
   "Plasma cells (+ inflammatory NF-kB signal)": [
    "plasma cell"
@@ -835,6 +854,9 @@
   "Superficial squamous epithelial cells (+ T cell and stromal signal)": [
    "differentiating tumor cell"
   ],
+  "T cells": [
+   "T cell"
+  ],
   "T cells (+ fibroblast signal)": [
    "T cell"
   ],
@@ -872,6 +894,9 @@
   "Tumor-associated macrophages (myeloid, CLEC10A-high subset)": [
    "macrophage"
   ],
+  "Unassigned": [
+   "cell"
+  ],
   "Weak stromal signal (fibroblast/smooth muscle)": [
    "fibroblast",
    "smooth muscle cell"
@@ -880,6 +905,9 @@
  "pbmc": {
   "Activated classical monocytes": [
    "classical monocyte"
+  ],
+  "B cells": [
+   "B cell"
   ],
   "B cells (FCRL5/IGHG3-high state)": [
    "memory B cell"
@@ -1084,6 +1112,9 @@
    "T cell",
    "NK cell"
   ],
+  "Dendritic cells": [
+   "dendritic cell"
+  ],
   "Dendritic cells (CLEC10A-high cDC2-like)": [
    "cDC2"
   ],
@@ -1115,6 +1146,12 @@
   "GZMK-high CD8 effector memory T cells (mixed CD4 T signal)": [
    "effector memory CD8 T cell"
   ],
+  "Hematopoietic progenitor cells": [
+   "progenitor cell"
+  ],
+  "Hematopoietic progenitors": [
+   "progenitor cell"
+  ],
   "MAIT-like T cells": [
    "MAIT cell"
   ],
@@ -1123,6 +1160,9 @@
   ],
   "MAIT-like innate-like T cells": [
    "MAIT cell"
+  ],
+  "Monocytes": [
+   "monocyte"
   ],
   "NK cells": [
    "NK cell"
@@ -1235,9 +1275,16 @@
   "Regulatory T cells (FOXP3/IL2RA)": [
    "regulatory T cell"
   ],
+  "T cells": [
+   "T cell"
+  ],
   "T cells (mixed CD4 and CD8 memory)": [
    "memory CD4 T cell",
    "memory CD8 T cell"
+  ],
+  "T/NK cells": [
+   "T cell",
+   "NK cell"
   ]
  }
 }

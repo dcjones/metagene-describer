@@ -1,7 +1,8 @@
 """Score cluster labels from run_clusters.py against per-cell reference cell types.
 
     uv run --group eval python eval/score_clusters.py DATASET RESULTS.tsv [...]
-        [--basis expr|metagene] [--res 2.0] [--detail] [--mapper-model M]
+        [--basis expr|metagene] [--res 2.0] [--column label|broad_label] [--detail]
+        [--mapper-model M]
 
 Each distinct label is mapped onto the dataset's cell type hierarchy (cluster_reference.py) by one
 blind request that sees only label text (cached per hierarchy in clusters/label-nodes.json, so a
@@ -153,6 +154,7 @@ def main():
     p.add_argument("results", nargs="+")
     p.add_argument("--basis", default="expr", choices=list(ref.CLUSTERS))
     p.add_argument("--res", default="2.0")
+    p.add_argument("--column", default="label", help="the label column to score, e.g. broad_label")
     p.add_argument("--detail", action="store_true", help="print each cluster's label and grade")
     p.add_argument("--mapper-model", default="claude-opus-5-5")
     a = p.parse_args()
@@ -173,19 +175,19 @@ def main():
         if dict(zip(df.cluster, df.n_cells)) != sizes:
             raise ValueError(f"{path} doesn't match the {a.basis} r{a.res} clusters")
         tables[os.path.basename(path).removesuffix(".tsv")] = df
-    mapping = map_labels(sorted({l for df in tables.values() for l in df.label}), h, a.mapper_model)
+    mapping = map_labels(sorted({l for df in tables.values() for l in df[a.column]}), h, a.mapper_model)
 
     width = max(len(n) for n in [*tables, "oracle"])
     print(f"{'':{width}s}  " + "  ".join(f"{l:^17s}" for l in h.levels))
     print(f"{'':{width}s}  " + "  ".join(" corr wrong unres" for _ in h.levels))
     report("oracle", oracle(h, counts), width)
     for name, df in tables.items():
-        report(name, score(h, {c: mapping[l] for c, l in zip(df.cluster, df.label)}, counts), width)
+        report(name, score(h, {c: mapping[l] for c, l in zip(df.cluster, df[a.column])}, counts), width)
 
     if a.detail:
         for name, df in tables.items():
             print(f"\n{name}")
-            for c, label in zip(df.cluster, df.label):
+            for c, label in zip(df.cluster, df[a.column]):
                 total = sum(counts[c].values())
                 top = ", ".join(f"{r} {100 * n / total:.0f}%" for r, n in counts[c].most_common(3))
                 print(f"{c:>4} {total:6d}  {label}  -> {' | '.join(mapping[label])}\n"

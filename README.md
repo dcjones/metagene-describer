@@ -185,11 +185,18 @@ e.g. "Fibroblasts (+ macrophage signal)". Clusters where no lineage dominates ar
 request sees every cluster's label and composition, makes the wording consistent, and adds
 qualifiers where clusters with the same identity clearly differ.
 
+The labels are fine-grained, so one cell type split across several clusters often has several
+labels, e.g. "Plasma cells (interferon-high)" and "IgG plasma cells". With `broad=True` (the
+default), one more request sees every distinct label and groups them under broad cell type labels.
+These name the major cell type alone, dropping subsets, states and contamination notes, and are
+stored in `broad_label`. Mixtures of unrelated lineages become "Mixed", and low-quality or
+unassigned clusters become "Unassigned".
+
 `notes` takes a `{cluster: str}` dict, e.g. `{"7": "85% of cells from patient P3"}`.
 `build_cluster_prompts` returns the prompts without calling the model.
 
 Each `ClusterDescription` has `cluster`, `n_cells`, `label`, `description`, `category`
 (`cell_type`, `cell_state`, `mixed`, `technical`, `ambiguous`), `confidence`, `cell_types`,
 `key_metagenes`, `contaminants`, `metagene_label` (the fallback label, built from the labels of
-the largest informative metagenes), `top_metagenes`, `error`, and `initial_label` /
-`refine_reason`.
+the largest informative metagenes), `top_metagenes`, `error`, `initial_label` /
+`refine_reason`, and `broad_label`.

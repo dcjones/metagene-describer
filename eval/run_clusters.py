@@ -2,7 +2,7 @@
 the results as a TSV.
 
     uv run --group eval python eval/run_clusters.py DATASET METAGENES.tsv OUT.tsv
-        [--basis expr|metagene] [--res 2.0] [--no-refine]
+        [--basis expr|metagene] [--res 2.0] [--no-refine] [--no-broad]
         [--backend anthropic|openai] [--model M] [--base-url URL] [--api-key-env VAR]
 
 Prints token usage and wall time (and cost, for known Anthropic models) to stderr.
@@ -53,6 +53,7 @@ def main():
     p.add_argument("--basis", default="expr", choices=list(cluster_reference.CLUSTERS))
     p.add_argument("--res", default="2.0")
     p.add_argument("--no-refine", action="store_true")
+    p.add_argument("--no-broad", action="store_true")
     p.add_argument("--backend", default="anthropic", choices=["anthropic", "openai"])
     p.add_argument("--model")
     p.add_argument("--base-url")
@@ -84,7 +85,8 @@ def main():
     t0 = time.time()
     results = describe_clusters(
         clusters, read_descriptions(a.metagenes), genes, H, W, context=DATASETS[a.dataset],
-        backend=backend, refine=not a.no_refine, max_workers=a.max_workers,
+        backend=backend, refine=not a.no_refine, broad=not a.no_broad,
+        max_workers=a.max_workers,
     )
     df = to_dataframe(results)
     df.to_csv(a.out, sep="\t")

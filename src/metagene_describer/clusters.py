@@ -11,7 +11,9 @@ descriptions, and the cluster's top modeled genes.
 from __future__ import annotations
 
 import dataclasses
+import re
 import sys
+from collections import Counter
 from collections.abc import Mapping, Sequence
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
@@ -205,6 +207,70 @@ reason, and the new label. Return an empty list if no label needs to change.
 """
 
 
+# Broad labels for clusters that have no single cell type.
+MIXED = "Mixed"
+UNASSIGNED = "Unassigned"
+
+BROAD_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "groups": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "broad_label": {"type": "string"},
+                    "labels": {"type": "array", "items": {"type": "string"}},
+                },
+                "required": ["broad_label", "labels"],
+                "additionalProperties": False,
+            },
+        }
+    },
+    "required": ["groups"],
+    "additionalProperties": False,
+}
+
+BROAD_SYSTEM_PROMPT = f"""\
+You are grouping the cell type labels of one dataset's clusters into broad cell types. The labels \
+are fine-grained: they name subsets, states, programs and contamination, so one cell type split \
+across several clusters often has a different label in each. A broad label names the major cell \
+type alone, so that all clusters of that cell type share it.
+
+You are given each distinct label with its category and the number of clusters and cells that \
+have it.
+
+Rules:
+- A broad label names a major cell type at the level of a lineage, in standard wording and in the \
+plural, e.g. "T cells", "NK cells", "B cells", "Plasma cells", "Monocytes", "Macrophages", \
+"Dendritic cells", "Fibroblasts", "Endothelial cells", "Hepatocytes".
+- Drop subsets, states, programs, isotypes and other qualifiers, and notes on contamination, \
+spillover or signal quality: "Cycling CD4 T cells", "Memory CD8 T cells (+ B cell signal)" and \
+"T cells (interferon-high)" all become "T cells"; "Inflammatory fibroblasts" and "Myofibroblasts" \
+become "Fibroblasts".
+- Keep distinctions between related lineages that are counted as different cell types in this \
+tissue: B cells and plasma cells, macrophages and dendritic cells, fibroblasts and smooth muscle \
+cells, and the distinct epithelial types of the tissue (e.g. hepatocytes and cholangiocytes). \
+Malignant cells keep their lineage, and "tumor" or "malignant" if the label says so, e.g. \
+"Ductal tumor cells".
+- Use the lineage's wording from the labels, not a synonym: if the labels say "Hepatocytes", \
+don't write "Liver parenchymal cells".
+- A label that names alternatives within one lineage ("CD4/CD8 T cells") gets that lineage. One \
+that names alternatives from two related lineages that share markers keeps both, e.g. "T/NK \
+cells" for "CD8 T/NK cells", unless the labels call them by a standard shared lineage ("Myeloid \
+cells").
+- A label that names one identity with a note on contamination, doublets or a second signal keeps \
+that identity. A mixture of unrelated lineages with no primary identity (category mixed, \
+"Fibroblast/T cell mixture") becomes "{MIXED}".
+- A label for low-quality, technical or unassigned cells, or one that names no cell type, becomes \
+"{UNASSIGNED}", even if it mentions a weak lineage signal.
+- Use as few broad labels as these rules allow, with the same wording for the same cell type.
+
+Return every label exactly as given, grouped under its broad label. Each label belongs to exactly \
+one group.
+"""
+
+
 @dataclass
 class MetageneShare:
     index: int
@@ -243,6 +309,9 @@ class ClusterDescription:
     error: str | None = None  # set when the LLM call failed; label then falls back to metagene_label
     initial_label: str | None = None  # the label before refinement, if refinement changed it
     refine_reason: str | None = None  # why refinement changed the label
+    # The major cell type alone, shared by all clusters of that type, e.g. "Plasma cells" for
+    # "Plasma cells (interferon-high)"; MIXED or UNASSIGNED for clusters with no single cell type.
+    broad_label: str | None = None
 
 
 def _rows(X: np.ndarray) -> np.ndarray:
@@ -559,6 +628,54 @@ def _refine(
     return out
 
 
+def broad_prompt(results: Sequence[ClusterDescription], context: str | None = None) -> str:
+    groups: dict[str, list[ClusterDescription]] = {}
+    for r in results:
+        groups.setdefault(r.label, []).append(r)
+    lines = []
+    if context:
+        lines += ["Dataset context:", context.strip(), ""]
+    lines.append("Labels (category; clusters; cells):")
+    for label, members in sorted(groups.items(), key=lambda kv: -sum(r.n_cells for r in kv[1])):
+        category = Counter(r.category for r in members).most_common(1)[0][0]
+        cells = sum(r.n_cells for r in members)
+        lines.append(f"{label}\t[{category}; {len(members)}; {cells}]")
+    return "\n".join(lines)
+
+
+def _strip_qualifiers(label: str) -> str:
+    """A fallback broad label: the label without a trailing parenthetical."""
+    return re.sub(r"\s*\([^()]*\)\s*$", "", label).strip() or label
+
+
+def _broaden(
+    results: list[ClusterDescription], backend: Backend, context: str | None
+) -> list[ClusterDescription]:
+    """One request sees every distinct label and groups them under broad labels. Labels the
+    response leaves out fall back to _strip_qualifiers. Raises BackendError if the response is
+    unusable."""
+    labels = {r.label for r in results}
+    data = backend.complete_json(BROAD_SYSTEM_PROMPT, broad_prompt(results, context), BROAD_SCHEMA)
+    if not isinstance(data.get("groups"), list):
+        raise BackendError("broad label response has no list of groups")
+    broad = {}
+    for group in data["groups"]:
+        if not isinstance(group, dict):
+            continue
+        name = str(group.get("broad_label") or "").strip().rstrip(".")
+        for label in group.get("labels") or []:
+            label = str(label).strip()
+            if name and label in labels:
+                broad.setdefault(label, name)
+    missing = labels - broad.keys()
+    if missing:
+        print(f"warning: no broad label returned for {sorted(missing)}", file=sys.stderr)
+    return [
+        dataclasses.replace(r, broad_label=broad.get(r.label) or _strip_qualifiers(r.label))
+        for r in results
+    ]
+
+
 def describe_clusters(
     clusters,
     descriptions: Sequence[MetageneDescription],
@@ -578,6 +695,7 @@ def describe_clusters(
     max_workers: int = 8,
     max_attempts: int = 2,
     refine: bool = True,
+    broad: bool = True,
     verbose: bool = False,
 ) -> list[ClusterDescription]:
     """Label cell clusters with an LLM, from their metagene composition and the metagenes'
@@ -614,6 +732,11 @@ def describe_clusters(
         compositions, to word the same identity the same way and add qualifiers where clusters with
         the same identity clearly differ. If it fails, a warning is printed and the unrefined
         labels are returned.
+    broad : bool
+        Finally, make one request that sees every distinct label and groups them under broad cell
+        type labels (broad_label), dropping subsets, states and contamination notes, so that all
+        clusters of one cell type share a broad label. If it fails, a warning is printed and each
+        broad label is its label without a trailing parenthetical. If False, broad_label is None.
 
     Returns
     -------
@@ -672,4 +795,10 @@ def describe_clusters(
             results = _refine(results, summaries, by_index, backend, context)
         except Exception as e:
             print(f"warning: cluster label refinement failed: {type(e).__name__}: {e}", file=sys.stderr)
+    if broad:
+        try:
+            results = _broaden(results, backend, context)
+        except Exception as e:
+            print(f"warning: broad cluster labels failed: {type(e).__name__}: {e}", file=sys.stderr)
+            results = [dataclasses.replace(r, broad_label=_strip_qualifiers(r.label)) for r in results]
     return results

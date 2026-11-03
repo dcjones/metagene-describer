@@ -228,3 +228,16 @@ gaps:
   mixed clusters.
 - The small, mixed clusters are mostly labeled "Fibroblasts".
 - The 7.7k-cell T cell cluster that is 58% cytotoxic T is labeled as Tregs.
+
+Broad labels (`broad_label`, scored with `--column broad_label`) were added after v5. The
+`*.v5*.broad.tsv` results are the v5 labels with only the broad step run on them (one request per
+run). They turn 23–46 distinct labels into 7–10, and keep the lineage-level score of the fine labels:
+
+| broad | compartment | lineage |
+|---|---|---|
+| Atera v5, v5-b | 79.8–80.6 / 9–11 / 8–11 | 72.1–73.0 / 17–18 / 9–11 |
+| PBMC v5, v5-b | 99.9 / 0.1 / 0 | 97.0–99.1 / 0.8–2.9 / 0.1 |
+
+On Atera, wrong calls drop by about 7 points, and unresolved calls rise by the same amount. The
+low-quality clusters whose fine labels name a weak lineage signal become "Unassigned", and that
+signal was often wrong. Below lineage level the broad labels are unresolved by design.

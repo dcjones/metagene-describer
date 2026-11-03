@@ -42,11 +42,16 @@ DESCS = [
 
 
 class FakeBackend:
-    def __init__(self, refine=None, fail=()):
-        self.calls, self.refine_calls = [], []
-        self.refine, self.fail = refine, set(fail)
+    def __init__(self, refine=None, fail=(), broad=None):
+        self.calls, self.refine_calls, self.broad_calls = [], [], []
+        self.refine, self.fail, self.broad = refine, set(fail), broad
 
     def complete_json(self, system, user, schema, tools=()):
+        if "groups" in schema["properties"]:
+            self.broad_calls.append(user)
+            if self.broad is None:
+                raise BackendError("bad json")
+            return {"groups": self.broad}
         if "labels" in schema["properties"]:
             self.refine_calls.append(user)
             if self.refine is None:
@@ -137,7 +142,39 @@ def test_failures_fall_back(capsys):
     out = describe_clusters(clusters, DESCS, GENES, make_H(), W, backend=backend, max_attempts=2)
     failed = [o for o in out if o.error]
     assert len(failed) == 1 and failed[0].label == failed[0].metagene_label
-    assert "refinement failed" in capsys.readouterr().err
+    err = capsys.readouterr().err
+    assert "refinement failed" in err and "broad cluster labels failed" in err
+    assert all(o.broad_label == o.label for o in out)
+
+
+def test_broad_labels(capsys):
+    clusters, W = make_W()
+    clusters = clusters.astype(object)
+    clusters[15:] = "B2"
+    backend = FakeBackend(
+        refine=[{"cluster": "B2", "reason": "", "label": "B cells (+ T cell signal)"}],
+        broad=[
+            {"broad_label": "B cells", "labels": ["B cells", "not a label"]},
+            {"broad_label": "Lymphocytes", "labels": ["B cells"]},  # a repeat; the first wins
+        ],
+    )
+    out = describe_clusters(clusters, DESCS, GENES, make_H(), W, backend=backend)
+    assert [o.broad_label for o in out] == ["B cells", "B cells", "T cells"]
+    # The label left out falls back to stripping its parenthetical.
+    assert "no broad label returned for ['B cells (+ T cell signal)', 'T cells']" in (
+        capsys.readouterr().err
+    )
+    prompt = backend.broad_calls[0]
+    assert "B cells\t[cell_type; 1; 5]" in prompt and "T cells\t[cell_type; 1; 10]" in prompt
+    off = describe_clusters(clusters, DESCS, GENES, make_H(), W, backend=backend, broad=False)
+    assert all(o.broad_label is None for o in off) and len(backend.broad_calls) == 1
+
+
+def test_strip_qualifiers():
+    from metagene_describer.clusters import _strip_qualifiers
+
+    assert _strip_qualifiers("Plasma cells (interferon-high)") == "Plasma cells"
+    assert _strip_qualifiers("(odd)") == "(odd)"
 
 
 def test_bad_usage_shape():

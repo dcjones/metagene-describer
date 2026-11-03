@@ -31,6 +31,7 @@ text = "\n".join(
         refine.RESOLVE_SYSTEM_PROMPT,
         clusters.SYSTEM_PROMPT,
         clusters.REFINE_SYSTEM_PROMPT,
+        clusters.BROAD_SYSTEM_PROMPT,
     ]
 )
 tokens = set(re.findall(r"\b[A-Z][A-Z0-9-]{2,}\b", text))
