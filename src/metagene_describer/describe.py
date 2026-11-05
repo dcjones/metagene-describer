@@ -19,6 +19,7 @@ __all__ = [
     "refine_labels",
     "build_prompts",
     "to_dataframe",
+    "from_dataframe",
 ]
 
 
@@ -294,9 +295,9 @@ def refine_labels(
     return _refine(list(descriptions), by_index, genes, H, usage_v, backend, context, max_workers)
 
 
-def to_dataframe(descriptions):
+def to_dataframe(descriptions, sep: str = ", "):
     """Metagene or cluster descriptions as a pandas DataFrame, indexed by metagene or cluster, with
-    list fields joined by ", "."""
+    list fields joined by sep."""
     import pandas as pd
 
     rows = []
@@ -304,7 +305,44 @@ def to_dataframe(descriptions):
         row = asdict(d)
         for key, value in row.items():
             if isinstance(value, list):
-                row[key] = ", ".join(str(v) for v in value)
+                row[key] = sep.join(str(v) for v in value)
         rows.append(row)
     df = pd.DataFrame(rows)
     return df.set_index("index" if "index" in df.columns else "cluster")
+
+
+def from_dataframe(df, sep: str = ", "):
+    """Metagene or cluster descriptions from a DataFrame made by to_dataframe with the same sep.
+
+    The kind is taken from the index name ("index" for metagenes, "cluster" for clusters). Empty or
+    missing values become None in optional fields and [] in list fields. Cluster ids come back as
+    they are stored, so ids written to a file as strings stay strings.
+    """
+    import dataclasses
+
+    from .clusters import ClusterDescription
+
+    cls = ClusterDescription if df.index.name == "cluster" else MetageneDescription
+    out = []
+    for key, row in zip(df.index, df.to_dict("records")):
+        kwargs: dict[str, object] = (
+            {"cluster": key} if cls is ClusterDescription else {"index": int(key)}
+        )
+        for f in dataclasses.fields(cls):
+            if f.name not in row:
+                continue
+            value = row[f.name]
+            missing = value is None or (isinstance(value, float) and np.isnan(value)) or value == ""
+            if f.default_factory is list:
+                items = [] if missing else str(value).split(sep)
+                kwargs[f.name] = [int(v) for v in items] if f.type == "list[int]" else items
+            elif missing and f.default is None:
+                kwargs[f.name] = None
+            elif f.type == "int":
+                kwargs[f.name] = int(value)
+            elif f.type == "str":
+                kwargs[f.name] = "" if missing else str(value)
+            else:
+                kwargs[f.name] = value
+        out.append(cls(**kwargs))
+    return out

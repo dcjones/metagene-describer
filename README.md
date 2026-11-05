@@ -33,6 +33,29 @@ descriptions = describe_metagenes(
 df = to_dataframe(descriptions)  # requires pandas
 ```
 
+### With AnnData
+
+If you ran `metagene.nmf` on an AnnData object, it stored W in `adata.obsm["W_nmf"]` and Hᵀ in
+`adata.varm["Ht_nmf"]`. `annotate_metagenes` and `annotate_clusters` read those and store their
+results in the object:
+
+```python
+from metagene_describer import annotate_metagenes, annotate_clusters, read_descriptions
+
+metagene.nmf(adata, k=100)
+annotate_metagenes(adata, context="Human PBMC")  # -> adata.uns["metagene_descriptions"]
+annotate_clusters(adata, "leiden", context="Human PBMC")
+# -> adata.obs["leiden_label"], adata.obs["leiden_broad_label"] (categorical)
+#    adata.uns["leiden_descriptions"]
+```
+
+Other keyword arguments are passed to `describe_metagenes` and `describe_clusters`. Both functions
+also return the descriptions. The tables in `uns` are `to_dataframe` output with list fields joined
+by `"; "`, and they can be written to h5ad or zarr. `annotate_clusters` reads the metagene
+descriptions from `adata.uns["metagene_descriptions"]` unless you pass `descriptions=`.
+`read_descriptions(adata, key)` turns a stored table back into description objects. anndata is not
+a dependency of this package.
+
 The default backend is Anthropic with `claude-haiku-5-5`. The API key and endpoint are read from
 `ANTHROPIC_API_KEY` / `ANTHROPIC_BASE_URL`, or you can pass them as arguments:
 
